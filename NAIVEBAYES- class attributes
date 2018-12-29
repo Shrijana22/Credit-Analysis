@@ -1,0 +1,142 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.bayes.NaiveBayes
+Relation:     dataset_31_credit-g-clean-weka.filters.supervised.instance.Resample-B0.0-S1-Z33.0-no-replacement-V-weka.filters.unsupervised.attribute.Remove-R1,4,10,12-18
+Instances:    670
+Attributes:   11
+              duration_months
+              credit_history
+              credit_amount
+              savings_status
+              present_employment_years
+              installment_commitment
+              personal_status
+              residence_since_years
+              own_telephone
+              foreign_worker
+              credit_status
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+Naive Bayes Classifier
+
+                                       Class
+Attribute                               good       bad
+                                       (0.7)     (0.3)
+=======================================================
+duration_months
+  mean                                19.2586   25.4548
+  std. dev.                           11.2233   13.5831
+  weight sum                              469       201
+  precision                            2.3448    2.3448
+
+credit_history
+  critical/other existing credit        161.0      31.0
+  existing paid                         248.0     112.0
+  delayed previously                     37.0      23.0
+  no credits/all paid                    12.0      20.0
+  all paid                               16.0      20.0
+  [total]                               474.0     206.0
+
+credit_amount
+  mean                              3049.9815 4096.7393
+  std. dev.                         2529.8844 3621.6936
+  weight sum                              469       201
+  precision                           24.6777   24.6777
+
+savings_status
+  no known savings                      102.0      16.0
+  <100                                  260.0     158.0
+  500<=X<1000                            36.0       5.0
+  >=1000                                 29.0       4.0
+  100<=X<500                             47.0      23.0
+  [total]                               474.0     206.0
+
+present_employment_years
+  >=7                                   127.0      46.0
+  1<=X<4                                155.0      68.0
+  4<=X<7                                 91.0      31.0
+  unemployed                             31.0      16.0
+  <1                                     70.0      45.0
+  [total]                               474.0     206.0
+
+installment_commitment
+  mean                                 2.9552    3.1095
+  std. dev.                            1.1102     1.078
+  weight sum                              469       201
+  precision                                 1         1
+
+personal_status
+  male single                           274.0      99.0
+  female div/dep/mar                    128.0      69.0
+  male div/sep                           23.0      17.0
+  male mar/wid                           48.0      20.0
+  [total]                               473.0     205.0
+
+residence_since_years
+  mean                                 2.8017    2.8706
+  std. dev.                            1.1183    1.0942
+  weight sum                              469       201
+  precision                                 1         1
+
+own_telephone
+  yes                                   204.0      85.0
+  none                                  267.0     118.0
+  [total]                               471.0     203.0
+
+foreign_worker
+  yes                                   447.0     199.0
+  no                                     24.0       4.0
+  [total]                               471.0     203.0
+
+
+Attribute mappings:
+
+Model attributes                    	    Incoming attributes
+------------------------------------	    ----------------
+(numeric) duration_months           	--> 2 (numeric) duration_months
+(nominal) credit_history            	--> 3 (nominal) credit_history
+(numeric) credit_amount             	--> 5 (numeric) credit_amount
+(nominal) savings_status            	--> 6 (nominal) savings_status
+(nominal) present_employment_years  	--> 7 (nominal) present_employment_years
+(numeric) installment_commitment    	--> 8 (numeric) installment_commitment
+(nominal) personal_status           	--> 9 (nominal) personal_status
+(numeric) residence_since_years     	--> 11 (numeric) residence_since_years
+(nominal) own_telephone             	--> 19 (nominal) own_telephone
+(nominal) foreign_worker            	--> 20 (nominal) foreign_worker
+(nominal) credit_status             	--> 21 (nominal) credit_status
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.32 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         241               73.0303 %
+Incorrectly Classified Instances        89               26.9697 %
+Kappa statistic                          0.2419
+Mean absolute error                      0.3348
+Root mean squared error                  0.444 
+Relative absolute error                 79.6675 %
+Root relative squared error             96.8851 %
+Total Number of Instances              330     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.922    0.717    0.750      0.922    0.827      0.271    0.686     0.815     good
+                 0.283    0.078    0.609      0.283    0.386      0.271    0.686     0.506     bad
+Weighted Avg.    0.730    0.525    0.708      0.730    0.695      0.271    0.686     0.722     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 213  18 |   a = good
+  71  28 |   b = bad
+
