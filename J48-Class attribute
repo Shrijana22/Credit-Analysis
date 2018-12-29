@@ -1,0 +1,90 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     dataset_31_credit-g-clean-weka.filters.supervised.instance.Resample-B0.0-S1-Z33.0-no-replacement-V-weka.filters.unsupervised.attribute.Remove-R1-2,5,12-18
+Instances:    670
+Attributes:   11
+              credit_history
+              purpose_of_credit
+              savings_status
+              present_employment_years
+              installment_commitment
+              personal_status
+              other_parties
+              residence_since_years
+              own_telephone
+              foreign_worker
+              credit_status
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+J48 pruned tree
+------------------
+
+savings_status = no known savings: good (116.0/15.0)
+savings_status = <100
+|   credit_history = critical/other existing credit: good (122.0/25.0)
+|   credit_history = existing paid: good (219.0/84.0)
+|   credit_history = delayed previously
+|   |   installment_commitment <= 2: good (11.0/2.0)
+|   |   installment_commitment > 2: bad (23.0/7.0)
+|   credit_history = no credits/all paid: bad (24.0/6.0)
+|   credit_history = all paid: bad (17.0/5.0)
+savings_status = 500<=X<1000: good (39.0/4.0)
+savings_status = >=1000: good (31.0/3.0)
+savings_status = 100<=X<500: good (68.0/22.0)
+
+Number of Leaves  : 	10
+
+Size of the tree : 	13
+
+Attribute mappings:
+
+Model attributes                    	    Incoming attributes
+------------------------------------	    ----------------
+(nominal) credit_history            	--> 3 (nominal) credit_history
+(nominal) purpose_of_credit         	--> 4 (nominal) purpose_of_credit
+(nominal) savings_status            	--> 6 (nominal) savings_status
+(nominal) present_employment_years  	--> 7 (nominal) present_employment_years
+(numeric) installment_commitment    	--> 8 (numeric) installment_commitment
+(nominal) personal_status           	--> 9 (nominal) personal_status
+(nominal) other_parties             	--> 10 (nominal) other_parties
+(numeric) residence_since_years     	--> 11 (numeric) residence_since_years
+(nominal) own_telephone             	--> 19 (nominal) own_telephone
+(nominal) foreign_worker            	--> 20 (nominal) foreign_worker
+(nominal) credit_status             	--> 21 (nominal) credit_status
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.45 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         231               70      %
+Incorrectly Classified Instances        99               30      %
+Kappa statistic                          0.0748
+Mean absolute error                      0.388 
+Root mean squared error                  0.463 
+Relative absolute error                 92.3361 %
+Root relative squared error            101.041  %
+Total Number of Instances              330     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.957    0.899    0.713      0.957    0.817      0.111    0.579     0.743     good
+                 0.101    0.043    0.500      0.101    0.168      0.111    0.579     0.366     bad
+Weighted Avg.    0.700    0.642    0.649      0.700    0.622      0.111    0.579     0.630     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 221  10 |   a = good
+  89  10 |   b = bad
+

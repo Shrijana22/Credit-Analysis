@@ -1,0 +1,95 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     dataset_31_credit-g-clean-weka.filters.supervised.instance.Resample-B0.0-S1-Z33.0-no-replacement-V-weka.filters.unsupervised.attribute.Remove-R4,7-20
+Instances:    670
+Attributes:   6
+              checking_status
+              duration_months
+              credit_history
+              credit_amount
+              savings_status
+              credit_status
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+J48 pruned tree
+------------------
+
+checking_status = <0
+|   credit_history = critical/other existing credit: good (45.0/9.0)
+|   credit_history = existing paid
+|   |   savings_status = no known savings
+|   |   |   duration_months <= 22: good (5.0)
+|   |   |   duration_months > 22: bad (7.0/2.0)
+|   |   savings_status = <100: bad (85.0/40.0)
+|   |   savings_status = 500<=X<1000: good (3.0)
+|   |   savings_status = >=1000: good (4.0)
+|   |   savings_status = 100<=X<500
+|   |   |   duration_months <= 15: bad (2.0)
+|   |   |   duration_months > 15: good (3.0/1.0)
+|   credit_history = delayed previously
+|   |   duration_months <= 21: good (3.0)
+|   |   duration_months > 21: bad (7.0)
+|   credit_history = no credits/all paid: bad (11.0/2.0)
+|   credit_history = all paid: bad (14.0/3.0)
+checking_status = 0<=X<200
+|   duration_months <= 20: good (96.0/24.0)
+|   duration_months > 20
+|   |   savings_status = no known savings: good (11.0)
+|   |   savings_status = <100: bad (44.0/11.0)
+|   |   savings_status = 500<=X<1000: good (3.0/1.0)
+|   |   savings_status = >=1000: good (2.0/1.0)
+|   |   savings_status = 100<=X<500: bad (20.0/8.0)
+checking_status = no checking: good (259.0/33.0)
+checking_status = >=200: good (46.0/8.0)
+
+Number of Leaves  : 	20
+
+Size of the tree : 	28
+
+Attribute mappings:
+
+Model attributes           	    Incoming attributes
+---------------------------	    ----------------
+(nominal) checking_status  	--> 1 (nominal) checking_status
+(numeric) duration_months  	--> 2 (numeric) duration_months
+(nominal) credit_history   	--> 3 (nominal) credit_history
+(numeric) credit_amount    	--> 5 (numeric) credit_amount
+(nominal) savings_status   	--> 6 (nominal) savings_status
+(nominal) credit_status    	--> 21 (nominal) credit_status
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.37 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         237               71.8182 %
+Incorrectly Classified Instances        93               28.1818 %
+Kappa statistic                          0.3028
+Mean absolute error                      0.3447
+Root mean squared error                  0.441 
+Relative absolute error                 82.0222 %
+Root relative squared error             96.2238 %
+Total Number of Instances              330     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.827    0.535    0.783      0.827    0.804      0.304    0.717     0.827     good
+                 0.465    0.173    0.535      0.465    0.497      0.304    0.717     0.480     bad
+Weighted Avg.    0.718    0.427    0.708      0.718    0.712      0.304    0.717     0.723     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 191  40 |   a = good
+  53  46 |   b = bad
+

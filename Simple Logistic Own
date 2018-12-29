@@ -1,0 +1,92 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.functions.SimpleLogistic -- -I 0 -M 500 -H 50 -W 0.0
+Relation:     dataset_31_credit-g-clean-weka.filters.supervised.instance.Resample-B0.0-S1-Z33.0-no-replacement-V-weka.filters.unsupervised.attribute.Remove-R2,5,8,11,13,16,18-19
+Instances:    670
+Attributes:   13
+              checking_status
+              credit_history
+              purpose_of_credit
+              savings_status
+              present_employment_years
+              personal_status
+              other_parties
+              property_magnitude
+              other_payment_plans
+              housing_type
+              job
+              foreign_worker
+              credit_status
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+SimpleLogistic:
+
+Class good :
+0.26 + 
+[checking_status=no checking] * 0.56 +
+[checking_status=>=200] * 0.51 +
+[credit_history=critical/other existing credit] * 0.42 +
+[savings_status=<100] * -0.38 +
+[property_magnitude=real estate] * 0.36
+
+Class bad :
+-0.26 + 
+[checking_status=no checking] * -0.56 +
+[checking_status=>=200] * -0.51 +
+[credit_history=critical/other existing credit] * -0.42 +
+[savings_status=<100] * 0.38 +
+[property_magnitude=real estate] * -0.36
+
+Attribute mappings:
+
+Model attributes                    	    Incoming attributes
+------------------------------------	    ----------------
+(nominal) checking_status           	--> 1 (nominal) checking_status
+(nominal) credit_history            	--> 3 (nominal) credit_history
+(nominal) purpose_of_credit         	--> 4 (nominal) purpose_of_credit
+(nominal) savings_status            	--> 6 (nominal) savings_status
+(nominal) present_employment_years  	--> 7 (nominal) present_employment_years
+(nominal) personal_status           	--> 9 (nominal) personal_status
+(nominal) other_parties             	--> 10 (nominal) other_parties
+(nominal) property_magnitude        	--> 12 (nominal) property_magnitude
+(nominal) other_payment_plans       	--> 14 (nominal) other_payment_plans
+(nominal) housing_type              	--> 15 (nominal) housing_type
+(nominal) job                       	--> 17 (nominal) job
+(nominal) foreign_worker            	--> 20 (nominal) foreign_worker
+(nominal) credit_status             	--> 21 (nominal) credit_status
+
+
+Time taken to build model: 0.14 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.35 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         233               70.6061 %
+Incorrectly Classified Instances        97               29.3939 %
+Kappa statistic                          0.2165
+Mean absolute error                      0.3649
+Root mean squared error                  0.4297
+Relative absolute error                 86.8408 %
+Root relative squared error             93.7669 %
+Total Number of Instances              330     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.870    0.677    0.750      0.870    0.806      0.227    0.722     0.835     good
+                 0.323    0.130    0.516      0.323    0.398      0.227    0.722     0.473     bad
+Weighted Avg.    0.706    0.513    0.680      0.706    0.683      0.227    0.722     0.726     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 201  30 |   a = good
+  67  32 |   b = bad
+

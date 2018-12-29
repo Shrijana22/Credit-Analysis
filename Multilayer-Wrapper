@@ -1,0 +1,1143 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     dataset_31_credit-g-clean-weka.filters.supervised.instance.Resample-B0.0-S1-Z33.0-no-replacement-V-weka.filters.unsupervised.attribute.Remove-R4,8-9,11,14,17-18
+Instances:    670
+Attributes:   14
+              checking_status
+              duration_months
+              credit_history
+              credit_amount
+              savings_status
+              present_employment_years
+              other_parties
+              property_magnitude
+              age
+              housing_type
+              number_of_existing_credits
+              own_telephone
+              foreign_worker
+              credit_status
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -11.023131069010223
+    Node 2    9.78794019138553
+    Node 3    4.207800038255184
+    Node 4    -0.9510529355411412
+    Node 5    5.872655558435964
+    Node 6    5.130914151416445
+    Node 7    -11.393927317527378
+    Node 8    5.977148238714622
+    Node 9    3.9486992975000517
+    Node 10    5.994199302084779
+    Node 11    5.0042861158079415
+    Node 12    7.143101188516163
+    Node 13    3.066010024798198
+    Node 14    4.691109496133456
+    Node 15    6.111230427036061
+    Node 16    8.024023948702784
+    Node 17    2.300333398430136
+    Node 18    -5.178519006107655
+    Node 19    7.504310463350959
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    11.02257889795532
+    Node 2    -9.787390686133735
+    Node 3    -4.207270683983988
+    Node 4    0.9633176525998773
+    Node 5    -5.875933309705831
+    Node 6    -5.131829174803133
+    Node 7    11.39370646575442
+    Node 8    -5.977209793488103
+    Node 9    -3.950328994491085
+    Node 10    -5.994092254605479
+    Node 11    -5.004492599305056
+    Node 12    -7.142952875482991
+    Node 13    -3.068056415798166
+    Node 14    -4.690697864329464
+    Node 15    -6.111603651601817
+    Node 16    -8.023579018087903
+    Node 17    -2.2999126261161544
+    Node 18    5.1774165049259375
+    Node 19    -7.504499950452891
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.3486558761145449
+    Attrib checking_status=<0    -2.3890011665423567
+    Attrib checking_status=0<=X<200    3.0213263667404378
+    Attrib checking_status=no checking    -3.1249807633740176
+    Attrib checking_status=>=200    3.258190892918958
+    Attrib duration_months    -6.30465494076227
+    Attrib credit_history=critical/other existing credit    -1.8217094348276914
+    Attrib credit_history=existing paid    -0.42279441253159195
+    Attrib credit_history=delayed previously    2.27797235750716
+    Attrib credit_history=no credits/all paid    1.3854281633316488
+    Attrib credit_history=all paid    -0.25892843869285215
+    Attrib credit_amount    -0.580600776043701
+    Attrib savings_status=no known savings    -1.1337627871204297
+    Attrib savings_status=<100    -6.070709160978519
+    Attrib savings_status=500<=X<1000    4.609563176310291
+    Attrib savings_status=>=1000    -0.2895510339960479
+    Attrib savings_status=100<=X<500    4.0737894377941775
+    Attrib present_employment_years=>=7    0.3366421048585551
+    Attrib present_employment_years=1<=X<4    1.4304103002255293
+    Attrib present_employment_years=4<=X<7    0.7333729893471559
+    Attrib present_employment_years=unemployed    1.5681285088232968
+    Attrib present_employment_years=<1    -2.8473530772588735
+    Attrib other_parties=none    -0.896845252029597
+    Attrib other_parties=guarantor    0.9241578705298192
+    Attrib other_parties=co applicant    0.3266623625880455
+    Attrib property_magnitude=real estate    2.206402710100823
+    Attrib property_magnitude=life insurance    -3.112242283686102
+    Attrib property_magnitude=no known property    -2.397098027772314
+    Attrib property_magnitude=car    4.033180092874509
+    Attrib age    -0.748123289857722
+    Attrib housing_type=own    -3.2912327126213206
+    Attrib housing_type=for free    2.5009051558102384
+    Attrib housing_type=rent    1.1888752824189668
+    Attrib number_of_existing_credits    -3.054217552974332
+    Attrib own_telephone=none    -2.5793855961118206
+    Attrib foreign_worker=no    -0.39575727158939566
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -1.637396746373739
+    Attrib checking_status=<0    2.8956741819295653
+    Attrib checking_status=0<=X<200    0.6027702256848299
+    Attrib checking_status=no checking    2.2395856941988943
+    Attrib checking_status=>=200    -2.4763100990857145
+    Attrib duration_months    -5.940375343625506
+    Attrib credit_history=critical/other existing credit    0.2386354897404793
+    Attrib credit_history=existing paid    -0.8050008933228656
+    Attrib credit_history=delayed previously    1.1757336063480281
+    Attrib credit_history=no credits/all paid    2.05337561506257
+    Attrib credit_history=all paid    2.112163177113988
+    Attrib credit_amount    0.5785257164506806
+    Attrib savings_status=no known savings    -0.8536999251059867
+    Attrib savings_status=<100    -0.20028314575412612
+    Attrib savings_status=500<=X<1000    0.7520333473973823
+    Attrib savings_status=>=1000    2.8093924970435604
+    Attrib savings_status=100<=X<500    2.3560714683551334
+    Attrib present_employment_years=>=7    -1.3710247001235263
+    Attrib present_employment_years=1<=X<4    5.599488987074379
+    Attrib present_employment_years=4<=X<7    0.6996165269719502
+    Attrib present_employment_years=unemployed    0.741497186628053
+    Attrib present_employment_years=<1    -0.9806856784199557
+    Attrib other_parties=none    -0.35275962719290777
+    Attrib other_parties=guarantor    2.48264071463647
+    Attrib other_parties=co applicant    -0.504880851048626
+    Attrib property_magnitude=real estate    4.361219523290568
+    Attrib property_magnitude=life insurance    -0.6565770047439986
+    Attrib property_magnitude=no known property    -0.40164496774307196
+    Attrib property_magnitude=car    -0.13795665225902728
+    Attrib age    7.836653775644587
+    Attrib housing_type=own    2.0707415803738103
+    Attrib housing_type=for free    -0.5805289254241839
+    Attrib housing_type=rent    0.10886945770405457
+    Attrib number_of_existing_credits    -1.0103121714120014
+    Attrib own_telephone=none    2.696889983567201
+    Attrib foreign_worker=no    1.865351814273917
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.1677529956606028
+    Attrib checking_status=<0    -0.31770016374973725
+    Attrib checking_status=0<=X<200    -0.011951794092462652
+    Attrib checking_status=no checking    0.48519938754795083
+    Attrib checking_status=>=200    0.2011504402614923
+    Attrib duration_months    0.08053589411974744
+    Attrib credit_history=critical/other existing credit    0.07790003955049772
+    Attrib credit_history=existing paid    -0.09918789128882284
+    Attrib credit_history=delayed previously    0.4033753900729152
+    Attrib credit_history=no credits/all paid    0.24447779166660938
+    Attrib credit_history=all paid    0.03752489189944317
+    Attrib credit_amount    0.2731633180088967
+    Attrib savings_status=no known savings    0.9614398026279184
+    Attrib savings_status=<100    -0.7949275109014555
+    Attrib savings_status=500<=X<1000    0.18692644958177224
+    Attrib savings_status=>=1000    0.2583541037098809
+    Attrib savings_status=100<=X<500    0.033994813798714774
+    Attrib present_employment_years=>=7    -0.04339387049315311
+    Attrib present_employment_years=1<=X<4    0.39940686311353035
+    Attrib present_employment_years=4<=X<7    0.2215565467990197
+    Attrib present_employment_years=unemployed    0.3367262385951669
+    Attrib present_employment_years=<1    -0.36891772849998433
+    Attrib other_parties=none    -0.049484083947610086
+    Attrib other_parties=guarantor    0.09886951002018529
+    Attrib other_parties=co applicant    0.16808283818265984
+    Attrib property_magnitude=real estate    0.5170945487508447
+    Attrib property_magnitude=life insurance    0.08837900005402792
+    Attrib property_magnitude=no known property    -0.12413902684483984
+    Attrib property_magnitude=car    -0.12842198562908966
+    Attrib age    0.18671237707585744
+    Attrib housing_type=own    0.4579780316650935
+    Attrib housing_type=for free    0.07680281653871888
+    Attrib housing_type=rent    -0.2626726354056865
+    Attrib number_of_existing_credits    -0.09255518258655597
+    Attrib own_telephone=none    0.2877096308826134
+    Attrib foreign_worker=no    0.25908305596888487
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -0.3045677807587342
+    Attrib checking_status=<0    -3.4065835816784626
+    Attrib checking_status=0<=X<200    1.2848669148047582
+    Attrib checking_status=no checking    4.652340920946043
+    Attrib checking_status=>=200    -1.9408681340097262
+    Attrib duration_months    2.5736878690544955
+    Attrib credit_history=critical/other existing credit    -2.4670097224685628
+    Attrib credit_history=existing paid    1.0071019445945972
+    Attrib credit_history=delayed previously    0.7965452914024035
+    Attrib credit_history=no credits/all paid    -0.6420873663842296
+    Attrib credit_history=all paid    2.2367357129619134
+    Attrib credit_amount    -0.8583858459541458
+    Attrib savings_status=no known savings    2.9699963553264515
+    Attrib savings_status=<100    1.1035656351748033
+    Attrib savings_status=500<=X<1000    -2.546836890518178
+    Attrib savings_status=>=1000    -0.47553946517890056
+    Attrib savings_status=100<=X<500    -0.13608307980555298
+    Attrib present_employment_years=>=7    -1.8269231193327684
+    Attrib present_employment_years=1<=X<4    -0.07919584632393127
+    Attrib present_employment_years=4<=X<7    4.494329156254177
+    Attrib present_employment_years=unemployed    -0.8656494799726147
+    Attrib present_employment_years=<1    -0.7520051981780013
+    Attrib other_parties=none    -0.8090271210378199
+    Attrib other_parties=guarantor    -0.8538881653598298
+    Attrib other_parties=co applicant    2.045654024608757
+    Attrib property_magnitude=real estate    3.864532871139939
+    Attrib property_magnitude=life insurance    -0.6011649496581197
+    Attrib property_magnitude=no known property    -1.1477624163422726
+    Attrib property_magnitude=car    -1.547506664781343
+    Attrib age    12.642155389933153
+    Attrib housing_type=own    -0.05643279475931555
+    Attrib housing_type=for free    -1.8855371437652493
+    Attrib housing_type=rent    2.249663471985219
+    Attrib number_of_existing_credits    3.2192366267171257
+    Attrib own_telephone=none    0.43634231207836
+    Attrib foreign_worker=no    1.2800591982009821
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.5201863964762613
+    Attrib checking_status=<0    -1.0304644546070998
+    Attrib checking_status=0<=X<200    -0.4773875720470458
+    Attrib checking_status=no checking    0.41694088258445716
+    Attrib checking_status=>=200    2.0791001543810173
+    Attrib duration_months    -0.5010299879876411
+    Attrib credit_history=critical/other existing credit    -0.03231919526958409
+    Attrib credit_history=existing paid    1.4519193413642772
+    Attrib credit_history=delayed previously    -0.22337907802426
+    Attrib credit_history=no credits/all paid    0.2283848821456992
+    Attrib credit_history=all paid    -0.02050202932889132
+    Attrib credit_amount    1.5774140143935624
+    Attrib savings_status=no known savings    0.5709837836755317
+    Attrib savings_status=<100    -1.3220202451951277
+    Attrib savings_status=500<=X<1000    0.8896782542613367
+    Attrib savings_status=>=1000    0.46598802157590535
+    Attrib savings_status=100<=X<500    0.7886732059835817
+    Attrib present_employment_years=>=7    -0.7206803780566152
+    Attrib present_employment_years=1<=X<4    -1.10422165881902
+    Attrib present_employment_years=4<=X<7    4.359593822897084
+    Attrib present_employment_years=unemployed    0.024193709442411376
+    Attrib present_employment_years=<1    -1.1268019671864595
+    Attrib other_parties=none    -0.11783365245118142
+    Attrib other_parties=guarantor    0.21064007834771914
+    Attrib other_parties=co applicant    0.408822816252121
+    Attrib property_magnitude=real estate    1.629594035874332
+    Attrib property_magnitude=life insurance    0.46228098277222696
+    Attrib property_magnitude=no known property    -1.2729590116543192
+    Attrib property_magnitude=car    0.12600075598180932
+    Attrib age    1.7306831605857707
+    Attrib housing_type=own    -1.5422737855890836
+    Attrib housing_type=for free    -0.40234637272227813
+    Attrib housing_type=rent    2.4863877467986146
+    Attrib number_of_existing_credits    -0.7053373147125734
+    Attrib own_telephone=none    -0.031950156112122034
+    Attrib foreign_worker=no    1.9046825504994969
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.07683471837856788
+    Attrib checking_status=<0    -1.7985955749239613
+    Attrib checking_status=0<=X<200    2.8199005416023373
+    Attrib checking_status=no checking    0.5137698956156038
+    Attrib checking_status=>=200    -1.4537607550257077
+    Attrib duration_months    3.2090200874785135
+    Attrib credit_history=critical/other existing credit    1.097224766410282
+    Attrib credit_history=existing paid    1.48566039442819
+    Attrib credit_history=delayed previously    -3.799791000897179
+    Attrib credit_history=no credits/all paid    1.6087320559875438
+    Attrib credit_history=all paid    -0.04748348098412873
+    Attrib credit_amount    6.6257880170106
+    Attrib savings_status=no known savings    -2.7791408348817535
+    Attrib savings_status=<100    1.405105271647528
+    Attrib savings_status=500<=X<1000    -1.6429917670523646
+    Attrib savings_status=>=1000    -2.542580204575476
+    Attrib savings_status=100<=X<500    5.841308976750579
+    Attrib present_employment_years=>=7    2.249554211046432
+    Attrib present_employment_years=1<=X<4    1.7556077172882
+    Attrib present_employment_years=4<=X<7    -5.429048912507102
+    Attrib present_employment_years=unemployed    2.9696621310390303
+    Attrib present_employment_years=<1    -1.2336703615041305
+    Attrib other_parties=none    -0.5109930806635771
+    Attrib other_parties=guarantor    1.8028602448710889
+    Attrib other_parties=co applicant    -1.250032047827135
+    Attrib property_magnitude=real estate    1.69698767982171
+    Attrib property_magnitude=life insurance    0.9818745631268434
+    Attrib property_magnitude=no known property    -0.7768565161447617
+    Attrib property_magnitude=car    -1.583544718663013
+    Attrib age    -1.2650144444189275
+    Attrib housing_type=own    -0.25854731769415096
+    Attrib housing_type=for free    -2.233284910873812
+    Attrib housing_type=rent    2.556402782125967
+    Attrib number_of_existing_credits    9.876915720005853
+    Attrib own_telephone=none    -2.7452095577327635
+    Attrib foreign_worker=no    3.845262904062502
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.5987510090057119
+    Attrib checking_status=<0    0.713235371662976
+    Attrib checking_status=0<=X<200    -3.773427646217644
+    Attrib checking_status=no checking    1.2237625766223514
+    Attrib checking_status=>=200    3.054533178156816
+    Attrib duration_months    9.004049524946753
+    Attrib credit_history=critical/other existing credit    -1.4097553299020318
+    Attrib credit_history=existing paid    -1.8970771619640827
+    Attrib credit_history=delayed previously    3.792553618469102
+    Attrib credit_history=no credits/all paid    1.819888508637131
+    Attrib credit_history=all paid    -0.6419524530762405
+    Attrib credit_amount    -1.3034509102197018
+    Attrib savings_status=no known savings    -0.41008439836638555
+    Attrib savings_status=<100    2.3357871586699495
+    Attrib savings_status=500<=X<1000    -0.653471060315251
+    Attrib savings_status=>=1000    1.5309109054909156
+    Attrib savings_status=100<=X<500    -1.170863370888129
+    Attrib present_employment_years=>=7    -0.2404305024282262
+    Attrib present_employment_years=1<=X<4    3.589452467970267
+    Attrib present_employment_years=4<=X<7    -0.6294919292459733
+    Attrib present_employment_years=unemployed    0.16522236787250077
+    Attrib present_employment_years=<1    -1.1498605800668174
+    Attrib other_parties=none    -1.9343060436342667
+    Attrib other_parties=guarantor    2.892688692472114
+    Attrib other_parties=co applicant    -0.3427657205500814
+    Attrib property_magnitude=real estate    0.19490937954971796
+    Attrib property_magnitude=life insurance    4.691150799179806
+    Attrib property_magnitude=no known property    -0.13384054020885536
+    Attrib property_magnitude=car    -3.51371885283331
+    Attrib age    -7.245920710052267
+    Attrib housing_type=own    1.8218560480164305
+    Attrib housing_type=for free    -2.2924955305400485
+    Attrib housing_type=rent    0.9414608381803187
+    Attrib number_of_existing_credits    3.9058241562268416
+    Attrib own_telephone=none    -1.9540214969134366
+    Attrib foreign_worker=no    1.4356361591464117
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -0.4011834862045887
+    Attrib checking_status=<0    -0.038667845563944425
+    Attrib checking_status=0<=X<200    -1.6522128439823154
+    Attrib checking_status=no checking    2.2149826208925876
+    Attrib checking_status=>=200    0.35049770065780084
+    Attrib duration_months    -5.522556533163488
+    Attrib credit_history=critical/other existing credit    1.343520145532528
+    Attrib credit_history=existing paid    0.8704317375192375
+    Attrib credit_history=delayed previously    -0.46916301417546136
+    Attrib credit_history=no credits/all paid    0.325192460089785
+    Attrib credit_history=all paid    -0.918564119828708
+    Attrib credit_amount    -1.5779034714969722
+    Attrib savings_status=no known savings    -0.26610761199803823
+    Attrib savings_status=<100    -2.9663606989759423
+    Attrib savings_status=500<=X<1000    0.0939161527623305
+    Attrib savings_status=>=1000    2.409883533718465
+    Attrib savings_status=100<=X<500    1.9509729667644526
+    Attrib present_employment_years=>=7    0.42717962836248946
+    Attrib present_employment_years=1<=X<4    0.9944887283345822
+    Attrib present_employment_years=4<=X<7    -0.04137430121248034
+    Attrib present_employment_years=unemployed    -0.3096297248531238
+    Attrib present_employment_years=<1    0.06490159218612472
+    Attrib other_parties=none    -0.7837625794264323
+    Attrib other_parties=guarantor    1.8976921940213585
+    Attrib other_parties=co applicant    -0.6439182874715167
+    Attrib property_magnitude=real estate    0.3579107715845578
+    Attrib property_magnitude=life insurance    -0.29070775869819504
+    Attrib property_magnitude=no known property    0.6255486073773724
+    Attrib property_magnitude=car    0.03501535287431828
+    Attrib age    -0.5257630208519494
+    Attrib housing_type=own    0.245237152036201
+    Attrib housing_type=for free    0.43904867319143326
+    Attrib housing_type=rent    -0.29136549945988366
+    Attrib number_of_existing_credits    0.5819356505917838
+    Attrib own_telephone=none    -3.0366032893088803
+    Attrib foreign_worker=no    0.5425817457349588
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -0.8342406274504416
+    Attrib checking_status=<0    -1.4545647548355893
+    Attrib checking_status=0<=X<200    -0.43243960243253804
+    Attrib checking_status=no checking    2.9923329764859297
+    Attrib checking_status=>=200    0.6400090754029156
+    Attrib duration_months    -2.1433819661257227
+    Attrib credit_history=critical/other existing credit    2.101520744165233
+    Attrib credit_history=existing paid    3.1492951297783343
+    Attrib credit_history=delayed previously    -2.1567043052069397
+    Attrib credit_history=no credits/all paid    -0.7139781413478098
+    Attrib credit_history=all paid    0.20922497020948527
+    Attrib credit_amount    0.9318200166496198
+    Attrib savings_status=no known savings    -0.1278473913413417
+    Attrib savings_status=<100    -1.4424560796226304
+    Attrib savings_status=500<=X<1000    1.6589470006974847
+    Attrib savings_status=>=1000    0.7793129881725637
+    Attrib savings_status=100<=X<500    1.830174038189384
+    Attrib present_employment_years=>=7    4.652983058420962
+    Attrib present_employment_years=1<=X<4    -3.6069929434451034
+    Attrib present_employment_years=4<=X<7    4.092052559159077
+    Attrib present_employment_years=unemployed    -1.5614243016001068
+    Attrib present_employment_years=<1    -0.8570407828667634
+    Attrib other_parties=none    0.1568533946341123
+    Attrib other_parties=guarantor    -0.8037890418748168
+    Attrib other_parties=co applicant    1.47024051760456
+    Attrib property_magnitude=real estate    1.5355166337274837
+    Attrib property_magnitude=life insurance    -2.5387949581113713
+    Attrib property_magnitude=no known property    -3.6414837374728535
+    Attrib property_magnitude=car    6.418099027478807
+    Attrib age    6.9189563270311725
+    Attrib housing_type=own    0.5169152465297199
+    Attrib housing_type=for free    1.9272901824952462
+    Attrib housing_type=rent    -1.5204726890829559
+    Attrib number_of_existing_credits    -2.615898253289602
+    Attrib own_telephone=none    1.3068682764298851
+    Attrib foreign_worker=no    0.9335855830956549
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -0.8932750839061012
+    Attrib checking_status=<0    -2.0403322768235803
+    Attrib checking_status=0<=X<200    -1.6097927051318697
+    Attrib checking_status=no checking    2.449975749046107
+    Attrib checking_status=>=200    2.9276948290914526
+    Attrib duration_months    -1.9789568325176292
+    Attrib credit_history=critical/other existing credit    -3.749510760116638
+    Attrib credit_history=existing paid    4.595830745407405
+    Attrib credit_history=delayed previously    1.2042334936701748
+    Attrib credit_history=no credits/all paid    1.3207403745016906
+    Attrib credit_history=all paid    -0.7217258820520489
+    Attrib credit_amount    10.754506037146548
+    Attrib savings_status=no known savings    -1.7250235368906754
+    Attrib savings_status=<100    0.9229576129250081
+    Attrib savings_status=500<=X<1000    3.402433210620699
+    Attrib savings_status=>=1000    2.5192156513135497
+    Attrib savings_status=100<=X<500    -2.5216698648929756
+    Attrib present_employment_years=>=7    -2.809884154691903
+    Attrib present_employment_years=1<=X<4    5.578727753473703
+    Attrib present_employment_years=4<=X<7    -5.715991127455055
+    Attrib present_employment_years=unemployed    -0.13834415403814324
+    Attrib present_employment_years=<1    5.733332231190003
+    Attrib other_parties=none    0.33254816621141536
+    Attrib other_parties=guarantor    4.67415493028847
+    Attrib other_parties=co applicant    -4.0408017496280255
+    Attrib property_magnitude=real estate    3.0908206346247775
+    Attrib property_magnitude=life insurance    4.295199059550591
+    Attrib property_magnitude=no known property    -3.1924141440100757
+    Attrib property_magnitude=car    -2.4291669059431182
+    Attrib age    4.105398233512048
+    Attrib housing_type=own    -0.9528488469223252
+    Attrib housing_type=for free    1.3961506425519679
+    Attrib housing_type=rent    0.48413759722588906
+    Attrib number_of_existing_credits    -1.5992444848820722
+    Attrib own_telephone=none    8.940210604521502
+    Attrib foreign_worker=no    -2.2106070630799683
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -1.4736403025196425
+    Attrib checking_status=<0    0.7363815399426008
+    Attrib checking_status=0<=X<200    -1.1625369653069797
+    Attrib checking_status=no checking    4.075693556341352
+    Attrib checking_status=>=200    -0.6210118558330608
+    Attrib duration_months    -10.89150078902216
+    Attrib credit_history=critical/other existing credit    8.681958340003645
+    Attrib credit_history=existing paid    -0.9293412740976466
+    Attrib credit_history=delayed previously    -0.786388143821252
+    Attrib credit_history=no credits/all paid    2.5271148332088407
+    Attrib credit_history=all paid    -4.97448256338039
+    Attrib credit_amount    -4.757002665326155
+    Attrib savings_status=no known savings    4.199530783080317
+    Attrib savings_status=<100    0.03403612958326706
+    Attrib savings_status=500<=X<1000    -2.0221562151489376
+    Attrib savings_status=>=1000    0.3366297716317808
+    Attrib savings_status=100<=X<500    2.0643318335075698
+    Attrib present_employment_years=>=7    4.1686062888394435
+    Attrib present_employment_years=1<=X<4    0.15333446682536273
+    Attrib present_employment_years=4<=X<7    2.29328352042403
+    Attrib present_employment_years=unemployed    -1.1269483175045112
+    Attrib present_employment_years=<1    -0.918004018065708
+    Attrib other_parties=none    1.357315619308737
+    Attrib other_parties=guarantor    2.6008156981581156
+    Attrib other_parties=co applicant    -2.442902255482661
+    Attrib property_magnitude=real estate    1.900800639773294
+    Attrib property_magnitude=life insurance    4.29640030231884
+    Attrib property_magnitude=no known property    -2.2326926855255285
+    Attrib property_magnitude=car    -0.9324961413133775
+    Attrib age    -1.7233536464553108
+    Attrib housing_type=own    -0.7892623500052209
+    Attrib housing_type=for free    1.8746265431890028
+    Attrib housing_type=rent    0.34021060470029735
+    Attrib number_of_existing_credits    0.1990890457322406
+    Attrib own_telephone=none    -6.3339728127525285
+    Attrib foreign_worker=no    1.0879158567710248
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -0.24480406193441312
+    Attrib checking_status=<0    -1.3649081024189447
+    Attrib checking_status=0<=X<200    0.9528184021793974
+    Attrib checking_status=no checking    -0.07637892068564256
+    Attrib checking_status=>=200    0.8670829106765444
+    Attrib duration_months    -1.8295777961349393
+    Attrib credit_history=critical/other existing credit    -0.4492478625680994
+    Attrib credit_history=existing paid    -0.7287348645188281
+    Attrib credit_history=delayed previously    2.031162776970964
+    Attrib credit_history=no credits/all paid    -0.3993036599379469
+    Attrib credit_history=all paid    0.12223451765556342
+    Attrib credit_amount    1.822885604893864
+    Attrib savings_status=no known savings    1.6062498248290449
+    Attrib savings_status=<100    -1.291081418156877
+    Attrib savings_status=500<=X<1000    0.3637951397176383
+    Attrib savings_status=>=1000    -0.3894020660025951
+    Attrib savings_status=100<=X<500    0.3287884710042715
+    Attrib present_employment_years=>=7    -0.24691994165663117
+    Attrib present_employment_years=1<=X<4    1.3811428075989811
+    Attrib present_employment_years=4<=X<7    1.0220732617884012
+    Attrib present_employment_years=unemployed    -0.2052238320695396
+    Attrib present_employment_years=<1    -1.2907018840904811
+    Attrib other_parties=none    -1.114536792852648
+    Attrib other_parties=guarantor    1.2021195933946736
+    Attrib other_parties=co applicant    0.1396943406107084
+    Attrib property_magnitude=real estate    -0.5025290076219218
+    Attrib property_magnitude=life insurance    -0.4465579753623341
+    Attrib property_magnitude=no known property    0.05073393073438753
+    Attrib property_magnitude=car    1.2216790990473014
+    Attrib age    -1.6002523284605579
+    Attrib housing_type=own    -0.8023545922709782
+    Attrib housing_type=for free    -0.07421953195557904
+    Attrib housing_type=rent    1.1560785604932422
+    Attrib number_of_existing_credits    -0.18813907841028252
+    Attrib own_telephone=none    0.6198694244698354
+    Attrib foreign_worker=no    0.28587761940174616
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    0.16887590407446795
+    Attrib checking_status=<0    -0.451091309887232
+    Attrib checking_status=0<=X<200    -4.04091347973473
+    Attrib checking_status=no checking    0.5718457354227369
+    Attrib checking_status=>=200    3.6242324094361287
+    Attrib duration_months    -2.761700738778832
+    Attrib credit_history=critical/other existing credit    -0.8138685290569759
+    Attrib credit_history=existing paid    -0.08158546441572827
+    Attrib credit_history=delayed previously    2.5339218117404503
+    Attrib credit_history=no credits/all paid    -3.7917292476203213
+    Attrib credit_history=all paid    1.5886706682192366
+    Attrib credit_amount    4.106414033054144
+    Attrib savings_status=no known savings    0.7570053423439713
+    Attrib savings_status=<100    0.023348442671295114
+    Attrib savings_status=500<=X<1000    0.5312900256767918
+    Attrib savings_status=>=1000    0.7515792549875344
+    Attrib savings_status=100<=X<500    -2.59957564567646
+    Attrib present_employment_years=>=7    0.5358162878828052
+    Attrib present_employment_years=1<=X<4    3.9205213451987646
+    Attrib present_employment_years=4<=X<7    -4.880699442527805
+    Attrib present_employment_years=unemployed    0.9426859851103815
+    Attrib present_employment_years=<1    -0.8999378167223324
+    Attrib other_parties=none    4.484315299316198
+    Attrib other_parties=guarantor    -1.792873671665963
+    Attrib other_parties=co applicant    -2.773991964409768
+    Attrib property_magnitude=real estate    6.346932541726513
+    Attrib property_magnitude=life insurance    -5.93928876150884
+    Attrib property_magnitude=no known property    1.5592422017210577
+    Attrib property_magnitude=car    -2.3407265300567026
+    Attrib age    1.8399517366188345
+    Attrib housing_type=own    -1.7882778567230637
+    Attrib housing_type=for free    0.09108626637381897
+    Attrib housing_type=rent    1.6043401771426486
+    Attrib number_of_existing_credits    -1.9906593673221509
+    Attrib own_telephone=none    -1.2083065588520556
+    Attrib foreign_worker=no    -2.685198950519969
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    -0.6044335321681461
+    Attrib checking_status=<0    -1.1244738384171888
+    Attrib checking_status=0<=X<200    0.9855641601530286
+    Attrib checking_status=no checking    0.8570809565206734
+    Attrib checking_status=>=200    0.5027755265072604
+    Attrib duration_months    9.025775158894007
+    Attrib credit_history=critical/other existing credit    -0.008636618213751843
+    Attrib credit_history=existing paid    0.6373945894518133
+    Attrib credit_history=delayed previously    -0.35114996458392433
+    Attrib credit_history=no credits/all paid    1.7861170357389495
+    Attrib credit_history=all paid    -0.14153456581768067
+    Attrib credit_amount    4.432971918013342
+    Attrib savings_status=no known savings    1.5177671276872045
+    Attrib savings_status=<100    1.0934442187399684
+    Attrib savings_status=500<=X<1000    0.6049224892855429
+    Attrib savings_status=>=1000    1.6055521783096944
+    Attrib savings_status=100<=X<500    -2.8357891813492824
+    Attrib present_employment_years=>=7    3.1812786271482616
+    Attrib present_employment_years=1<=X<4    -2.159682819866969
+    Attrib present_employment_years=4<=X<7    0.577937714538153
+    Attrib present_employment_years=unemployed    3.281072922790063
+    Attrib present_employment_years=<1    -3.0294317283308287
+    Attrib other_parties=none    -1.1663646221813333
+    Attrib other_parties=guarantor    0.3966589906254015
+    Attrib other_parties=co applicant    1.4488832711267146
+    Attrib property_magnitude=real estate    -3.0147270015942498
+    Attrib property_magnitude=life insurance    3.249439526115824
+    Attrib property_magnitude=no known property    -2.0314248835867788
+    Attrib property_magnitude=car    3.084910132598628
+    Attrib age    -8.138221851392212
+    Attrib housing_type=own    2.1646747753667333
+    Attrib housing_type=for free    -0.7952832947123802
+    Attrib housing_type=rent    -0.7555386399580919
+    Attrib number_of_existing_credits    5.087631772843817
+    Attrib own_telephone=none    1.915571170318921
+    Attrib foreign_worker=no    1.042518502477637
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    -1.5668967360634023
+    Attrib checking_status=<0    -1.554180208077128
+    Attrib checking_status=0<=X<200    3.5452738621378552
+    Attrib checking_status=no checking    0.40987866840723586
+    Attrib checking_status=>=200    0.7474315887098882
+    Attrib duration_months    -6.991218193768363
+    Attrib credit_history=critical/other existing credit    4.285252181225661
+    Attrib credit_history=existing paid    1.9820844047101038
+    Attrib credit_history=delayed previously    0.4534149307234032
+    Attrib credit_history=no credits/all paid    -1.3942788088675462
+    Attrib credit_history=all paid    -0.6564587886683665
+    Attrib credit_amount    -5.5738639993383785
+    Attrib savings_status=no known savings    2.7599965367782353
+    Attrib savings_status=<100    1.872815830222485
+    Attrib savings_status=500<=X<1000    0.8645872415825594
+    Attrib savings_status=>=1000    0.5462676187146385
+    Attrib savings_status=100<=X<500    -1.397052502778403
+    Attrib present_employment_years=>=7    2.3811506521448993
+    Attrib present_employment_years=1<=X<4    -0.18634605923705752
+    Attrib present_employment_years=4<=X<7    -0.3683825872792139
+    Attrib present_employment_years=unemployed    -1.4581936246403289
+    Attrib present_employment_years=<1    4.191469672567835
+    Attrib other_parties=none    -1.003397285539273
+    Attrib other_parties=guarantor    1.9520869619755281
+    Attrib other_parties=co applicant    0.5773423147017965
+    Attrib property_magnitude=real estate    1.078160991337168
+    Attrib property_magnitude=life insurance    1.5569337007808617
+    Attrib property_magnitude=no known property    1.3753033362748919
+    Attrib property_magnitude=car    -0.9226750395181575
+    Attrib age    -1.0822840988387386
+    Attrib housing_type=own    3.227393857495972
+    Attrib housing_type=for free    0.3533823975876498
+    Attrib housing_type=rent    -2.026437894129759
+    Attrib number_of_existing_credits    5.256951176982217
+    Attrib own_telephone=none    -4.602755449880824
+    Attrib foreign_worker=no    3.5949103271200764
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    -0.8031009247836448
+    Attrib checking_status=<0    4.79756389120293
+    Attrib checking_status=0<=X<200    -1.4395015769777544
+    Attrib checking_status=no checking    1.3382863561459293
+    Attrib checking_status=>=200    -3.0613240602807785
+    Attrib duration_months    -1.3659207899931278
+    Attrib credit_history=critical/other existing credit    -0.6649752040000865
+    Attrib credit_history=existing paid    0.8191141953426266
+    Attrib credit_history=delayed previously    -1.4474007807965674
+    Attrib credit_history=no credits/all paid    0.8397798078073112
+    Attrib credit_history=all paid    2.8375990552565264
+    Attrib credit_amount    5.836141396497515
+    Attrib savings_status=no known savings    -3.0174654763167092
+    Attrib savings_status=<100    2.319781390278228
+    Attrib savings_status=500<=X<1000    0.5360476903696583
+    Attrib savings_status=>=1000    1.5244306809153014
+    Attrib savings_status=100<=X<500    1.0738506311666698
+    Attrib present_employment_years=>=7    -2.9760180490507513
+    Attrib present_employment_years=1<=X<4    1.9511785103430719
+    Attrib present_employment_years=4<=X<7    2.1524588330610532
+    Attrib present_employment_years=unemployed    1.7017311054368423
+    Attrib present_employment_years=<1    -0.40608539246775716
+    Attrib other_parties=none    0.13609324622698601
+    Attrib other_parties=guarantor    0.9561694482487051
+    Attrib other_parties=co applicant    -0.2367392477054684
+    Attrib property_magnitude=real estate    0.658791106198196
+    Attrib property_magnitude=life insurance    -1.9448795830897425
+    Attrib property_magnitude=no known property    0.36019680543825294
+    Attrib property_magnitude=car    2.5099761547732053
+    Attrib age    0.4646167444208382
+    Attrib housing_type=own    2.815073986257055
+    Attrib housing_type=for free    2.196309633621416
+    Attrib housing_type=rent    -4.216549073183128
+    Attrib number_of_existing_credits    1.7696521120826407
+    Attrib own_telephone=none    2.5437554400050018
+    Attrib foreign_worker=no    1.9239079253336122
+Sigmoid Node 18
+    Inputs    Weights
+    Threshold    0.48185635413452305
+    Attrib checking_status=<0    2.0171206296972652
+    Attrib checking_status=0<=X<200    -3.8310118656157943
+    Attrib checking_status=no checking    2.003083828017644
+    Attrib checking_status=>=200    -1.1245561862850422
+    Attrib duration_months    5.196921352455547
+    Attrib credit_history=critical/other existing credit    -3.2101414961720334
+    Attrib credit_history=existing paid    -2.394094429472095
+    Attrib credit_history=delayed previously    2.965904518189438
+    Attrib credit_history=no credits/all paid    1.0235738882215855
+    Attrib credit_history=all paid    0.052090415763141724
+    Attrib credit_amount    -8.249832880586734
+    Attrib savings_status=no known savings    0.09865205813398036
+    Attrib savings_status=<100    -4.337566745100711
+    Attrib savings_status=500<=X<1000    0.6912438428313513
+    Attrib savings_status=>=1000    -2.3718654811456075
+    Attrib savings_status=100<=X<500    4.406639564616898
+    Attrib present_employment_years=>=7    -2.641349604981727
+    Attrib present_employment_years=1<=X<4    3.090351700089942
+    Attrib present_employment_years=4<=X<7    1.4723037297970776
+    Attrib present_employment_years=unemployed    0.11754985832287457
+    Attrib present_employment_years=<1    -3.5839124342380444
+    Attrib other_parties=none    -0.7873920221396082
+    Attrib other_parties=guarantor    -0.24291850170686946
+    Attrib other_parties=co applicant    0.5526317989893149
+    Attrib property_magnitude=real estate    4.113590607264584
+    Attrib property_magnitude=life insurance    -1.444009160938439
+    Attrib property_magnitude=no known property    -2.5244156606250545
+    Attrib property_magnitude=car    -1.1373178092761735
+    Attrib age    6.65182990358373
+    Attrib housing_type=own    -0.42747436582028264
+    Attrib housing_type=for free    -0.7227876730855207
+    Attrib housing_type=rent    0.6567122971121161
+    Attrib number_of_existing_credits    3.671907521946737
+    Attrib own_telephone=none    -0.13503516484229217
+    Attrib foreign_worker=no    0.05839155933185291
+Sigmoid Node 19
+    Inputs    Weights
+    Threshold    -0.9811948824676949
+    Attrib checking_status=<0    2.489424106345591
+    Attrib checking_status=0<=X<200    -0.2969092125872748
+    Attrib checking_status=no checking    -0.32961107872221895
+    Attrib checking_status=>=200    0.03845806120020475
+    Attrib duration_months    -0.9585253107755526
+    Attrib credit_history=critical/other existing credit    5.305561183430983
+    Attrib credit_history=existing paid    0.584052095124639
+    Attrib credit_history=delayed previously    -1.292819222161106
+    Attrib credit_history=no credits/all paid    -1.0618834453433947
+    Attrib credit_history=all paid    -0.5331985443079621
+    Attrib credit_amount    -0.737616662731893
+    Attrib savings_status=no known savings    0.07735605723688378
+    Attrib savings_status=<100    -0.8518785925185097
+    Attrib savings_status=500<=X<1000    1.6044418383337968
+    Attrib savings_status=>=1000    0.6582329422842766
+    Attrib savings_status=100<=X<500    1.4668126502972574
+    Attrib present_employment_years=>=7    -2.0945063154874175
+    Attrib present_employment_years=1<=X<4    -0.6707878684321973
+    Attrib present_employment_years=4<=X<7    1.6379066635579052
+    Attrib present_employment_years=unemployed    4.006612028744893
+    Attrib present_employment_years=<1    -0.04337426864243078
+    Attrib other_parties=none    1.1350759721663903
+    Attrib other_parties=guarantor    -0.6711080413421427
+    Attrib other_parties=co applicant    0.5024315113646015
+    Attrib property_magnitude=real estate    0.6009203370829835
+    Attrib property_magnitude=life insurance    1.1137014571919148
+    Attrib property_magnitude=no known property    -0.29956738416374085
+    Attrib property_magnitude=car    0.43539991402222994
+    Attrib age    2.344307524137688
+    Attrib housing_type=own    -1.5087341640839784
+    Attrib housing_type=for free    2.4309660520444227
+    Attrib housing_type=rent    0.02194814837441423
+    Attrib number_of_existing_credits    -2.7860900714871453
+    Attrib own_telephone=none    -1.9918227769606678
+    Attrib foreign_worker=no    1.6065406677550722
+Class good
+    Input
+    Node 0
+Class bad
+    Input
+    Node 1
+
+Attribute mappings:
+
+Model attributes                      	    Incoming attributes
+--------------------------------------	    ----------------
+(nominal) checking_status             	--> 1 (nominal) checking_status
+(numeric) duration_months             	--> 2 (numeric) duration_months
+(nominal) credit_history              	--> 3 (nominal) credit_history
+(numeric) credit_amount               	--> 5 (numeric) credit_amount
+(nominal) savings_status              	--> 6 (nominal) savings_status
+(nominal) present_employment_years    	--> 7 (nominal) present_employment_years
+(nominal) other_parties               	--> 10 (nominal) other_parties
+(nominal) property_magnitude          	--> 12 (nominal) property_magnitude
+(numeric) age                         	--> 13 (numeric) age
+(nominal) housing_type                	--> 15 (nominal) housing_type
+(numeric) number_of_existing_credits  	--> 16 (numeric) number_of_existing_credits
+(nominal) own_telephone               	--> 19 (nominal) own_telephone
+(nominal) foreign_worker              	--> 20 (nominal) foreign_worker
+(nominal) credit_status               	--> 21 (nominal) credit_status
+
+
+Time taken to build model: 3.89 seconds
+
+=== Predictions on test set ===
+
+    inst#     actual  predicted error prediction
+        1     1:good     1:good       1 
+        2     1:good     1:good       0.961 
+        3     1:good     1:good       0.997 
+        4     1:good      2:bad   +   0.986 
+        5     1:good     1:good       1 
+        6     1:good     1:good       0.998 
+        7     1:good     1:good       0.967 
+        8     1:good     1:good       1 
+        9     1:good     1:good       1 
+       10     1:good      2:bad   +   0.91 
+       11     1:good     1:good       0.861 
+       12     1:good     1:good       1 
+       13     1:good     1:good       1 
+       14     1:good     1:good       0.999 
+       15     1:good      2:bad   +   0.985 
+       16     1:good     1:good       1 
+       17     1:good      2:bad   +   1 
+       18     1:good      2:bad   +   0.921 
+       19     1:good     1:good       1 
+       20     1:good     1:good       0.85 
+       21     1:good     1:good       0.618 
+       22     1:good     1:good       1 
+       23     1:good     1:good       1 
+       24     1:good     1:good       0.999 
+       25     1:good     1:good       1 
+       26     1:good     1:good       0.857 
+       27     1:good     1:good       1 
+       28     1:good     1:good       1 
+       29     1:good     1:good       1 
+       30     1:good      2:bad   +   0.994 
+       31     1:good      2:bad   +   0.599 
+       32     1:good     1:good       1 
+       33     1:good     1:good       1 
+       34     1:good     1:good       0.975 
+       35     1:good      2:bad   +   0.861 
+       36     1:good     1:good       0.668 
+       37     1:good      2:bad   +   0.792 
+       38     1:good     1:good       1 
+       39     1:good     1:good       1 
+       40     1:good      2:bad   +   0.833 
+       41     1:good     1:good       0.996 
+       42     1:good     1:good       1 
+       43     1:good     1:good       0.719 
+       44     1:good     1:good       0.999 
+       45     1:good      2:bad   +   0.997 
+       46     1:good      2:bad   +   0.992 
+       47     1:good     1:good       1 
+       48     1:good     1:good       1 
+       49     1:good     1:good       0.965 
+       50     1:good     1:good       1 
+       51     1:good      2:bad   +   0.989 
+       52     1:good     1:good       0.992 
+       53     1:good     1:good       0.916 
+       54     1:good     1:good       1 
+       55     1:good     1:good       1 
+       56     1:good     1:good       1 
+       57     1:good      2:bad   +   0.824 
+       58     1:good     1:good       1 
+       59     1:good     1:good       0.777 
+       60     1:good     1:good       0.926 
+       61     1:good     1:good       1 
+       62     1:good     1:good       1 
+       63     1:good     1:good       0.998 
+       64     1:good     1:good       0.979 
+       65     1:good     1:good       0.999 
+       66     1:good     1:good       0.948 
+       67     1:good     1:good       0.999 
+       68     1:good      2:bad   +   0.752 
+       69     1:good      2:bad   +   0.925 
+       70     1:good     1:good       1 
+       71     1:good     1:good       1 
+       72     1:good     1:good       1 
+       73     1:good     1:good       0.929 
+       74     1:good     1:good       1 
+       75     1:good     1:good       1 
+       76     1:good     1:good       0.998 
+       77     1:good     1:good       1 
+       78     1:good     1:good       0.841 
+       79     1:good      2:bad   +   0.992 
+       80     1:good     1:good       0.839 
+       81     1:good     1:good       1 
+       82     1:good     1:good       1 
+       83     1:good     1:good       1 
+       84     1:good      2:bad   +   0.982 
+       85     1:good     1:good       1 
+       86     1:good     1:good       1 
+       87     1:good     1:good       1 
+       88     1:good     1:good       0.976 
+       89     1:good     1:good       0.687 
+       90     1:good      2:bad   +   0.999 
+       91     1:good     1:good       1 
+       92     1:good     1:good       1 
+       93     1:good     1:good       0.969 
+       94     1:good     1:good       0.741 
+       95     1:good      2:bad   +   0.964 
+       96     1:good     1:good       1 
+       97     1:good     1:good       0.995 
+       98     1:good      2:bad   +   0.999 
+       99     1:good      2:bad   +   0.998 
+      100     1:good     1:good       1 
+      101     1:good      2:bad   +   0.965 
+      102     1:good      2:bad   +   0.955 
+      103     1:good     1:good       0.99 
+      104     1:good     1:good       1 
+      105     1:good      2:bad   +   0.997 
+      106     1:good     1:good       0.993 
+      107     1:good     1:good       0.963 
+      108     1:good     1:good       1 
+      109     1:good      2:bad   +   0.753 
+      110     1:good     1:good       1 
+      111     1:good      2:bad   +   0.667 
+      112     1:good     1:good       0.999 
+      113     1:good      2:bad   +   0.996 
+      114     1:good     1:good       0.997 
+      115     1:good     1:good       1 
+      116     1:good     1:good       1 
+      117     1:good     1:good       1 
+      118     1:good     1:good       0.997 
+      119     1:good     1:good       1 
+      120     1:good     1:good       1 
+      121     1:good      2:bad   +   0.971 
+      122     1:good     1:good       0.999 
+      123     1:good      2:bad   +   0.735 
+      124     1:good      2:bad   +   0.99 
+      125     1:good      2:bad   +   0.95 
+      126     1:good     1:good       0.993 
+      127     1:good     1:good       0.603 
+      128     1:good     1:good       0.985 
+      129     1:good     1:good       1 
+      130     1:good      2:bad   +   0.969 
+      131     1:good     1:good       0.796 
+      132     1:good     1:good       1 
+      133     1:good     1:good       0.998 
+      134     1:good     1:good       1 
+      135     1:good     1:good       1 
+      136     1:good     1:good       1 
+      137     1:good     1:good       0.997 
+      138     1:good     1:good       1 
+      139     1:good     1:good       0.999 
+      140     1:good     1:good       0.983 
+      141     1:good      2:bad   +   0.843 
+      142     1:good      2:bad   +   0.982 
+      143     1:good      2:bad   +   0.997 
+      144     1:good     1:good       1 
+      145     1:good     1:good       0.982 
+      146     1:good     1:good       0.997 
+      147     1:good     1:good       1 
+      148     1:good      2:bad   +   0.904 
+      149     1:good     1:good       0.992 
+      150     1:good     1:good       1 
+      151     1:good     1:good       1 
+      152     1:good      2:bad   +   0.993 
+      153     1:good     1:good       1 
+      154     1:good     1:good       1 
+      155     1:good     1:good       1 
+      156     1:good     1:good       1 
+      157     1:good      2:bad   +   0.539 
+      158     1:good     1:good       0.999 
+      159     1:good     1:good       0.965 
+      160     1:good     1:good       0.998 
+      161     1:good     1:good       1 
+      162     1:good      2:bad   +   0.974 
+      163     1:good     1:good       1 
+      164     1:good     1:good       0.989 
+      165     1:good     1:good       0.924 
+      166     1:good     1:good       0.642 
+      167     1:good     1:good       1 
+      168     1:good     1:good       0.969 
+      169     1:good     1:good       0.993 
+      170     1:good     1:good       0.996 
+      171     1:good     1:good       1 
+      172     1:good     1:good       1 
+      173     1:good     1:good       0.715 
+      174     1:good     1:good       0.999 
+      175     1:good     1:good       1 
+      176     1:good      2:bad   +   0.963 
+      177     1:good      2:bad   +   0.803 
+      178     1:good     1:good       0.999 
+      179     1:good      2:bad   +   0.637 
+      180     1:good     1:good       1 
+      181     1:good     1:good       1 
+      182     1:good     1:good       0.994 
+      183     1:good     1:good       1 
+      184     1:good     1:good       1 
+      185     1:good     1:good       1 
+      186     1:good     1:good       1 
+      187     1:good     1:good       0.944 
+      188     1:good     1:good       1 
+      189     1:good      2:bad   +   0.998 
+      190     1:good      2:bad   +   1 
+      191     1:good      2:bad   +   0.602 
+      192     1:good      2:bad   +   0.836 
+      193     1:good      2:bad   +   0.998 
+      194     1:good     1:good       1 
+      195     1:good      2:bad   +   0.999 
+      196     1:good      2:bad   +   0.906 
+      197     1:good     1:good       1 
+      198     1:good     1:good       0.966 
+      199     1:good      2:bad   +   0.963 
+      200     1:good      2:bad   +   0.986 
+      201     1:good     1:good       0.908 
+      202     1:good     1:good       0.995 
+      203     1:good     1:good       0.909 
+      204     1:good     1:good       0.98 
+      205     1:good      2:bad   +   1 
+      206     1:good     1:good       0.967 
+      207     1:good      2:bad   +   0.891 
+      208     1:good     1:good       0.999 
+      209     1:good     1:good       0.552 
+      210     1:good     1:good       1 
+      211     1:good     1:good       1 
+      212     1:good     1:good       0.987 
+      213     1:good     1:good       0.999 
+      214     1:good      2:bad   +   0.992 
+      215     1:good     1:good       1 
+      216     1:good     1:good       1 
+      217     1:good      2:bad   +   1 
+      218     1:good     1:good       1 
+      219     1:good      2:bad   +   1 
+      220     1:good      2:bad   +   0.997 
+      221     1:good     1:good       0.507 
+      222     1:good     1:good       1 
+      223     1:good     1:good       1 
+      224     1:good     1:good       1 
+      225     1:good     1:good       0.997 
+      226     1:good     1:good       1 
+      227     1:good     1:good       0.996 
+      228     1:good      2:bad   +   0.531 
+      229     1:good      2:bad   +   0.956 
+      230     1:good     1:good       0.999 
+      231     1:good     1:good       0.999 
+      232      2:bad      2:bad       1 
+      233      2:bad      2:bad       0.881 
+      234      2:bad      2:bad       0.84 
+      235      2:bad      2:bad       0.918 
+      236      2:bad      2:bad       0.985 
+      237      2:bad      2:bad       1 
+      238      2:bad      2:bad       0.866 
+      239      2:bad     1:good   +   0.985 
+      240      2:bad     1:good   +   0.997 
+      241      2:bad     1:good   +   0.714 
+      242      2:bad     1:good   +   1 
+      243      2:bad     1:good   +   1 
+      244      2:bad     1:good   +   1 
+      245      2:bad      2:bad       0.787 
+      246      2:bad     1:good   +   1 
+      247      2:bad     1:good   +   1 
+      248      2:bad      2:bad       0.974 
+      249      2:bad      2:bad       0.923 
+      250      2:bad     1:good   +   1 
+      251      2:bad     1:good   +   1 
+      252      2:bad      2:bad       0.865 
+      253      2:bad      2:bad       0.588 
+      254      2:bad     1:good   +   1 
+      255      2:bad      2:bad       1 
+      256      2:bad      2:bad       0.818 
+      257      2:bad      2:bad       1 
+      258      2:bad      2:bad       1 
+      259      2:bad     1:good   +   0.538 
+      260      2:bad      2:bad       0.978 
+      261      2:bad     1:good   +   0.959 
+      262      2:bad     1:good   +   1 
+      263      2:bad     1:good   +   0.967 
+      264      2:bad      2:bad       0.998 
+      265      2:bad     1:good   +   0.637 
+      266      2:bad     1:good   +   0.886 
+      267      2:bad     1:good   +   0.721 
+      268      2:bad     1:good   +   0.999 
+      269      2:bad      2:bad       0.997 
+      270      2:bad      2:bad       0.998 
+      271      2:bad     1:good   +   0.691 
+      272      2:bad      2:bad       0.985 
+      273      2:bad      2:bad       0.65 
+      274      2:bad     1:good   +   0.958 
+      275      2:bad      2:bad       0.977 
+      276      2:bad     1:good   +   0.719 
+      277      2:bad      2:bad       0.938 
+      278      2:bad     1:good   +   1 
+      279      2:bad      2:bad       1 
+      280      2:bad     1:good   +   0.999 
+      281      2:bad     1:good   +   1 
+      282      2:bad      2:bad       0.995 
+      283      2:bad      2:bad       0.746 
+      284      2:bad     1:good   +   1 
+      285      2:bad     1:good   +   1 
+      286      2:bad      2:bad       0.982 
+      287      2:bad     1:good   +   0.999 
+      288      2:bad      2:bad       0.938 
+      289      2:bad      2:bad       1 
+      290      2:bad     1:good   +   0.652 
+      291      2:bad      2:bad       1 
+      292      2:bad      2:bad       0.881 
+      293      2:bad     1:good   +   0.986 
+      294      2:bad      2:bad       1 
+      295      2:bad     1:good   +   1 
+      296      2:bad      2:bad       0.975 
+      297      2:bad      2:bad       1 
+      298      2:bad     1:good   +   0.949 
+      299      2:bad      2:bad       0.657 
+      300      2:bad      2:bad       0.867 
+      301      2:bad     1:good   +   0.971 
+      302      2:bad     1:good   +   0.999 
+      303      2:bad      2:bad       0.981 
+      304      2:bad     1:good   +   0.987 
+      305      2:bad     1:good   +   0.997 
+      306      2:bad      2:bad       0.801 
+      307      2:bad     1:good   +   0.977 
+      308      2:bad      2:bad       0.97 
+      309      2:bad      2:bad       0.782 
+      310      2:bad     1:good   +   1 
+      311      2:bad      2:bad       0.998 
+      312      2:bad      2:bad       0.998 
+      313      2:bad      2:bad       0.794 
+      314      2:bad     1:good   +   1 
+      315      2:bad      2:bad       1 
+      316      2:bad      2:bad       0.901 
+      317      2:bad      2:bad       0.732 
+      318      2:bad     1:good   +   0.999 
+      319      2:bad     1:good   +   0.913 
+      320      2:bad      2:bad       0.999 
+      321      2:bad     1:good   +   0.986 
+      322      2:bad     1:good   +   1 
+      323      2:bad     1:good   +   0.997 
+      324      2:bad      2:bad       0.998 
+      325      2:bad     1:good   +   0.751 
+      326      2:bad      2:bad       0.586 
+      327      2:bad     1:good   +   0.992 
+      328      2:bad      2:bad       0.714 
+      329      2:bad      2:bad       0.976 
+      330      2:bad      2:bad       0.95 
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.81 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         224               67.8788 %
+Incorrectly Classified Instances       106               32.1212 %
+Kappa statistic                          0.2649
+Mean absolute error                      0.3279
+Root mean squared error                  0.5337
+Relative absolute error                 78.0172 %
+Root relative squared error            116.4709 %
+Total Number of Instances              330     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.740    0.465    0.788      0.740    0.763      0.266    0.664     0.786     good
+                 0.535    0.260    0.469      0.535    0.500      0.266    0.664     0.464     bad
+Weighted Avg.    0.679    0.403    0.692      0.679    0.684      0.266    0.664     0.689     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 171  60 |   a = good
+  46  53 |   b = bad
+

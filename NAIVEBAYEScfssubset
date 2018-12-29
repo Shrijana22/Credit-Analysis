@@ -1,0 +1,102 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.bayes.NaiveBayes
+Relation:     dataset_31_credit-g-clean-weka.filters.supervised.instance.Resample-B0.0-S1-Z33.0-no-replacement-V-weka.filters.unsupervised.attribute.Remove-R4,7-20
+Instances:    670
+Attributes:   6
+              checking_status
+              duration_months
+              credit_history
+              credit_amount
+              savings_status
+              credit_status
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+Naive Bayes Classifier
+
+                                       Class
+Attribute                               good       bad
+                                       (0.7)     (0.3)
+=======================================================
+checking_status
+  <0                                    101.0      90.0
+  0<=X<200                              106.0      72.0
+  no checking                           227.0      34.0
+  >=200                                  39.0       9.0
+  [total]                               473.0     205.0
+
+duration_months
+  mean                                19.2586   25.4548
+  std. dev.                           11.2233   13.5831
+  weight sum                              469       201
+  precision                            2.3448    2.3448
+
+credit_history
+  critical/other existing credit        161.0      31.0
+  existing paid                         248.0     112.0
+  delayed previously                     37.0      23.0
+  no credits/all paid                    12.0      20.0
+  all paid                               16.0      20.0
+  [total]                               474.0     206.0
+
+credit_amount
+  mean                              3049.9815 4096.7393
+  std. dev.                         2529.8844 3621.6936
+  weight sum                              469       201
+  precision                           24.6777   24.6777
+
+savings_status
+  no known savings                      102.0      16.0
+  <100                                  260.0     158.0
+  500<=X<1000                            36.0       5.0
+  >=1000                                 29.0       4.0
+  100<=X<500                             47.0      23.0
+  [total]                               474.0     206.0
+
+
+Attribute mappings:
+
+Model attributes           	    Incoming attributes
+---------------------------	    ----------------
+(nominal) checking_status  	--> 1 (nominal) checking_status
+(numeric) duration_months  	--> 2 (numeric) duration_months
+(nominal) credit_history   	--> 3 (nominal) credit_history
+(numeric) credit_amount    	--> 5 (numeric) credit_amount
+(nominal) savings_status   	--> 6 (nominal) savings_status
+(nominal) credit_status    	--> 21 (nominal) credit_status
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.77 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         242               73.3333 %
+Incorrectly Classified Instances        88               26.6667 %
+Kappa statistic                          0.2727
+Mean absolute error                      0.3157
+Root mean squared error                  0.4365
+Relative absolute error                 75.1222 %
+Root relative squared error             95.2498 %
+Total Number of Instances              330     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.905    0.667    0.760      0.905    0.826      0.293    0.729     0.847     good
+                 0.333    0.095    0.600      0.333    0.429      0.293    0.729     0.536     bad
+Weighted Avg.    0.733    0.495    0.712      0.733    0.707      0.293    0.729     0.754     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 209  22 |   a = good
+  66  33 |   b = bad
+

@@ -1,0 +1,129 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     dataset_31_credit-g-clean-weka.filters.supervised.instance.Resample-B0.0-S1-Z33.0-no-replacement-V-weka.filters.unsupervised.attribute.Remove-R8,11,13,16,18-19
+Instances:    670
+Attributes:   15
+              checking_status
+              duration_months
+              credit_history
+              purpose_of_credit
+              credit_amount
+              savings_status
+              present_employment_years
+              personal_status
+              other_parties
+              property_magnitude
+              other_payment_plans
+              housing_type
+              job
+              foreign_worker
+              credit_status
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+J48 pruned tree
+------------------
+
+checking_status = <0
+|   duration_months <= 11: good (31.0/4.0)
+|   duration_months > 11
+|   |   savings_status = no known savings
+|   |   |   foreign_worker = yes
+|   |   |   |   duration_months <= 18: good (4.0)
+|   |   |   |   duration_months > 18: bad (9.0/2.0)
+|   |   |   foreign_worker = no: good (2.0)
+|   |   savings_status = <100
+|   |   |   job = skilled
+|   |   |   |   other_parties = none: bad (66.0/20.0)
+|   |   |   |   other_parties = guarantor
+|   |   |   |   |   present_employment_years = >=7: good (1.0)
+|   |   |   |   |   present_employment_years = 1<=X<4: good (6.0/1.0)
+|   |   |   |   |   present_employment_years = 4<=X<7: bad (2.0)
+|   |   |   |   |   present_employment_years = unemployed: good (0.0)
+|   |   |   |   |   present_employment_years = <1: good (0.0)
+|   |   |   |   other_parties = co applicant: bad (6.0)
+|   |   |   job = unskilled resident
+|   |   |   |   housing_type = own: good (21.0/7.0)
+|   |   |   |   housing_type = for free: bad (2.0)
+|   |   |   |   housing_type = rent: bad (8.0/2.0)
+|   |   |   job = high qualif/self emp/mgmt
+|   |   |   |   credit_amount <= 7596: good (11.0)
+|   |   |   |   credit_amount > 7596: bad (4.0/1.0)
+|   |   |   job = unemp/unskilled non res: good (2.0/1.0)
+|   |   savings_status = 500<=X<1000: good (3.0/1.0)
+|   |   savings_status = >=1000: good (4.0)
+|   |   savings_status = 100<=X<500
+|   |   |   property_magnitude = real estate: good (1.0)
+|   |   |   property_magnitude = life insurance: bad (2.0)
+|   |   |   property_magnitude = no known property: bad (1.0)
+|   |   |   property_magnitude = car: good (3.0)
+checking_status = 0<=X<200
+|   duration_months <= 20: good (96.0/24.0)
+|   duration_months > 20
+|   |   savings_status = no known savings: good (11.0)
+|   |   savings_status = <100: bad (44.0/11.0)
+|   |   savings_status = 500<=X<1000: good (3.0/1.0)
+|   |   savings_status = >=1000: good (2.0/1.0)
+|   |   savings_status = 100<=X<500: bad (20.0/8.0)
+checking_status = no checking: good (259.0/33.0)
+checking_status = >=200: good (46.0/8.0)
+
+Number of Leaves  : 	31
+
+Size of the tree : 	44
+
+Attribute mappings:
+
+Model attributes                    	    Incoming attributes
+------------------------------------	    ----------------
+(nominal) checking_status           	--> 1 (nominal) checking_status
+(numeric) duration_months           	--> 2 (numeric) duration_months
+(nominal) credit_history            	--> 3 (nominal) credit_history
+(nominal) purpose_of_credit         	--> 4 (nominal) purpose_of_credit
+(numeric) credit_amount             	--> 5 (numeric) credit_amount
+(nominal) savings_status            	--> 6 (nominal) savings_status
+(nominal) present_employment_years  	--> 7 (nominal) present_employment_years
+(nominal) personal_status           	--> 9 (nominal) personal_status
+(nominal) other_parties             	--> 10 (nominal) other_parties
+(nominal) property_magnitude        	--> 12 (nominal) property_magnitude
+(nominal) other_payment_plans       	--> 14 (nominal) other_payment_plans
+(nominal) housing_type              	--> 15 (nominal) housing_type
+(nominal) job                       	--> 17 (nominal) job
+(nominal) foreign_worker            	--> 20 (nominal) foreign_worker
+(nominal) credit_status             	--> 21 (nominal) credit_status
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.39 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         238               72.1212 %
+Incorrectly Classified Instances        92               27.8788 %
+Kappa statistic                          0.2912
+Mean absolute error                      0.3409
+Root mean squared error                  0.4476
+Relative absolute error                 81.1261 %
+Root relative squared error             97.6683 %
+Total Number of Instances              330     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.848    0.576    0.775      0.848    0.810      0.295    0.707     0.818     good
+                 0.424    0.152    0.545      0.424    0.477      0.295    0.707     0.461     bad
+Weighted Avg.    0.721    0.448    0.706      0.721    0.710      0.295    0.707     0.711     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 196  35 |   a = good
+  57  42 |   b = bad
+

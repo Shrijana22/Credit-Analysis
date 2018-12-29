@@ -1,0 +1,1543 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     dataset_31_credit-g-clean-weka.filters.supervised.instance.Resample-B0.0-S1-Z33.0-no-replacement-V-weka.filters.unsupervised.attribute.Remove-R2,5,8,11,13,16,18-19
+Instances:    670
+Attributes:   13
+              checking_status
+              credit_history
+              purpose_of_credit
+              savings_status
+              present_employment_years
+              personal_status
+              other_parties
+              property_magnitude
+              other_payment_plans
+              housing_type
+              job
+              foreign_worker
+              credit_status
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -9.417913219391643
+    Node 2    4.454414249976107
+    Node 3    4.616089056159326
+    Node 4    4.417478114613515
+    Node 5    0.8895282130511354
+    Node 6    3.6405800585441375
+    Node 7    3.594127624929342
+    Node 8    2.7906857015565474
+    Node 9    0.054112268335374476
+    Node 10    -4.836107248882648
+    Node 11    6.541104590294711
+    Node 12    -0.6638754501187716
+    Node 13    1.2496714141520842
+    Node 14    4.597703795923702
+    Node 15    5.2905215936508485
+    Node 16    6.083407213054904
+    Node 17    5.221540741815294
+    Node 18    0.01198453976441534
+    Node 19    6.035488005006596
+    Node 20    -1.0263958305479692
+    Node 21    0.06727237322948848
+    Node 22    7.382548450710086
+    Node 23    -6.763863961845726
+    Node 24    0.0915763898437521
+    Node 25    4.999649274957618
+    Node 26    3.469857154135909
+    Node 27    4.861609301365868
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    9.417293888875777
+    Node 2    -4.453314609922312
+    Node 3    -4.622541310912813
+    Node 4    -4.419651831986546
+    Node 5    -0.8559294985955959
+    Node 6    -3.6489383105102777
+    Node 7    -3.5954390429080814
+    Node 8    -2.787593709379181
+    Node 9    -0.06378116055968887
+    Node 10    4.843731749776405
+    Node 11    -6.542704614521255
+    Node 12    0.6403123881727365
+    Node 13    -1.2779146059537345
+    Node 14    -4.59810618270394
+    Node 15    -5.289984830277928
+    Node 16    -6.083967174943841
+    Node 17    -5.219736567911251
+    Node 18    0.053740279486468784
+    Node 19    -6.034574561606903
+    Node 20    1.0178682099199887
+    Node 21    -0.05914980631343969
+    Node 22    -7.384304181967326
+    Node 23    6.763969554972902
+    Node 24    -0.02527412071926168
+    Node 25    -5.0004503229823944
+    Node 26    -3.4612428218787037
+    Node 27    -4.862614564251591
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    0.18713457392022106
+    Attrib checking_status=<0    0.7175524583003262
+    Attrib checking_status=0<=X<200    -4.131886415491509
+    Attrib checking_status=no checking    0.3390110075313646
+    Attrib checking_status=>=200    2.811411443236231
+    Attrib credit_history=critical/other existing credit    3.425111582801972
+    Attrib credit_history=existing paid    2.3016631339383777
+    Attrib credit_history=delayed previously    -3.0861080336117523
+    Attrib credit_history=no credits/all paid    -0.8235045730420296
+    Attrib credit_history=all paid    -2.246504090603818
+    Attrib purpose_of_credit=radio/tv    -0.13344645236320843
+    Attrib purpose_of_credit=education    2.3665125487893066
+    Attrib purpose_of_credit=furniture/equipment    0.2770807701391052
+    Attrib purpose_of_credit=new car    -2.8886899772179997
+    Attrib purpose_of_credit=used car    -0.3783498653360619
+    Attrib purpose_of_credit=business    -0.7212083683751599
+    Attrib purpose_of_credit=domestic appliance    -0.31002314066290637
+    Attrib purpose_of_credit=repairs    0.7055965403078202
+    Attrib purpose_of_credit=other    -0.026775925501800864
+    Attrib purpose_of_credit=retraining    -0.08884096232162873
+    Attrib savings_status=no known savings    0.42098595972216474
+    Attrib savings_status=<100    -2.133317139436017
+    Attrib savings_status=500<=X<1000    3.1285656317624713
+    Attrib savings_status=>=1000    0.5683739780674182
+    Attrib savings_status=100<=X<500    -2.4689597537650085
+    Attrib present_employment_years=>=7    -0.3442145375622278
+    Attrib present_employment_years=1<=X<4    1.09732026662271
+    Attrib present_employment_years=4<=X<7    -2.086088890969503
+    Attrib present_employment_years=unemployed    -0.35359424398946443
+    Attrib present_employment_years=<1    1.3277313449867802
+    Attrib personal_status=male single    -0.8422538187535896
+    Attrib personal_status=female div/dep/mar    2.0046285444042766
+    Attrib personal_status=male div/sep    -1.4726845748208457
+    Attrib personal_status=male mar/wid    -0.011709624501799782
+    Attrib other_parties=none    1.221885732957567
+    Attrib other_parties=guarantor    1.253309025977547
+    Attrib other_parties=co applicant    -2.5949962606016967
+    Attrib property_magnitude=real estate    2.0445157943962844
+    Attrib property_magnitude=life insurance    -2.5579252102913412
+    Attrib property_magnitude=no known property    -0.6534171161089394
+    Attrib property_magnitude=car    0.8796900362518802
+    Attrib other_payment_plans=none    -0.02271668717708472
+    Attrib other_payment_plans=bank    0.7604373236565857
+    Attrib other_payment_plans=stores    -0.8714355731145317
+    Attrib housing_type=own    1.6628058975239128
+    Attrib housing_type=for free    -1.4000508549314594
+    Attrib housing_type=rent    -0.45662980944525194
+    Attrib job=skilled    -2.5113332489193483
+    Attrib job=unskilled resident    1.4265857715335877
+    Attrib job=high qualif/self emp/mgmt    0.05262573763024246
+    Attrib job=unemp/unskilled non res    0.6229008073247323
+    Attrib foreign_worker=no    1.1328983667396308
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.2834645651496134
+    Attrib checking_status=<0    0.6056323174127368
+    Attrib checking_status=0<=X<200    0.2917238373988824
+    Attrib checking_status=no checking    -0.2895665507242313
+    Attrib checking_status=>=200    0.020944130732664976
+    Attrib credit_history=critical/other existing credit    1.3634838683246224
+    Attrib credit_history=existing paid    0.42060408037431884
+    Attrib credit_history=delayed previously    -0.29651602191756193
+    Attrib credit_history=no credits/all paid    -0.01674853917408207
+    Attrib credit_history=all paid    -0.6163760595314268
+    Attrib purpose_of_credit=radio/tv    -1.427013891490139
+    Attrib purpose_of_credit=education    1.7757145885238368
+    Attrib purpose_of_credit=furniture/equipment    2.9910269284678437
+    Attrib purpose_of_credit=new car    -0.7792838924381482
+    Attrib purpose_of_credit=used car    -0.9491550913443006
+    Attrib purpose_of_credit=business    -0.2783781269547742
+    Attrib purpose_of_credit=domestic appliance    0.07919926479637901
+    Attrib purpose_of_credit=repairs    0.3015678460410769
+    Attrib purpose_of_credit=other    -0.09874939821765148
+    Attrib purpose_of_credit=retraining    0.4322311399170467
+    Attrib savings_status=no known savings    0.8454375860391605
+    Attrib savings_status=<100    -0.7838820918575069
+    Attrib savings_status=500<=X<1000    0.5895791916130445
+    Attrib savings_status=>=1000    0.11133048416183663
+    Attrib savings_status=100<=X<500    0.032989627149496346
+    Attrib present_employment_years=>=7    -1.4903971427698333
+    Attrib present_employment_years=1<=X<4    0.9472899159525839
+    Attrib present_employment_years=4<=X<7    -0.9533328452984602
+    Attrib present_employment_years=unemployed    1.252489135246812
+    Attrib present_employment_years=<1    1.0454335583539762
+    Attrib personal_status=male single    1.5471300025978525
+    Attrib personal_status=female div/dep/mar    -0.44288143067222757
+    Attrib personal_status=male div/sep    -0.6894359004756262
+    Attrib personal_status=male mar/wid    0.07379629987459464
+    Attrib other_parties=none    0.6453211180448406
+    Attrib other_parties=guarantor    -0.16681867228798428
+    Attrib other_parties=co applicant    -0.18361625650972338
+    Attrib property_magnitude=real estate    0.38561847265405336
+    Attrib property_magnitude=life insurance    0.7311874017126074
+    Attrib property_magnitude=no known property    0.5713953655504742
+    Attrib property_magnitude=car    -1.1703540874469065
+    Attrib other_payment_plans=none    -0.8368153468103402
+    Attrib other_payment_plans=bank    0.11015122136424386
+    Attrib other_payment_plans=stores    1.0627626036652944
+    Attrib housing_type=own    -2.1609893549992276
+    Attrib housing_type=for free    1.6536242889588288
+    Attrib housing_type=rent    0.7063449652601722
+    Attrib job=skilled    0.44279891294411894
+    Attrib job=unskilled resident    -0.9158770672096769
+    Attrib job=high qualif/self emp/mgmt    0.5110266066853227
+    Attrib job=unemp/unskilled non res    0.46218735916608356
+    Attrib foreign_worker=no    0.3293943708249056
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.371727930126994
+    Attrib checking_status=<0    1.7850604648327537
+    Attrib checking_status=0<=X<200    -0.028636694697696103
+    Attrib checking_status=no checking    -0.9867201253693013
+    Attrib checking_status=>=200    0.055722719190038246
+    Attrib credit_history=critical/other existing credit    1.8708800919833382
+    Attrib credit_history=existing paid    0.30971099940913865
+    Attrib credit_history=delayed previously    -0.13721487189391013
+    Attrib credit_history=no credits/all paid    -0.014192864728241996
+    Attrib credit_history=all paid    -0.8964019518816464
+    Attrib purpose_of_credit=radio/tv    0.1824389712468491
+    Attrib purpose_of_credit=education    0.41465969066778563
+    Attrib purpose_of_credit=furniture/equipment    -0.9407476970096763
+    Attrib purpose_of_credit=new car    -0.45669829959209496
+    Attrib purpose_of_credit=used car    1.173989571258747
+    Attrib purpose_of_credit=business    1.679790507455756
+    Attrib purpose_of_credit=domestic appliance    -2.318845048010914
+    Attrib purpose_of_credit=repairs    1.3305600763117742
+    Attrib purpose_of_credit=other    1.3603070285918408
+    Attrib purpose_of_credit=retraining    0.9777785594569538
+    Attrib savings_status=no known savings    -0.5583979180223819
+    Attrib savings_status=<100    0.4144500621655415
+    Attrib savings_status=500<=X<1000    0.28552049927561785
+    Attrib savings_status=>=1000    1.0055161296648814
+    Attrib savings_status=100<=X<500    0.16763351498719506
+    Attrib present_employment_years=>=7    -0.5333923470151712
+    Attrib present_employment_years=1<=X<4    2.137594717590128
+    Attrib present_employment_years=4<=X<7    0.9965396366764001
+    Attrib present_employment_years=unemployed    -0.21001803690235907
+    Attrib present_employment_years=<1    -1.1166943904885163
+    Attrib personal_status=male single    1.1131857348642076
+    Attrib personal_status=female div/dep/mar    -0.7364791773875558
+    Attrib personal_status=male div/sep    -0.18581348886456317
+    Attrib personal_status=male mar/wid    0.6730980716719898
+    Attrib other_parties=none    -0.6970309512173721
+    Attrib other_parties=guarantor    0.533414256393219
+    Attrib other_parties=co applicant    0.5460175519959057
+    Attrib property_magnitude=real estate    -0.513535433959257
+    Attrib property_magnitude=life insurance    1.8861044233752782
+    Attrib property_magnitude=no known property    -0.2338978368372593
+    Attrib property_magnitude=car    -0.4432808822653249
+    Attrib other_payment_plans=none    0.48899366960245017
+    Attrib other_payment_plans=bank    0.7178909334524081
+    Attrib other_payment_plans=stores    -0.7816559378531085
+    Attrib housing_type=own    1.4310893419297392
+    Attrib housing_type=for free    0.7453463280109105
+    Attrib housing_type=rent    -1.6993877351939672
+    Attrib job=skilled    -2.472264122450201
+    Attrib job=unskilled resident    0.6997339843052147
+    Attrib job=high qualif/self emp/mgmt    1.7460644604122502
+    Attrib job=unemp/unskilled non res    0.8129717695237609
+    Attrib foreign_worker=no    -0.25549403870656046
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -0.0739378299188167
+    Attrib checking_status=<0    0.36009536321116953
+    Attrib checking_status=0<=X<200    -0.21995742163981397
+    Attrib checking_status=no checking    -0.1671707472681024
+    Attrib checking_status=>=200    0.06876468385198327
+    Attrib credit_history=critical/other existing credit    0.3352060806475329
+    Attrib credit_history=existing paid    0.01982612208501199
+    Attrib credit_history=delayed previously    0.19884692314943817
+    Attrib credit_history=no credits/all paid    -0.061747939375764796
+    Attrib credit_history=all paid    -0.2663430121394662
+    Attrib purpose_of_credit=radio/tv    0.2522058443043869
+    Attrib purpose_of_credit=education    -0.010327643609864788
+    Attrib purpose_of_credit=furniture/equipment    0.8548494912961246
+    Attrib purpose_of_credit=new car    -0.5577936139306934
+    Attrib purpose_of_credit=used car    -0.07084011230175997
+    Attrib purpose_of_credit=business    -0.3101538626442984
+    Attrib purpose_of_credit=domestic appliance    -0.06630933603883754
+    Attrib purpose_of_credit=repairs    0.08147789297360973
+    Attrib purpose_of_credit=other    0.18304135578803338
+    Attrib purpose_of_credit=retraining    0.11561932224576964
+    Attrib savings_status=no known savings    0.07559812356626512
+    Attrib savings_status=<100    0.1641225745949478
+    Attrib savings_status=500<=X<1000    0.14737451284232836
+    Attrib savings_status=>=1000    0.06483226803955815
+    Attrib savings_status=100<=X<500    -0.13352905863901532
+    Attrib present_employment_years=>=7    0.26323107853218025
+    Attrib present_employment_years=1<=X<4    -0.34708245070887433
+    Attrib present_employment_years=4<=X<7    -0.011796757426956407
+    Attrib present_employment_years=unemployed    0.33954598408613473
+    Attrib present_employment_years=<1    0.03543889076402568
+    Attrib personal_status=male single    -0.1579505719166645
+    Attrib personal_status=female div/dep/mar    -0.36011904994872596
+    Attrib personal_status=male div/sep    0.46909333692309596
+    Attrib personal_status=male mar/wid    0.17177549976794945
+    Attrib other_parties=none    -0.29118011988240233
+    Attrib other_parties=guarantor    0.17233410027302834
+    Attrib other_parties=co applicant    0.17277729355978227
+    Attrib property_magnitude=real estate    -0.21376996250055944
+    Attrib property_magnitude=life insurance    0.5476491560659483
+    Attrib property_magnitude=no known property    -0.08989130779654746
+    Attrib property_magnitude=car    -0.026218404273009987
+    Attrib other_payment_plans=none    0.05112988322196361
+    Attrib other_payment_plans=bank    0.011669447095005583
+    Attrib other_payment_plans=stores    -0.012797321662621791
+    Attrib housing_type=own    -0.271890337070153
+    Attrib housing_type=for free    0.16481670753306416
+    Attrib housing_type=rent    0.15907725736040904
+    Attrib job=skilled    -0.6533737639014555
+    Attrib job=unskilled resident    0.12041817015588148
+    Attrib job=high qualif/self emp/mgmt    0.5579237678913648
+    Attrib job=unemp/unskilled non res    0.20876751516578623
+    Attrib foreign_worker=no    0.19683809577659245
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.07165985190615726
+    Attrib checking_status=<0    -1.0143217670004114
+    Attrib checking_status=0<=X<200    1.0707704079277807
+    Attrib checking_status=no checking    -0.5411009452074521
+    Attrib checking_status=>=200    0.49844217977219696
+    Attrib credit_history=critical/other existing credit    -1.0717788233125671
+    Attrib credit_history=existing paid    0.5552551242195617
+    Attrib credit_history=delayed previously    1.2669880227223387
+    Attrib credit_history=no credits/all paid    0.03056216677807356
+    Attrib credit_history=all paid    -0.7768631941992766
+    Attrib purpose_of_credit=radio/tv    0.4243388958894454
+    Attrib purpose_of_credit=education    1.1461316196554021
+    Attrib purpose_of_credit=furniture/equipment    0.9744720677148634
+    Attrib purpose_of_credit=new car    -0.3932814262957311
+    Attrib purpose_of_credit=used car    -0.21225833781497583
+    Attrib purpose_of_credit=business    -1.058528352939233
+    Attrib purpose_of_credit=domestic appliance    -0.19824397816740202
+    Attrib purpose_of_credit=repairs    -0.0213883745309693
+    Attrib purpose_of_credit=other    -0.5253345938823845
+    Attrib purpose_of_credit=retraining    0.06964463537884101
+    Attrib savings_status=no known savings    1.067898755832418
+    Attrib savings_status=<100    -0.8360306487792775
+    Attrib savings_status=500<=X<1000    0.44023849869292575
+    Attrib savings_status=>=1000    -0.08408978076939413
+    Attrib savings_status=100<=X<500    -0.4995976470075471
+    Attrib present_employment_years=>=7    1.3142574334008288
+    Attrib present_employment_years=1<=X<4    -0.24796978338091244
+    Attrib present_employment_years=4<=X<7    1.2883691163613484
+    Attrib present_employment_years=unemployed    -0.9065452132139651
+    Attrib present_employment_years=<1    -1.2615845132587415
+    Attrib personal_status=male single    -0.6665379867044752
+    Attrib personal_status=female div/dep/mar    0.1081656575185016
+    Attrib personal_status=male div/sep    -0.23421480204023162
+    Attrib personal_status=male mar/wid    0.9088433599634501
+    Attrib other_parties=none    0.3461978519172625
+    Attrib other_parties=guarantor    -0.12133856441175146
+    Attrib other_parties=co applicant    -0.22044465966073742
+    Attrib property_magnitude=real estate    -0.39108985151424286
+    Attrib property_magnitude=life insurance    0.8704833980148912
+    Attrib property_magnitude=no known property    -0.5524190018537551
+    Attrib property_magnitude=car    0.15346613927425043
+    Attrib other_payment_plans=none    -0.7156821112459455
+    Attrib other_payment_plans=bank    1.0493407089180522
+    Attrib other_payment_plans=stores    -0.27569229296513775
+    Attrib housing_type=own    -1.0439805249873342
+    Attrib housing_type=for free    0.4256108220573165
+    Attrib housing_type=rent    0.5936610048396407
+    Attrib job=skilled    -1.009800454621193
+    Attrib job=unskilled resident    0.7368872116605828
+    Attrib job=high qualif/self emp/mgmt    0.2048696054602282
+    Attrib job=unemp/unskilled non res    0.23660297733805902
+    Attrib foreign_worker=no    0.30376348684568555
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.15450862579782254
+    Attrib checking_status=<0    -1.0807756915916917
+    Attrib checking_status=0<=X<200    -0.5700562263685883
+    Attrib checking_status=no checking    2.5009283993634184
+    Attrib checking_status=>=200    -0.5418205319913059
+    Attrib credit_history=critical/other existing credit    -0.16820628869644105
+    Attrib credit_history=existing paid    0.3742853639635579
+    Attrib credit_history=delayed previously    -1.660574138300757
+    Attrib credit_history=no credits/all paid    0.3742596514752895
+    Attrib credit_history=all paid    1.7193541864893367
+    Attrib purpose_of_credit=radio/tv    1.8169909797948316
+    Attrib purpose_of_credit=education    0.11816528805171767
+    Attrib purpose_of_credit=furniture/equipment    -0.33263137610731647
+    Attrib purpose_of_credit=new car    -0.6974557337099918
+    Attrib purpose_of_credit=used car    1.3533140369995855
+    Attrib purpose_of_credit=business    -0.14176610246063398
+    Attrib purpose_of_credit=domestic appliance    -0.12683980721907856
+    Attrib purpose_of_credit=repairs    -0.9011152801179364
+    Attrib purpose_of_credit=other    0.18996095949317027
+    Attrib purpose_of_credit=retraining    0.3927011792591613
+    Attrib savings_status=no known savings    -0.8657941657070922
+    Attrib savings_status=<100    0.4788457439124348
+    Attrib savings_status=500<=X<1000    0.7317998877584673
+    Attrib savings_status=>=1000    0.1389467630075957
+    Attrib savings_status=100<=X<500    0.07652681816521596
+    Attrib present_employment_years=>=7    0.9996979808024439
+    Attrib present_employment_years=1<=X<4    -0.2516451526098719
+    Attrib present_employment_years=4<=X<7    1.2960809244882616
+    Attrib present_employment_years=unemployed    -0.6243667966832244
+    Attrib present_employment_years=<1    -0.8430730946636937
+    Attrib personal_status=male single    0.7735675431368044
+    Attrib personal_status=female div/dep/mar    -0.7352581193297069
+    Attrib personal_status=male div/sep    0.05758055633753418
+    Attrib personal_status=male mar/wid    0.2142182368477117
+    Attrib other_parties=none    -1.2338171391643655
+    Attrib other_parties=guarantor    1.8290740783994932
+    Attrib other_parties=co applicant    -0.34334818400321193
+    Attrib property_magnitude=real estate    1.7024618003655199
+    Attrib property_magnitude=life insurance    0.054529602893989906
+    Attrib property_magnitude=no known property    -0.21089846187989553
+    Attrib property_magnitude=car    -1.140140379581557
+    Attrib other_payment_plans=none    0.700961568348397
+    Attrib other_payment_plans=bank    -0.08537040895252247
+    Attrib other_payment_plans=stores    -0.4256979667309287
+    Attrib housing_type=own    -0.5957474959463189
+    Attrib housing_type=for free    0.5882956891782717
+    Attrib housing_type=rent    0.19481364931574238
+    Attrib job=skilled    0.7092569250896895
+    Attrib job=unskilled resident    0.2758701227065833
+    Attrib job=high qualif/self emp/mgmt    -1.1747391745553346
+    Attrib job=unemp/unskilled non res    0.49728159360905044
+    Attrib foreign_worker=no    1.3521283781262894
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.27090789581811564
+    Attrib checking_status=<0    -1.5524491270663512
+    Attrib checking_status=0<=X<200    -0.8186621639989835
+    Attrib checking_status=no checking    3.7394185728723732
+    Attrib checking_status=>=200    -0.8410861549344852
+    Attrib credit_history=critical/other existing credit    0.025763699261247677
+    Attrib credit_history=existing paid    -0.38696326282772897
+    Attrib credit_history=delayed previously    0.40626493029386535
+    Attrib credit_history=no credits/all paid    -0.2309023158104334
+    Attrib credit_history=all paid    0.8730066312319359
+    Attrib purpose_of_credit=radio/tv    1.0947488433341577
+    Attrib purpose_of_credit=education    1.1157224755377633
+    Attrib purpose_of_credit=furniture/equipment    0.4703953196035962
+    Attrib purpose_of_credit=new car    -1.1697722968106372
+    Attrib purpose_of_credit=used car    2.8482687524249304
+    Attrib purpose_of_credit=business    -3.033442287532577
+    Attrib purpose_of_credit=domestic appliance    0.1242474684814271
+    Attrib purpose_of_credit=repairs    -0.781658432743755
+    Attrib purpose_of_credit=other    0.5809955712999209
+    Attrib purpose_of_credit=retraining    0.6873779172340416
+    Attrib savings_status=no known savings    1.6775319335159165
+    Attrib savings_status=<100    -1.1625757946538984
+    Attrib savings_status=500<=X<1000    0.9768872336480559
+    Attrib savings_status=>=1000    -0.6429036575205883
+    Attrib savings_status=100<=X<500    -0.014707223199381645
+    Attrib present_employment_years=>=7    3.4491722967012657
+    Attrib present_employment_years=1<=X<4    -1.5285527150598408
+    Attrib present_employment_years=4<=X<7    1.9823449072787829
+    Attrib present_employment_years=unemployed    -0.3630849008512336
+    Attrib present_employment_years=<1    -2.792856666647155
+    Attrib personal_status=male single    0.41991308157602597
+    Attrib personal_status=female div/dep/mar    0.352249239236384
+    Attrib personal_status=male div/sep    -1.2527680052740704
+    Attrib personal_status=male mar/wid    0.912977561522301
+    Attrib other_parties=none    0.6744047798217054
+    Attrib other_parties=guarantor    -1.487730840023708
+    Attrib other_parties=co applicant    1.0510544457935407
+    Attrib property_magnitude=real estate    1.1085725214806756
+    Attrib property_magnitude=life insurance    -0.9830751666999521
+    Attrib property_magnitude=no known property    -0.6132603149779255
+    Attrib property_magnitude=car    1.0034289622013701
+    Attrib other_payment_plans=none    2.108370222854388
+    Attrib other_payment_plans=bank    0.27813563003462755
+    Attrib other_payment_plans=stores    -2.2022538628349824
+    Attrib housing_type=own    -0.516789653442991
+    Attrib housing_type=for free    0.21002999017991697
+    Attrib housing_type=rent    0.5272118130278943
+    Attrib job=skilled    1.149899843844791
+    Attrib job=unskilled resident    1.3368650705415797
+    Attrib job=high qualif/self emp/mgmt    -2.9947635899243594
+    Attrib job=unemp/unskilled non res    0.9048019409787439
+    Attrib foreign_worker=no    1.5151420133988693
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -0.18753300601989853
+    Attrib checking_status=<0    -0.19227114908613555
+    Attrib checking_status=0<=X<200    0.022300603657893818
+    Attrib checking_status=no checking    0.15658751187023964
+    Attrib checking_status=>=200    0.37574287548798596
+    Attrib credit_history=critical/other existing credit    0.08240985849385733
+    Attrib credit_history=existing paid    0.12506116271449222
+    Attrib credit_history=delayed previously    0.15997427722886606
+    Attrib credit_history=no credits/all paid    -3.8634395101186706E-4
+    Attrib credit_history=all paid    0.06292469055083019
+    Attrib purpose_of_credit=radio/tv    0.1639559843033689
+    Attrib purpose_of_credit=education    0.08813455517682116
+    Attrib purpose_of_credit=furniture/equipment    0.3329039023491793
+    Attrib purpose_of_credit=new car    -0.24269150743242665
+    Attrib purpose_of_credit=used car    0.5665718689161199
+    Attrib purpose_of_credit=business    -0.07350212830794228
+    Attrib purpose_of_credit=domestic appliance    0.11091405570860297
+    Attrib purpose_of_credit=repairs    0.039849123271530985
+    Attrib purpose_of_credit=other    0.1782590597000792
+    Attrib purpose_of_credit=retraining    0.2028074237985969
+    Attrib savings_status=no known savings    0.15458344755983386
+    Attrib savings_status=<100    -0.2781795869199909
+    Attrib savings_status=500<=X<1000    0.34577557122771285
+    Attrib savings_status=>=1000    0.2094004324708239
+    Attrib savings_status=100<=X<500    0.03721794386201588
+    Attrib present_employment_years=>=7    0.023151831111623295
+    Attrib present_employment_years=1<=X<4    0.2384964936676245
+    Attrib present_employment_years=4<=X<7    -0.05708083784798562
+    Attrib present_employment_years=unemployed    0.2016348573993966
+    Attrib present_employment_years=<1    0.13159892302322768
+    Attrib personal_status=male single    0.2313839178691909
+    Attrib personal_status=female div/dep/mar    -0.2132974621364666
+    Attrib personal_status=male div/sep    0.17037251219450936
+    Attrib personal_status=male mar/wid    0.17529353843585616
+    Attrib other_parties=none    -0.19301284160766236
+    Attrib other_parties=guarantor    0.2948828708346082
+    Attrib other_parties=co applicant    0.08869615041175752
+    Attrib property_magnitude=real estate    0.3674387872914984
+    Attrib property_magnitude=life insurance    0.06222493914496845
+    Attrib property_magnitude=no known property    0.012496366462858692
+    Attrib property_magnitude=car    -0.14613449190700284
+    Attrib other_payment_plans=none    -0.13585387987133013
+    Attrib other_payment_plans=bank    0.3210498853524036
+    Attrib other_payment_plans=stores    0.02227421486806784
+    Attrib housing_type=own    -0.24121489535216073
+    Attrib housing_type=for free    0.30486419303272305
+    Attrib housing_type=rent    0.04022417673026794
+    Attrib job=skilled    -0.01709528561308498
+    Attrib job=unskilled resident    0.007390623644201931
+    Attrib job=high qualif/self emp/mgmt    -0.016793729438279763
+    Attrib job=unemp/unskilled non res    0.39061036864164006
+    Attrib foreign_worker=no    0.3788802332451113
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    0.09676113101542962
+    Attrib checking_status=<0    1.0380439385523559
+    Attrib checking_status=0<=X<200    -1.0501584621574214
+    Attrib checking_status=no checking    0.5407994029854691
+    Attrib checking_status=>=200    -0.6128184439943266
+    Attrib credit_history=critical/other existing credit    -0.009596082974247291
+    Attrib credit_history=existing paid    -1.4668698491239602
+    Attrib credit_history=delayed previously    1.8108783951324245
+    Attrib credit_history=no credits/all paid    -0.21841194606815306
+    Attrib credit_history=all paid    -0.17068905551869293
+    Attrib purpose_of_credit=radio/tv    -1.6227333226827074
+    Attrib purpose_of_credit=education    -0.7144965867884975
+    Attrib purpose_of_credit=furniture/equipment    0.4162232155615845
+    Attrib purpose_of_credit=new car    -0.6149694552424155
+    Attrib purpose_of_credit=used car    0.4892876985563724
+    Attrib purpose_of_credit=business    0.6356037745530482
+    Attrib purpose_of_credit=domestic appliance    1.056913536306434
+    Attrib purpose_of_credit=repairs    0.17580175808830842
+    Attrib purpose_of_credit=other    -0.0858831367724204
+    Attrib purpose_of_credit=retraining    -0.1362990029783987
+    Attrib savings_status=no known savings    1.1806227409325272
+    Attrib savings_status=<100    -0.9268203173796311
+    Attrib savings_status=500<=X<1000    0.45272139153530117
+    Attrib savings_status=>=1000    -0.09222362555627622
+    Attrib savings_status=100<=X<500    -0.7813473667813032
+    Attrib present_employment_years=>=7    -0.8771413141741801
+    Attrib present_employment_years=1<=X<4    0.5799214367137293
+    Attrib present_employment_years=4<=X<7    1.7375346988272897
+    Attrib present_employment_years=unemployed    0.1932942505664122
+    Attrib present_employment_years=<1    -1.6566980147721615
+    Attrib personal_status=male single    0.14327001342316628
+    Attrib personal_status=female div/dep/mar    0.3232212224501581
+    Attrib personal_status=male div/sep    -0.6726766768566977
+    Attrib personal_status=male mar/wid    0.19538058267115663
+    Attrib other_parties=none    -1.3056663020546573
+    Attrib other_parties=guarantor    1.7106373878512484
+    Attrib other_parties=co applicant    -0.45663146147005856
+    Attrib property_magnitude=real estate    1.3607038499016397
+    Attrib property_magnitude=life insurance    -1.62752223161366
+    Attrib property_magnitude=no known property    -0.5871247271822455
+    Attrib property_magnitude=car    0.8104039607827956
+    Attrib other_payment_plans=none    0.48149721132443396
+    Attrib other_payment_plans=bank    -0.5261387930926623
+    Attrib other_payment_plans=stores    0.01929338151250308
+    Attrib housing_type=own    -1.1020953736324985
+    Attrib housing_type=for free    0.26171517471546846
+    Attrib housing_type=rent    0.8295148256901922
+    Attrib job=skilled    -1.3381616057836545
+    Attrib job=unskilled resident    0.977866248140973
+    Attrib job=high qualif/self emp/mgmt    0.4001896784716138
+    Attrib job=unemp/unskilled non res    -0.15018848781265723
+    Attrib foreign_worker=no    -0.0025183665400321836
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -0.48591090302397566
+    Attrib checking_status=<0    0.809938115785106
+    Attrib checking_status=0<=X<200    -0.8468137241134213
+    Attrib checking_status=no checking    1.9152851905982435
+    Attrib checking_status=>=200    -0.9267355192064157
+    Attrib credit_history=critical/other existing credit    2.385327299696966
+    Attrib credit_history=existing paid    -0.5823515832757246
+    Attrib credit_history=delayed previously    -0.8393829005931464
+    Attrib credit_history=no credits/all paid    0.3767952725427822
+    Attrib credit_history=all paid    0.03276241995052005
+    Attrib purpose_of_credit=radio/tv    2.2977315424061002
+    Attrib purpose_of_credit=education    -0.7199063914844358
+    Attrib purpose_of_credit=furniture/equipment    1.0813288632843259
+    Attrib purpose_of_credit=new car    -1.0589490064230265
+    Attrib purpose_of_credit=used car    0.6627248722517092
+    Attrib purpose_of_credit=business    -0.6922504249027996
+    Attrib purpose_of_credit=domestic appliance    0.6127264212997673
+    Attrib purpose_of_credit=repairs    -0.2610974440243159
+    Attrib purpose_of_credit=other    0.9422535038151291
+    Attrib purpose_of_credit=retraining    0.8481521372554813
+    Attrib savings_status=no known savings    -2.279365389419493
+    Attrib savings_status=<100    1.470848814408576
+    Attrib savings_status=500<=X<1000    -0.0635102809913271
+    Attrib savings_status=>=1000    1.865870365192301
+    Attrib savings_status=100<=X<500    0.4156901998579707
+    Attrib present_employment_years=>=7    2.969623757760917
+    Attrib present_employment_years=1<=X<4    -2.2066229174554755
+    Attrib present_employment_years=4<=X<7    1.0009592351383885
+    Attrib present_employment_years=unemployed    -1.39133357819244
+    Attrib present_employment_years=<1    1.1217976143123
+    Attrib personal_status=male single    -1.0660379646199323
+    Attrib personal_status=female div/dep/mar    0.8841813005631521
+    Attrib personal_status=male div/sep    -0.3889628285743833
+    Attrib personal_status=male mar/wid    1.4921837494473327
+    Attrib other_parties=none    0.33266678154947105
+    Attrib other_parties=guarantor    0.19035471375349433
+    Attrib other_parties=co applicant    -0.02595667851438583
+    Attrib property_magnitude=real estate    -2.1364283039410643
+    Attrib property_magnitude=life insurance    0.26904271083182796
+    Attrib property_magnitude=no known property    1.672303615913142
+    Attrib property_magnitude=car    1.218096514724443
+    Attrib other_payment_plans=none    -0.3132345473672038
+    Attrib other_payment_plans=bank    -0.11001238946012648
+    Attrib other_payment_plans=stores    0.8398207136341348
+    Attrib housing_type=own    0.8108823202612716
+    Attrib housing_type=for free    -1.4112282174031014
+    Attrib housing_type=rent    1.0207003362196905
+    Attrib job=skilled    -0.0627822290285895
+    Attrib job=unskilled resident    -1.1863101755910757
+    Attrib job=high qualif/self emp/mgmt    1.2231931062093009
+    Attrib job=unemp/unskilled non res    0.9457141778475446
+    Attrib foreign_worker=no    1.924953077081718
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -0.033887421553246054
+    Attrib checking_status=<0    -0.26667165847465507
+    Attrib checking_status=0<=X<200    -0.09587953169228322
+    Attrib checking_status=no checking    0.4085638629969347
+    Attrib checking_status=>=200    0.04654939764550283
+    Attrib credit_history=critical/other existing credit    0.08213347155008847
+    Attrib credit_history=existing paid    -0.060464903576393475
+    Attrib credit_history=delayed previously    0.1857906867867615
+    Attrib credit_history=no credits/all paid    -0.04854434498357099
+    Attrib credit_history=all paid    0.020074957001166144
+    Attrib purpose_of_credit=radio/tv    0.04079465355400846
+    Attrib purpose_of_credit=education    0.06110435757677314
+    Attrib purpose_of_credit=furniture/equipment    0.17222120518447542
+    Attrib purpose_of_credit=new car    -0.37254560123611813
+    Attrib purpose_of_credit=used car    0.14931795981264723
+    Attrib purpose_of_credit=business    0.21550518174781183
+    Attrib purpose_of_credit=domestic appliance    0.012178059645576432
+    Attrib purpose_of_credit=repairs    0.001709040829218245
+    Attrib purpose_of_credit=other    0.0851996905535048
+    Attrib purpose_of_credit=retraining    0.03652267338100636
+    Attrib savings_status=no known savings    0.20101327317016796
+    Attrib savings_status=<100    -0.3967117424768983
+    Attrib savings_status=500<=X<1000    0.29661358230340823
+    Attrib savings_status=>=1000    0.06250715112025196
+    Attrib savings_status=100<=X<500    -0.06067984305934626
+    Attrib present_employment_years=>=7    -0.14505404652480536
+    Attrib present_employment_years=1<=X<4    -0.031116525287118273
+    Attrib present_employment_years=4<=X<7    -0.10791171333360511
+    Attrib present_employment_years=unemployed    0.14183844559671044
+    Attrib present_employment_years=<1    0.2843104774728861
+    Attrib personal_status=male single    -0.08667372951357898
+    Attrib personal_status=female div/dep/mar    0.24059230228617484
+    Attrib personal_status=male div/sep    0.009108559879459755
+    Attrib personal_status=male mar/wid    0.01620337991341783
+    Attrib other_parties=none    0.023642390064542485
+    Attrib other_parties=guarantor    0.08655438789568065
+    Attrib other_parties=co applicant    -0.05720618558085337
+    Attrib property_magnitude=real estate    0.1867034196587749
+    Attrib property_magnitude=life insurance    0.09820041552989892
+    Attrib property_magnitude=no known property    0.02650508454757865
+    Attrib property_magnitude=car    -0.1852965818309293
+    Attrib other_payment_plans=none    -0.23486655975147097
+    Attrib other_payment_plans=bank    0.26742072531866423
+    Attrib other_payment_plans=stores    -0.06881510305151838
+    Attrib housing_type=own    0.016563391484010145
+    Attrib housing_type=for free    0.14059918953816297
+    Attrib housing_type=rent    -0.06965157257673373
+    Attrib job=skilled    -0.10201466558856745
+    Attrib job=unskilled resident    0.019096575520521013
+    Attrib job=high qualif/self emp/mgmt    0.07522796455554838
+    Attrib job=unemp/unskilled non res    0.1146958342642126
+    Attrib foreign_worker=no    0.18840367998612115
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -0.18165975486394054
+    Attrib checking_status=<0    0.2746870054049682
+    Attrib checking_status=0<=X<200    -0.8662635372859971
+    Attrib checking_status=no checking    0.6354634089787325
+    Attrib checking_status=>=200    0.28110652081303295
+    Attrib credit_history=critical/other existing credit    0.6689605988264047
+    Attrib credit_history=existing paid    -0.01151823114448076
+    Attrib credit_history=delayed previously    -0.17177157302679863
+    Attrib credit_history=no credits/all paid    0.07755820443105767
+    Attrib credit_history=all paid    -0.12638956451351
+    Attrib purpose_of_credit=radio/tv    -0.21573396267620926
+    Attrib purpose_of_credit=education    -0.2895418418963997
+    Attrib purpose_of_credit=furniture/equipment    0.38438027289454907
+    Attrib purpose_of_credit=new car    -0.13684950497508735
+    Attrib purpose_of_credit=used car    0.9583727049022583
+    Attrib purpose_of_credit=business    -0.06653284957691959
+    Attrib purpose_of_credit=domestic appliance    -0.0891474110107191
+    Attrib purpose_of_credit=repairs    0.06662643813040517
+    Attrib purpose_of_credit=other    0.2861937715898185
+    Attrib purpose_of_credit=retraining    0.21783946587311578
+    Attrib savings_status=no known savings    -0.1354067482956267
+    Attrib savings_status=<100    0.26686034362506367
+    Attrib savings_status=500<=X<1000    0.30125713621300926
+    Attrib savings_status=>=1000    0.3206741847841318
+    Attrib savings_status=100<=X<500    -0.35848974723781113
+    Attrib present_employment_years=>=7    0.04985542292736578
+    Attrib present_employment_years=1<=X<4    0.17292984914489554
+    Attrib present_employment_years=4<=X<7    -0.2300912479118111
+    Attrib present_employment_years=unemployed    0.4646838919765254
+    Attrib present_employment_years=<1    -0.009455988796082943
+    Attrib personal_status=male single    0.19271203231730133
+    Attrib personal_status=female div/dep/mar    -0.48467783874725145
+    Attrib personal_status=male div/sep    1.0027333458679253
+    Attrib personal_status=male mar/wid    -0.4519863497344404
+    Attrib other_parties=none    -0.9455633146252123
+    Attrib other_parties=guarantor    0.9627884879991788
+    Attrib other_parties=co applicant    0.12048540258889005
+    Attrib property_magnitude=real estate    -0.20323561096147638
+    Attrib property_magnitude=life insurance    0.6113236128085856
+    Attrib property_magnitude=no known property    -0.04037520188852084
+    Attrib property_magnitude=car    -0.12062049503409644
+    Attrib other_payment_plans=none    0.5653039883890241
+    Attrib other_payment_plans=bank    -0.30687880288184993
+    Attrib other_payment_plans=stores    -0.18294430978202622
+    Attrib housing_type=own    0.25462981935268103
+    Attrib housing_type=for free    0.17303506482505618
+    Attrib housing_type=rent    -0.2510336654184234
+    Attrib job=skilled    -0.31071611290590007
+    Attrib job=unskilled resident    -0.2407996053605582
+    Attrib job=high qualif/self emp/mgmt    0.3749971822746555
+    Attrib job=unemp/unskilled non res    0.43217111327291663
+    Attrib foreign_worker=no    0.6323943068385123
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    -0.2983402359577954
+    Attrib checking_status=<0    1.0119647727178676
+    Attrib checking_status=0<=X<200    -0.22640792571051618
+    Attrib checking_status=no checking    -1.0689904830620027
+    Attrib checking_status=>=200    0.9584025636521571
+    Attrib credit_history=critical/other existing credit    2.7393397383575233
+    Attrib credit_history=existing paid    -1.2297109192411062
+    Attrib credit_history=delayed previously    -0.14788818603392193
+    Attrib credit_history=no credits/all paid    0.7545457016540194
+    Attrib credit_history=all paid    -1.1482694403623954
+    Attrib purpose_of_credit=radio/tv    1.0592653733919877
+    Attrib purpose_of_credit=education    -0.8931779942815277
+    Attrib purpose_of_credit=furniture/equipment    -0.32448651445313625
+    Attrib purpose_of_credit=new car    -1.304783650518934
+    Attrib purpose_of_credit=used car    0.487470216036529
+    Attrib purpose_of_credit=business    1.650989309908369
+    Attrib purpose_of_credit=domestic appliance    0.05290431025415089
+    Attrib purpose_of_credit=repairs    1.1489324954645235
+    Attrib purpose_of_credit=other    0.09228078625733835
+    Attrib purpose_of_credit=retraining    0.539228718445006
+    Attrib savings_status=no known savings    2.1210228380328333
+    Attrib savings_status=<100    -1.4397539109399418
+    Attrib savings_status=500<=X<1000    -0.5614757646048953
+    Attrib savings_status=>=1000    1.346422576800208
+    Attrib savings_status=100<=X<500    -0.4622107005110909
+    Attrib present_employment_years=>=7    -0.020305307107481876
+    Attrib present_employment_years=1<=X<4    0.6903468310954548
+    Attrib present_employment_years=4<=X<7    -0.10925545878552945
+    Attrib present_employment_years=unemployed    -0.4832411939541607
+    Attrib present_employment_years=<1    0.8686197342345116
+    Attrib personal_status=male single    0.3211454953235841
+    Attrib personal_status=female div/dep/mar    0.9167963732333406
+    Attrib personal_status=male div/sep    -0.5276409762987005
+    Attrib personal_status=male mar/wid    -0.108127629613623
+    Attrib other_parties=none    -0.09322074218721624
+    Attrib other_parties=guarantor    -0.34144907358831206
+    Attrib other_parties=co applicant    0.7579333138054565
+    Attrib property_magnitude=real estate    -0.24449913510101348
+    Attrib property_magnitude=life insurance    3.431064127787679
+    Attrib property_magnitude=no known property    -1.2039523810524566
+    Attrib property_magnitude=car    -1.3683607776533369
+    Attrib other_payment_plans=none    0.6806986037809749
+    Attrib other_payment_plans=bank    0.5505746044856468
+    Attrib other_payment_plans=stores    -0.9100893534468228
+    Attrib housing_type=own    0.856151155783788
+    Attrib housing_type=for free    -0.04773616475231604
+    Attrib housing_type=rent    -0.5134099300224079
+    Attrib job=skilled    -1.1770800515625308
+    Attrib job=unskilled resident    0.5936599334743735
+    Attrib job=high qualif/self emp/mgmt    0.42255242215020405
+    Attrib job=unemp/unskilled non res    0.8294466894107421
+    Attrib foreign_worker=no    0.5131632913651974
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    -0.0816774049286216
+    Attrib checking_status=<0    0.5846534073813693
+    Attrib checking_status=0<=X<200    1.0784937861872617
+    Attrib checking_status=no checking    -1.0577346807977388
+    Attrib checking_status=>=200    -0.34066083804018665
+    Attrib credit_history=critical/other existing credit    -1.4999558361302738
+    Attrib credit_history=existing paid    1.4268252945731013
+    Attrib credit_history=delayed previously    -0.09262883802289675
+    Attrib credit_history=no credits/all paid    1.101578293214871
+    Attrib credit_history=all paid    -0.6345571427473886
+    Attrib purpose_of_credit=radio/tv    -0.3334272444182711
+    Attrib purpose_of_credit=education    -0.38750011073621565
+    Attrib purpose_of_credit=furniture/equipment    -1.3588531455754012
+    Attrib purpose_of_credit=new car    0.6593374284013929
+    Attrib purpose_of_credit=used car    -0.2859248731912782
+    Attrib purpose_of_credit=business    1.4420184349250558
+    Attrib purpose_of_credit=domestic appliance    1.9899341486508806
+    Attrib purpose_of_credit=repairs    -0.3468360611814371
+    Attrib purpose_of_credit=other    -0.6367737181576147
+    Attrib purpose_of_credit=retraining    0.13315243008736402
+    Attrib savings_status=no known savings    -0.6236723066103322
+    Attrib savings_status=<100    -0.07585696753337992
+    Attrib savings_status=500<=X<1000    1.3140336410389086
+    Attrib savings_status=>=1000    0.29328789506581027
+    Attrib savings_status=100<=X<500    -0.5659723422700673
+    Attrib present_employment_years=>=7    -0.9314618385318377
+    Attrib present_employment_years=1<=X<4    0.26772209117815887
+    Attrib present_employment_years=4<=X<7    -1.1541620218101707
+    Attrib present_employment_years=unemployed    0.7634617331244167
+    Attrib present_employment_years=<1    1.4563788085889013
+    Attrib personal_status=male single    -1.4250491344148253
+    Attrib personal_status=female div/dep/mar    2.091678996905634
+    Attrib personal_status=male div/sep    -0.7869779142840077
+    Attrib personal_status=male mar/wid    0.4046656442165724
+    Attrib other_parties=none    -0.8833224035734303
+    Attrib other_parties=guarantor    0.9475090509724055
+    Attrib other_parties=co applicant    -0.02185035988003088
+    Attrib property_magnitude=real estate    0.20628383000602188
+    Attrib property_magnitude=life insurance    -0.5451454340755915
+    Attrib property_magnitude=no known property    1.2074903633421203
+    Attrib property_magnitude=car    -0.6472370528734595
+    Attrib other_payment_plans=none    -0.9679495939595547
+    Attrib other_payment_plans=bank    0.7266685000254277
+    Attrib other_payment_plans=stores    0.4142659240935065
+    Attrib housing_type=own    -1.5837775192432877
+    Attrib housing_type=for free    1.8930070158286947
+    Attrib housing_type=rent    -0.1676038082551876
+    Attrib job=skilled    -0.7124092266869205
+    Attrib job=unskilled resident    -0.7679697682529827
+    Attrib job=high qualif/self emp/mgmt    1.4783435956980833
+    Attrib job=unemp/unskilled non res    0.2671492861211593
+    Attrib foreign_worker=no    0.24680203079502114
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    -0.25240434647859733
+    Attrib checking_status=<0    -0.7588147706433717
+    Attrib checking_status=0<=X<200    0.6922267931375516
+    Attrib checking_status=no checking    -0.7232605289110234
+    Attrib checking_status=>=200    1.226161559423046
+    Attrib credit_history=critical/other existing credit    0.6450837678955691
+    Attrib credit_history=existing paid    -1.1297401025990728
+    Attrib credit_history=delayed previously    1.7788500473457969
+    Attrib credit_history=no credits/all paid    -0.2556425566230329
+    Attrib credit_history=all paid    -0.3582802920186947
+    Attrib purpose_of_credit=radio/tv    -0.39708733449643707
+    Attrib purpose_of_credit=education    -1.3206017964058943
+    Attrib purpose_of_credit=furniture/equipment    2.855783698560713
+    Attrib purpose_of_credit=new car    1.8354351392517485
+    Attrib purpose_of_credit=used car    1.1801547190741601
+    Attrib purpose_of_credit=business    -2.035571582804643
+    Attrib purpose_of_credit=domestic appliance    -0.6932101602187237
+    Attrib purpose_of_credit=repairs    -0.12833278654043892
+    Attrib purpose_of_credit=other    0.061260276282308686
+    Attrib purpose_of_credit=retraining    0.526189245320972
+    Attrib savings_status=no known savings    -0.7417109000743211
+    Attrib savings_status=<100    -0.7407333779140157
+    Attrib savings_status=500<=X<1000    0.6314147308225811
+    Attrib savings_status=>=1000    1.1564510079965369
+    Attrib savings_status=100<=X<500    0.4226583193940145
+    Attrib present_employment_years=>=7    -1.7838333400949062
+    Attrib present_employment_years=1<=X<4    2.175668482458698
+    Attrib present_employment_years=4<=X<7    -1.540081695732912
+    Attrib present_employment_years=unemployed    2.279143457870618
+    Attrib present_employment_years=<1    -0.4411198704170545
+    Attrib personal_status=male single    0.5496287862784233
+    Attrib personal_status=female div/dep/mar    -3.0990392742623434
+    Attrib personal_status=male div/sep    2.492325302314576
+    Attrib personal_status=male mar/wid    0.48080296899999925
+    Attrib other_parties=none    0.3790356670525668
+    Attrib other_parties=guarantor    -0.2260510752338827
+    Attrib other_parties=co applicant    0.011873289062806628
+    Attrib property_magnitude=real estate    1.999374519812783
+    Attrib property_magnitude=life insurance    -2.06433180213349
+    Attrib property_magnitude=no known property    0.5128796955242345
+    Attrib property_magnitude=car    -0.060792759999456776
+    Attrib other_payment_plans=none    -0.32529769612188303
+    Attrib other_payment_plans=bank    -0.5748562418189881
+    Attrib other_payment_plans=stores    1.052443395140265
+    Attrib housing_type=own    -0.8486344322283053
+    Attrib housing_type=for free    1.743579865887225
+    Attrib housing_type=rent    -0.6528637982064289
+    Attrib job=skilled    0.19662237663500864
+    Attrib job=unskilled resident    0.5131642459741879
+    Attrib job=high qualif/self emp/mgmt    -0.7626591433535882
+    Attrib job=unemp/unskilled non res    0.5016115367735974
+    Attrib foreign_worker=no    0.6333725456028684
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    -0.4106752690890344
+    Attrib checking_status=<0    -1.567336457877045
+    Attrib checking_status=0<=X<200    0.7965540763131653
+    Attrib checking_status=no checking    1.553006340836651
+    Attrib checking_status=>=200    0.03333816376267625
+    Attrib credit_history=critical/other existing credit    1.0424725158887462
+    Attrib credit_history=existing paid    -1.4010381486493968
+    Attrib credit_history=delayed previously    -0.6479102521463377
+    Attrib credit_history=no credits/all paid    1.219750365458729
+    Attrib credit_history=all paid    1.084230776819846
+    Attrib purpose_of_credit=radio/tv    1.7358385783883534
+    Attrib purpose_of_credit=education    -0.8220197254591011
+    Attrib purpose_of_credit=furniture/equipment    -2.130254574460008
+    Attrib purpose_of_credit=new car    -1.203259202819092
+    Attrib purpose_of_credit=used car    -0.8107054985233425
+    Attrib purpose_of_credit=business    4.0043158186918735
+    Attrib purpose_of_credit=domestic appliance    1.143676783764848
+    Attrib purpose_of_credit=repairs    0.2157683980817078
+    Attrib purpose_of_credit=other    0.34005841158579775
+    Attrib purpose_of_credit=retraining    1.0223044928050415
+    Attrib savings_status=no known savings    -0.2927382632543337
+    Attrib savings_status=<100    1.5992041052834933
+    Attrib savings_status=500<=X<1000    -0.5761610057293391
+    Attrib savings_status=>=1000    0.3414433573326529
+    Attrib savings_status=100<=X<500    0.26906148365734844
+    Attrib present_employment_years=>=7    3.2384569952768936
+    Attrib present_employment_years=1<=X<4    -0.4848013756218433
+    Attrib present_employment_years=4<=X<7    0.9435325647471147
+    Attrib present_employment_years=unemployed    -0.044895041384205026
+    Attrib present_employment_years=<1    -2.3861195609678005
+    Attrib personal_status=male single    -1.7758115362885931
+    Attrib personal_status=female div/dep/mar    4.037267953562704
+    Attrib personal_status=male div/sep    -0.37114274076980813
+    Attrib personal_status=male mar/wid    -1.0348933407437233
+    Attrib other_parties=none    -1.443677840819864
+    Attrib other_parties=guarantor    0.5374758507288924
+    Attrib other_parties=co applicant    1.2479727521973458
+    Attrib property_magnitude=real estate    -1.6475256766538036
+    Attrib property_magnitude=life insurance    3.2364784506142428
+    Attrib property_magnitude=no known property    -1.1057237106224256
+    Attrib property_magnitude=car    0.4456644347021459
+    Attrib other_payment_plans=none    0.8360521381270217
+    Attrib other_payment_plans=bank    0.5788465091077398
+    Attrib other_payment_plans=stores    -0.9217511734796204
+    Attrib housing_type=own    1.1811392017928666
+    Attrib housing_type=for free    -0.4624641145167271
+    Attrib housing_type=rent    -0.2515415411912432
+    Attrib job=skilled    0.5558778939991391
+    Attrib job=unskilled resident    0.6087006063503979
+    Attrib job=high qualif/self emp/mgmt    -1.3742026209965965
+    Attrib job=unemp/unskilled non res    1.0028563265950146
+    Attrib foreign_worker=no    0.7563833764982468
+Sigmoid Node 18
+    Inputs    Weights
+    Threshold    -0.15885450842494958
+    Attrib checking_status=<0    0.12089859352581943
+    Attrib checking_status=0<=X<200    0.049410885130407416
+    Attrib checking_status=no checking    -0.005504483286225342
+    Attrib checking_status=>=200    0.2230858459649825
+    Attrib credit_history=critical/other existing credit    0.10429939684358955
+    Attrib credit_history=existing paid    0.11125255643843536
+    Attrib credit_history=delayed previously    0.12274123548748783
+    Attrib credit_history=no credits/all paid    0.060366311486552936
+    Attrib credit_history=all paid    0.0126414097490099
+    Attrib purpose_of_credit=radio/tv    0.07153001512134875
+    Attrib purpose_of_credit=education    0.12106261081269597
+    Attrib purpose_of_credit=furniture/equipment    0.2246193653019147
+    Attrib purpose_of_credit=new car    -0.10298403318605527
+    Attrib purpose_of_credit=used car    0.12867179836082604
+    Attrib purpose_of_credit=business    0.08302380750609475
+    Attrib purpose_of_credit=domestic appliance    0.12276984621652105
+    Attrib purpose_of_credit=repairs    0.08067158348210691
+    Attrib purpose_of_credit=other    0.18284091936136507
+    Attrib purpose_of_credit=retraining    0.19954884609175488
+    Attrib savings_status=no known savings    0.06812415405324795
+    Attrib savings_status=<100    -0.15465788123855037
+    Attrib savings_status=500<=X<1000    0.20969194435417776
+    Attrib savings_status=>=1000    0.13297674076441554
+    Attrib savings_status=100<=X<500    0.05987805749171394
+    Attrib present_employment_years=>=7    -0.031945130693018596
+    Attrib present_employment_years=1<=X<4    0.025267391957585327
+    Attrib present_employment_years=4<=X<7    -0.01024605875214893
+    Attrib present_employment_years=unemployed    0.19528956896087923
+    Attrib present_employment_years=<1    0.18827856126006182
+    Attrib personal_status=male single    6.107473601605748E-4
+    Attrib personal_status=female div/dep/mar    0.08922563238898855
+    Attrib personal_status=male div/sep    0.10101666245656911
+    Attrib personal_status=male mar/wid    0.036226901723161536
+    Attrib other_parties=none    -0.0343403840973835
+    Attrib other_parties=guarantor    0.15851630193215177
+    Attrib other_parties=co applicant    0.11433602625439275
+    Attrib property_magnitude=real estate    0.03770595529847713
+    Attrib property_magnitude=life insurance    0.17607510196768572
+    Attrib property_magnitude=no known property    0.09140735742712178
+    Attrib property_magnitude=car    -0.08500637468349032
+    Attrib other_payment_plans=none    -0.16133940031659647
+    Attrib other_payment_plans=bank    0.21680492057636128
+    Attrib other_payment_plans=stores    0.11992177023287014
+    Attrib housing_type=own    -0.13510526776259785
+    Attrib housing_type=for free    0.25245437846611757
+    Attrib housing_type=rent    0.009560062004018353
+    Attrib job=skilled    -0.131869118512953
+    Attrib job=unskilled resident    -0.051309229195472525
+    Attrib job=high qualif/self emp/mgmt    0.25179310708097474
+    Attrib job=unemp/unskilled non res    0.15729726312407288
+    Attrib foreign_worker=no    0.2240133108546515
+Sigmoid Node 19
+    Inputs    Weights
+    Threshold    -0.32145720396992467
+    Attrib checking_status=<0    -3.6239297922314853
+    Attrib checking_status=0<=X<200    -1.0940607979778154
+    Attrib checking_status=no checking    3.9774619667137925
+    Attrib checking_status=>=200    1.3055366163833682
+    Attrib credit_history=critical/other existing credit    1.1032152776293163
+    Attrib credit_history=existing paid    -0.34709644813133295
+    Attrib credit_history=delayed previously    0.36310733599439293
+    Attrib credit_history=no credits/all paid    -1.3765733697123844E-4
+    Attrib credit_history=all paid    -0.11655864911721923
+    Attrib purpose_of_credit=radio/tv    -0.4721690834159036
+    Attrib purpose_of_credit=education    -0.34294354744237054
+    Attrib purpose_of_credit=furniture/equipment    1.7800232154917794
+    Attrib purpose_of_credit=new car    1.116469184768551
+    Attrib purpose_of_credit=used car    -0.914873364830484
+    Attrib purpose_of_credit=business    -1.1605359049098005
+    Attrib purpose_of_credit=domestic appliance    0.4097137010017597
+    Attrib purpose_of_credit=repairs    0.6043141791679717
+    Attrib purpose_of_credit=other    1.1355354332568612
+    Attrib purpose_of_credit=retraining    0.4246323079936883
+    Attrib savings_status=no known savings    1.884564034472417
+    Attrib savings_status=<100    -1.2167488710521475
+    Attrib savings_status=500<=X<1000    -0.12882158247972672
+    Attrib savings_status=>=1000    0.7504841717139166
+    Attrib savings_status=100<=X<500    -0.3791937634312877
+    Attrib present_employment_years=>=7    1.1723301318771708
+    Attrib present_employment_years=1<=X<4    -0.10967808544813396
+    Attrib present_employment_years=4<=X<7    1.6316601007409004
+    Attrib present_employment_years=unemployed    0.38915188139567247
+    Attrib present_employment_years=<1    -2.177795344719361
+    Attrib personal_status=male single    1.7724317208797424
+    Attrib personal_status=female div/dep/mar    -1.1845220058209844
+    Attrib personal_status=male div/sep    -1.7505209620552666
+    Attrib personal_status=male mar/wid    1.7404131682770638
+    Attrib other_parties=none    0.589962624532259
+    Attrib other_parties=guarantor    -1.3138576254839383
+    Attrib other_parties=co applicant    1.0319401474463181
+    Attrib property_magnitude=real estate    1.6910466582500585
+    Attrib property_magnitude=life insurance    -1.6776615265389392
+    Attrib property_magnitude=no known property    1.0676297793526253
+    Attrib property_magnitude=car    -0.45304239348383885
+    Attrib other_payment_plans=none    3.0973010265481355
+    Attrib other_payment_plans=bank    -1.6953886518494459
+    Attrib other_payment_plans=stores    -1.1223657059669148
+    Attrib housing_type=own    -1.3893661904026013
+    Attrib housing_type=for free    -0.1524738491819628
+    Attrib housing_type=rent    1.9013484230896238
+    Attrib job=skilled    -0.18690549497717865
+    Attrib job=unskilled resident    1.1303080818179627
+    Attrib job=high qualif/self emp/mgmt    -1.6404938770389583
+    Attrib job=unemp/unskilled non res    1.3488837304043422
+    Attrib foreign_worker=no    1.353890365024312
+Sigmoid Node 20
+    Inputs    Weights
+    Threshold    -0.04487457399142405
+    Attrib checking_status=<0    -0.32466711371152934
+    Attrib checking_status=0<=X<200    -0.07752612589833927
+    Attrib checking_status=no checking    0.46389135157649874
+    Attrib checking_status=>=200    -0.029430449477186732
+    Attrib credit_history=critical/other existing credit    -0.08800148426622154
+    Attrib credit_history=existing paid    -0.09289764957354259
+    Attrib credit_history=delayed previously    0.27023678414793245
+    Attrib credit_history=no credits/all paid    -0.036759932142139566
+    Attrib credit_history=all paid    0.015027843152875817
+    Attrib purpose_of_credit=radio/tv    -0.02617610142965075
+    Attrib purpose_of_credit=education    0.0016124896474614169
+    Attrib purpose_of_credit=furniture/equipment    0.16179807366370835
+    Attrib purpose_of_credit=new car    -0.3620648807371093
+    Attrib purpose_of_credit=used car    0.1730573896124096
+    Attrib purpose_of_credit=business    0.3175575748720809
+    Attrib purpose_of_credit=domestic appliance    -0.03211254217016833
+    Attrib purpose_of_credit=repairs    0.05156980315949397
+    Attrib purpose_of_credit=other    0.017220918288887145
+    Attrib purpose_of_credit=retraining    0.09822333091084959
+    Attrib savings_status=no known savings    0.3072689175739422
+    Attrib savings_status=<100    -0.5505101870312882
+    Attrib savings_status=500<=X<1000    0.25173021160312126
+    Attrib savings_status=>=1000    0.06385441634868304
+    Attrib savings_status=100<=X<500    -0.038329230550260766
+    Attrib present_employment_years=>=7    -0.12167915373941357
+    Attrib present_employment_years=1<=X<4    -0.11458486692469981
+    Attrib present_employment_years=4<=X<7    -0.08117988663670003
+    Attrib present_employment_years=unemployed    0.16277541073191654
+    Attrib present_employment_years=<1    0.3291272825193969
+    Attrib personal_status=male single    -0.3383965457857137
+    Attrib personal_status=female div/dep/mar    0.42808268275306527
+    Attrib personal_status=male div/sep    0.06191057841894221
+    Attrib personal_status=male mar/wid    -0.015326595586593644
+    Attrib other_parties=none    0.02137040798020856
+    Attrib other_parties=guarantor    0.054078740903170476
+    Attrib other_parties=co applicant    0.03231636181622398
+    Attrib property_magnitude=real estate    0.12117809790331975
+    Attrib property_magnitude=life insurance    0.06429471114279002
+    Attrib property_magnitude=no known property    -0.01794185538696621
+    Attrib property_magnitude=car    -0.09299065275328187
+    Attrib other_payment_plans=none    -0.2503385190715221
+    Attrib other_payment_plans=bank    0.31857176466486625
+    Attrib other_payment_plans=stores    -0.03206844572479428
+    Attrib housing_type=own    0.13539520489657111
+    Attrib housing_type=for free    0.05116291092731199
+    Attrib housing_type=rent    -0.10408669431274689
+    Attrib job=skilled    -0.09593816674107584
+    Attrib job=unskilled resident    -0.022136458171282274
+    Attrib job=high qualif/self emp/mgmt    0.09492857885256177
+    Attrib job=unemp/unskilled non res    0.1033738500942124
+    Attrib foreign_worker=no    0.04227177455426304
+Sigmoid Node 21
+    Inputs    Weights
+    Threshold    -0.16885468065848533
+    Attrib checking_status=<0    0.018648029943363197
+    Attrib checking_status=0<=X<200    -0.14704596282998048
+    Attrib checking_status=no checking    0.07886909976648951
+    Attrib checking_status=>=200    0.29866467223364646
+    Attrib credit_history=critical/other existing credit    0.45310172947260985
+    Attrib credit_history=existing paid    0.03196058938775251
+    Attrib credit_history=delayed previously    -0.004054083809871982
+    Attrib credit_history=no credits/all paid    0.02649595307382644
+    Attrib credit_history=all paid    0.03630983462943185
+    Attrib purpose_of_credit=radio/tv    0.0380518499694755
+    Attrib purpose_of_credit=education    -0.02700452011431318
+    Attrib purpose_of_credit=furniture/equipment    0.2688604606339548
+    Attrib purpose_of_credit=new car    -0.12214565394960522
+    Attrib purpose_of_credit=used car    0.615310852445946
+    Attrib purpose_of_credit=business    0.14298100207687933
+    Attrib purpose_of_credit=domestic appliance    0.03352831547645832
+    Attrib purpose_of_credit=repairs    0.1373920687298389
+    Attrib purpose_of_credit=other    0.1878111992678953
+    Attrib purpose_of_credit=retraining    0.26204282947461016
+    Attrib savings_status=no known savings    -0.018575883111611097
+    Attrib savings_status=<100    -0.2167130981233416
+    Attrib savings_status=500<=X<1000    0.29108625256348053
+    Attrib savings_status=>=1000    0.35345169047847014
+    Attrib savings_status=100<=X<500    0.07222618517071802
+    Attrib present_employment_years=>=7    -0.023104081612115576
+    Attrib present_employment_years=1<=X<4    0.06298201741632067
+    Attrib present_employment_years=4<=X<7    0.04047089819919008
+    Attrib present_employment_years=unemployed    0.12695441285746012
+    Attrib present_employment_years=<1    0.27641010448234166
+    Attrib personal_status=male single    0.19188115073532525
+    Attrib personal_status=female div/dep/mar    -0.19683575626397679
+    Attrib personal_status=male div/sep    0.26561678450603093
+    Attrib personal_status=male mar/wid    0.1859133917922467
+    Attrib other_parties=none    -0.16728361565648955
+    Attrib other_parties=guarantor    0.3192566464696929
+    Attrib other_parties=co applicant    0.010733190676465821
+    Attrib property_magnitude=real estate    0.28686391585283594
+    Attrib property_magnitude=life insurance    0.16964279484623315
+    Attrib property_magnitude=no known property    -0.03797467216775639
+    Attrib property_magnitude=car    0.011826518146085702
+    Attrib other_payment_plans=none    0.10810035835262642
+    Attrib other_payment_plans=bank    0.13843890827128755
+    Attrib other_payment_plans=stores    -0.035517716239991
+    Attrib housing_type=own    0.19902717791729804
+    Attrib housing_type=for free    0.19986106681408988
+    Attrib housing_type=rent    -0.16521401682056053
+    Attrib job=skilled    -0.23489483274696388
+    Attrib job=unskilled resident    0.09542206177575818
+    Attrib job=high qualif/self emp/mgmt    0.06139009667874155
+    Attrib job=unemp/unskilled non res    0.4325912743764465
+    Attrib foreign_worker=no    0.5700872200962851
+Sigmoid Node 22
+    Inputs    Weights
+    Threshold    -0.3954961242657844
+    Attrib checking_status=<0    -1.5842650269038876
+    Attrib checking_status=0<=X<200    0.09418056573712165
+    Attrib checking_status=no checking    -0.5014746721846999
+    Attrib checking_status=>=200    2.80557998131253
+    Attrib credit_history=critical/other existing credit    0.048663817061591834
+    Attrib credit_history=existing paid    -0.29310046452077265
+    Attrib credit_history=delayed previously    1.6013814528305679
+    Attrib credit_history=no credits/all paid    1.3370498214601894
+    Attrib credit_history=all paid    -1.4249829741423772
+    Attrib purpose_of_credit=radio/tv    -2.707570660063699
+    Attrib purpose_of_credit=education    -0.006998233471020938
+    Attrib purpose_of_credit=furniture/equipment    -0.22706421030460924
+    Attrib purpose_of_credit=new car    2.0703799444695457
+    Attrib purpose_of_credit=used car    2.901248821440075
+    Attrib purpose_of_credit=business    -1.7445070553859188
+    Attrib purpose_of_credit=domestic appliance    0.607728941669953
+    Attrib purpose_of_credit=repairs    1.1643633091665067
+    Attrib purpose_of_credit=other    0.6959248113815969
+    Attrib purpose_of_credit=retraining    0.5097800520309148
+    Attrib savings_status=no known savings    -0.8702782964393905
+    Attrib savings_status=<100    -2.793873706814477
+    Attrib savings_status=500<=X<1000    -0.0636469908601157
+    Attrib savings_status=>=1000    1.1695759580127325
+    Attrib savings_status=100<=X<500    3.649920525176116
+    Attrib present_employment_years=>=7    0.2314954474332493
+    Attrib present_employment_years=1<=X<4    -0.668931516166233
+    Attrib present_employment_years=4<=X<7    3.4103020459417257
+    Attrib present_employment_years=unemployed    1.0664129304863856
+    Attrib present_employment_years=<1    -2.9287810010705373
+    Attrib personal_status=male single    1.1184440051792248
+    Attrib personal_status=female div/dep/mar    2.096278628295893
+    Attrib personal_status=male div/sep    -1.3298905231057438
+    Attrib personal_status=male mar/wid    -1.1451112331724258
+    Attrib other_parties=none    1.3929306128199486
+    Attrib other_parties=guarantor    -1.2653418000007641
+    Attrib other_parties=co applicant    0.2936428719324138
+    Attrib property_magnitude=real estate    -1.4281796415774146
+    Attrib property_magnitude=life insurance    0.17128300945199626
+    Attrib property_magnitude=no known property    -1.4821849916932908
+    Attrib property_magnitude=car    3.563108190145844
+    Attrib other_payment_plans=none    0.007677798346560041
+    Attrib other_payment_plans=bank    -1.7466311954810894
+    Attrib other_payment_plans=stores    2.081870101381676
+    Attrib housing_type=own    -0.4244476246377546
+    Attrib housing_type=for free    -1.725175591853875
+    Attrib housing_type=rent    2.5281757114968237
+    Attrib job=skilled    0.5398333669346762
+    Attrib job=unskilled resident    -0.1114004918250098
+    Attrib job=high qualif/self emp/mgmt    -0.5452684861401501
+    Attrib job=unemp/unskilled non res    0.8948669696169325
+    Attrib foreign_worker=no    -0.8829124970164924
+Sigmoid Node 23
+    Inputs    Weights
+    Threshold    -0.16083451859944478
+    Attrib checking_status=<0    0.17170964130697114
+    Attrib checking_status=0<=X<200    1.0976391146358278
+    Attrib checking_status=no checking    1.6014973007264357
+    Attrib checking_status=>=200    -2.537174675273022
+    Attrib credit_history=critical/other existing credit    -2.8961645116501846
+    Attrib credit_history=existing paid    -0.31697493583174163
+    Attrib credit_history=delayed previously    -1.5685368558079613
+    Attrib credit_history=no credits/all paid    3.3411085347508696
+    Attrib credit_history=all paid    1.9050634631347738
+    Attrib purpose_of_credit=radio/tv    -1.8014515694825208
+    Attrib purpose_of_credit=education    1.309573599352226
+    Attrib purpose_of_credit=furniture/equipment    -0.17340579063279288
+    Attrib purpose_of_credit=new car    1.9510567430601666
+    Attrib purpose_of_credit=used car    0.12242495784917613
+    Attrib purpose_of_credit=business    0.89179529363086
+    Attrib purpose_of_credit=domestic appliance    0.29798577382900104
+    Attrib purpose_of_credit=repairs    -0.2724698948669713
+    Attrib purpose_of_credit=other    -0.6876331354391744
+    Attrib purpose_of_credit=retraining    -0.7629574686583631
+    Attrib savings_status=no known savings    -2.31116625607838
+    Attrib savings_status=<100    -1.7094020217707497
+    Attrib savings_status=500<=X<1000    1.453986299539925
+    Attrib savings_status=>=1000    0.13363625862960546
+    Attrib savings_status=100<=X<500    2.849709322551271
+    Attrib present_employment_years=>=7    2.696499869496858
+    Attrib present_employment_years=1<=X<4    0.29552860979778833
+    Attrib present_employment_years=4<=X<7    -1.367024941273381
+    Attrib present_employment_years=unemployed    -1.7988943916484594
+    Attrib present_employment_years=<1    0.5614292881730844
+    Attrib personal_status=male single    0.560971099710104
+    Attrib personal_status=female div/dep/mar    -0.15833372036863283
+    Attrib personal_status=male div/sep    1.7332981904497227
+    Attrib personal_status=male mar/wid    -1.8831524308724945
+    Attrib other_parties=none    0.0683667588420209
+    Attrib other_parties=guarantor    -0.6223595428227623
+    Attrib other_parties=co applicant    0.6867179643134892
+    Attrib property_magnitude=real estate    -2.8915900773665664
+    Attrib property_magnitude=life insurance    1.4858713912395451
+    Attrib property_magnitude=no known property    2.793941867423078
+    Attrib property_magnitude=car    -1.1422377496776677
+    Attrib other_payment_plans=none    -0.4794703710704254
+    Attrib other_payment_plans=bank    -1.5274271774867525
+    Attrib other_payment_plans=stores    2.1769452939116314
+    Attrib housing_type=own    -1.5335459263036881
+    Attrib housing_type=for free    0.42850898988872804
+    Attrib housing_type=rent    1.1915290782088876
+    Attrib job=skilled    -1.7998013678613016
+    Attrib job=unskilled resident    3.079129323106248
+    Attrib job=high qualif/self emp/mgmt    -1.0092285403683239
+    Attrib job=unemp/unskilled non res    -0.05342895027341797
+    Attrib foreign_worker=no    0.20436758836373442
+Sigmoid Node 24
+    Inputs    Weights
+    Threshold    -0.1737928195030911
+    Attrib checking_status=<0    0.06912264514153803
+    Attrib checking_status=0<=X<200    -0.07586417112340164
+    Attrib checking_status=no checking    -0.08849415139273452
+    Attrib checking_status=>=200    0.3715513863608664
+    Attrib credit_history=critical/other existing credit    0.0022431332185762587
+    Attrib credit_history=existing paid    0.05615207689237754
+    Attrib credit_history=delayed previously    0.14126512185055912
+    Attrib credit_history=no credits/all paid    0.2311598846648054
+    Attrib credit_history=all paid    -0.050411820746558804
+    Attrib purpose_of_credit=radio/tv    0.07466533186202341
+    Attrib purpose_of_credit=education    0.06017759437361668
+    Attrib purpose_of_credit=furniture/equipment    0.10831794403393395
+    Attrib purpose_of_credit=new car    -0.10336001195127982
+    Attrib purpose_of_credit=used car    0.4455577620177149
+    Attrib purpose_of_credit=business    0.020570831783092495
+    Attrib purpose_of_credit=domestic appliance    0.16172575994107136
+    Attrib purpose_of_credit=repairs    0.12016829344227836
+    Attrib purpose_of_credit=other    0.1903771864552593
+    Attrib purpose_of_credit=retraining    0.19440085120584163
+    Attrib savings_status=no known savings    0.15086305264429187
+    Attrib savings_status=<100    -0.37804819128596173
+    Attrib savings_status=500<=X<1000    0.30984219128750273
+    Attrib savings_status=>=1000    0.25251317481899
+    Attrib savings_status=100<=X<500    0.10471008460662666
+    Attrib present_employment_years=>=7    0.23725911030024024
+    Attrib present_employment_years=1<=X<4    0.09997226655163408
+    Attrib present_employment_years=4<=X<7    -0.038393984054484236
+    Attrib present_employment_years=unemployed    0.10680107332535035
+    Attrib present_employment_years=<1    0.11044859173928707
+    Attrib personal_status=male single    -0.033490520806493645
+    Attrib personal_status=female div/dep/mar    0.060405731876591255
+    Attrib personal_status=male div/sep    0.29148701963353024
+    Attrib personal_status=male mar/wid    0.07263273865360292
+    Attrib other_parties=none    -0.10423234893754808
+    Attrib other_parties=guarantor    0.2513426081683586
+    Attrib other_parties=co applicant    -0.0109742148685638
+    Attrib property_magnitude=real estate    -0.03115604143976294
+    Attrib property_magnitude=life insurance    0.0904957233568237
+    Attrib property_magnitude=no known property    0.01867276893364988
+    Attrib property_magnitude=car    0.16614114203148816
+    Attrib other_payment_plans=none    -0.2983262001059896
+    Attrib other_payment_plans=bank    0.3923670791684242
+    Attrib other_payment_plans=stores    0.11603943362395149
+    Attrib housing_type=own    0.031510594565724165
+    Attrib housing_type=for free    0.17170359422524262
+    Attrib housing_type=rent    -0.0015449286179173057
+    Attrib job=skilled    0.03885010436709088
+    Attrib job=unskilled resident    -0.022065326869314252
+    Attrib job=high qualif/self emp/mgmt    0.014200407041620771
+    Attrib job=unemp/unskilled non res    0.2405377841781475
+    Attrib foreign_worker=no    0.2766516432025579
+Sigmoid Node 25
+    Inputs    Weights
+    Threshold    -0.35081928788311284
+    Attrib checking_status=<0    0.5474623045985183
+    Attrib checking_status=0<=X<200    0.34470649092649885
+    Attrib checking_status=no checking    0.5177573854384551
+    Attrib checking_status=>=200    -0.8638298686050838
+    Attrib credit_history=critical/other existing credit    1.137974770866581
+    Attrib credit_history=existing paid    0.572570124941173
+    Attrib credit_history=delayed previously    -1.8764170598304903
+    Attrib credit_history=no credits/all paid    -0.05960490839888651
+    Attrib credit_history=all paid    0.9825013116227255
+    Attrib purpose_of_credit=radio/tv    -2.0048063260633904
+    Attrib purpose_of_credit=education    -2.290997979450715
+    Attrib purpose_of_credit=furniture/equipment    0.49228418857083306
+    Attrib purpose_of_credit=new car    -0.02500235973810475
+    Attrib purpose_of_credit=used car    3.2168135674192713
+    Attrib purpose_of_credit=business    2.7387823229282873
+    Attrib purpose_of_credit=domestic appliance    -0.34392478483831773
+    Attrib purpose_of_credit=repairs    -0.4482986146729588
+    Attrib purpose_of_credit=other    -0.4671359937197781
+    Attrib purpose_of_credit=retraining    1.658174204244358
+    Attrib savings_status=no known savings    0.3696212936001639
+    Attrib savings_status=<100    -0.9795388130881003
+    Attrib savings_status=500<=X<1000    1.2613930324706306
+    Attrib savings_status=>=1000    1.9447426244661963
+    Attrib savings_status=100<=X<500    -1.5647628997343201
+    Attrib present_employment_years=>=7    -1.9075305544870775
+    Attrib present_employment_years=1<=X<4    0.9075721408639315
+    Attrib present_employment_years=4<=X<7    -2.22989672622998
+    Attrib present_employment_years=unemployed    1.141545807308267
+    Attrib present_employment_years=<1    3.009373987908797
+    Attrib personal_status=male single    2.269419882948964
+    Attrib personal_status=female div/dep/mar    -3.1695189662163465
+    Attrib personal_status=male div/sep    -0.4805590919750374
+    Attrib personal_status=male mar/wid    2.0019648269053163
+    Attrib other_parties=none    -1.6037933233676065
+    Attrib other_parties=guarantor    1.8625267622970691
+    Attrib other_parties=co applicant    0.10053862742122577
+    Attrib property_magnitude=real estate    1.3912189144687808
+    Attrib property_magnitude=life insurance    2.1013810219081646
+    Attrib property_magnitude=no known property    -0.6821438901959097
+    Attrib property_magnitude=car    -2.235944768581241
+    Attrib other_payment_plans=none    1.901865448374097
+    Attrib other_payment_plans=bank    -0.7792159941356566
+    Attrib other_payment_plans=stores    -0.8096186118992105
+    Attrib housing_type=own    2.0897777506318174
+    Attrib housing_type=for free    0.4655642472490904
+    Attrib housing_type=rent    -2.2807027257836903
+    Attrib job=skilled    -1.8546227471287302
+    Attrib job=unskilled resident    2.8640011231039884
+    Attrib job=high qualif/self emp/mgmt    -1.2900444532689928
+    Attrib job=unemp/unskilled non res    0.9587276717443328
+    Attrib foreign_worker=no    0.5490205244152178
+Sigmoid Node 26
+    Inputs    Weights
+    Threshold    -0.2786799536486333
+    Attrib checking_status=<0    -0.17357214202549417
+    Attrib checking_status=0<=X<200    0.6089299480998034
+    Attrib checking_status=no checking    -0.0422080014918484
+    Attrib checking_status=>=200    0.2615877938384069
+    Attrib credit_history=critical/other existing credit    -0.8750484297470299
+    Attrib credit_history=existing paid    -0.44020659753944535
+    Attrib credit_history=delayed previously    -0.1192238967825645
+    Attrib credit_history=no credits/all paid    0.5614197701328899
+    Attrib credit_history=all paid    1.8403590784464987
+    Attrib purpose_of_credit=radio/tv    -0.4142886281320782
+    Attrib purpose_of_credit=education    0.3906518650252318
+    Attrib purpose_of_credit=furniture/equipment    -1.7299892095850729
+    Attrib purpose_of_credit=new car    -0.1650687816692939
+    Attrib purpose_of_credit=used car    2.5785497278519696
+    Attrib purpose_of_credit=business    0.07786084864792651
+    Attrib purpose_of_credit=domestic appliance    1.9217970305391678
+    Attrib purpose_of_credit=repairs    -0.9168454824084703
+    Attrib purpose_of_credit=other    0.26462212046611233
+    Attrib purpose_of_credit=retraining    0.4123838791357284
+    Attrib savings_status=no known savings    -0.8658015055899759
+    Attrib savings_status=<100    -1.3615815250426244
+    Attrib savings_status=500<=X<1000    2.2082481489832677
+    Attrib savings_status=>=1000    -0.28584233364371375
+    Attrib savings_status=100<=X<500    1.1384608495405613
+    Attrib present_employment_years=>=7    -0.1643524741514337
+    Attrib present_employment_years=1<=X<4    -0.6345740521289992
+    Attrib present_employment_years=4<=X<7    1.2359680153215602
+    Attrib present_employment_years=unemployed    -0.22396088892101165
+    Attrib present_employment_years=<1    0.6485778450327156
+    Attrib personal_status=male single    1.3575913614865125
+    Attrib personal_status=female div/dep/mar    -0.28888900738972373
+    Attrib personal_status=male div/sep    -0.6330082917244394
+    Attrib personal_status=male mar/wid    0.10411122854346347
+    Attrib other_parties=none    1.3476888759421004
+    Attrib other_parties=guarantor    -0.6888597656616047
+    Attrib other_parties=co applicant    -0.3866226878329673
+    Attrib property_magnitude=real estate    2.569862433148918
+    Attrib property_magnitude=life insurance    -1.4806556297659343
+    Attrib property_magnitude=no known property    -0.8907106668739702
+    Attrib property_magnitude=car    0.3743819777871077
+    Attrib other_payment_plans=none    -0.6037963163188766
+    Attrib other_payment_plans=bank    0.8792622330459439
+    Attrib other_payment_plans=stores    0.03169699527741018
+    Attrib housing_type=own    1.2013506178867308
+    Attrib housing_type=for free    -0.2447005239844519
+    Attrib housing_type=rent    -0.752688041652741
+    Attrib job=skilled    1.4503051671766252
+    Attrib job=unskilled resident    -1.5666493326683586
+    Attrib job=high qualif/self emp/mgmt    0.1785393385967699
+    Attrib job=unemp/unskilled non res    0.5471559339169496
+    Attrib foreign_worker=no    1.4255411631166672
+Sigmoid Node 27
+    Inputs    Weights
+    Threshold    -0.3329127098167474
+    Attrib checking_status=<0    -0.9808222990134041
+    Attrib checking_status=0<=X<200    -0.11044625655910356
+    Attrib checking_status=no checking    0.6183070421461422
+    Attrib checking_status=>=200    1.1693844710296284
+    Attrib credit_history=critical/other existing credit    -0.48006569752552175
+    Attrib credit_history=existing paid    1.9931096735436875
+    Attrib credit_history=delayed previously    -1.003392206144503
+    Attrib credit_history=no credits/all paid    -0.16311904610911018
+    Attrib credit_history=all paid    0.7063687958520324
+    Attrib purpose_of_credit=radio/tv    1.472863529225645
+    Attrib purpose_of_credit=education    -0.25680736578810454
+    Attrib purpose_of_credit=furniture/equipment    -0.667472051499239
+    Attrib purpose_of_credit=new car    0.3430821447013128
+    Attrib purpose_of_credit=used car    2.0971682871798962
+    Attrib purpose_of_credit=business    -0.06075021694563204
+    Attrib purpose_of_credit=domestic appliance    -0.6845432346695464
+    Attrib purpose_of_credit=repairs    -0.04570745383974677
+    Attrib purpose_of_credit=other    0.13862960406967828
+    Attrib purpose_of_credit=retraining    0.46906971263036656
+    Attrib savings_status=no known savings    -0.43000226950355525
+    Attrib savings_status=<100    0.5341935517415484
+    Attrib savings_status=500<=X<1000    0.4471061986721586
+    Attrib savings_status=>=1000    1.2842554209932289
+    Attrib savings_status=100<=X<500    -0.7903589064754184
+    Attrib present_employment_years=>=7    -0.8640593885954044
+    Attrib present_employment_years=1<=X<4    1.6022451403313105
+    Attrib present_employment_years=4<=X<7    0.18107430425284712
+    Attrib present_employment_years=unemployed    0.8296488908184061
+    Attrib present_employment_years=<1    -0.6820736006687531
+    Attrib personal_status=male single    0.3332993628151477
+    Attrib personal_status=female div/dep/mar    -0.9910759881809013
+    Attrib personal_status=male div/sep    2.2806853783052614
+    Attrib personal_status=male mar/wid    -0.7311215506166441
+    Attrib other_parties=none    -0.8717250234129484
+    Attrib other_parties=guarantor    2.1950308076083793
+    Attrib other_parties=co applicant    -0.9101592669563998
+    Attrib property_magnitude=real estate    -1.3488494434047582
+    Attrib property_magnitude=life insurance    0.8899035588779665
+    Attrib property_magnitude=no known property    -0.7367539243040703
+    Attrib property_magnitude=car    2.01694551890521
+    Attrib other_payment_plans=none    0.19626200532117696
+    Attrib other_payment_plans=bank    -1.5129306445244526
+    Attrib other_payment_plans=stores    1.5995453947303089
+    Attrib housing_type=own    0.4291172915689798
+    Attrib housing_type=for free    -0.1785714934158526
+    Attrib housing_type=rent    0.1382265640830574
+    Attrib job=skilled    -0.3073880743233668
+    Attrib job=unskilled resident    0.653751063030195
+    Attrib job=high qualif/self emp/mgmt    -0.1510902323170471
+    Attrib job=unemp/unskilled non res    0.5210310158509279
+    Attrib foreign_worker=no    0.6011058881050833
+Class good
+    Input
+    Node 0
+Class bad
+    Input
+    Node 1
+
+Attribute mappings:
+
+Model attributes                    	    Incoming attributes
+------------------------------------	    ----------------
+(nominal) checking_status           	--> 1 (nominal) checking_status
+(nominal) credit_history            	--> 3 (nominal) credit_history
+(nominal) purpose_of_credit         	--> 4 (nominal) purpose_of_credit
+(nominal) savings_status            	--> 6 (nominal) savings_status
+(nominal) present_employment_years  	--> 7 (nominal) present_employment_years
+(nominal) personal_status           	--> 9 (nominal) personal_status
+(nominal) other_parties             	--> 10 (nominal) other_parties
+(nominal) property_magnitude        	--> 12 (nominal) property_magnitude
+(nominal) other_payment_plans       	--> 14 (nominal) other_payment_plans
+(nominal) housing_type              	--> 15 (nominal) housing_type
+(nominal) job                       	--> 17 (nominal) job
+(nominal) foreign_worker            	--> 20 (nominal) foreign_worker
+(nominal) credit_status             	--> 21 (nominal) credit_status
+
+
+Time taken to build model: 8.72 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.57 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         231               70      %
+Incorrectly Classified Instances        99               30      %
+Kappa statistic                          0.2443
+Mean absolute error                      0.3134
+Root mean squared error                  0.5258
+Relative absolute error                 74.5652 %
+Root relative squared error            114.745  %
+Total Number of Instances              330     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.827    0.596    0.764      0.827    0.794      0.247    0.673     0.821     good
+                 0.404    0.173    0.500      0.404    0.447      0.247    0.673     0.474     bad
+Weighted Avg.    0.700    0.469    0.685      0.700    0.690      0.247    0.673     0.717     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 191  40 |   a = good
+  59  40 |   b = bad
+

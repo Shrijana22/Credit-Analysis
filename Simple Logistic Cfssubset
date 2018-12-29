@@ -1,0 +1,94 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.functions.SimpleLogistic -- -I 0 -M 500 -H 50 -W 0.0
+Relation:     dataset_31_credit-g-clean-weka.filters.supervised.instance.Resample-B0.0-S1-Z33.0-no-replacement-V-weka.filters.unsupervised.attribute.Remove-R4,7-20
+Instances:    670
+Attributes:   6
+              checking_status
+              duration_months
+              credit_history
+              credit_amount
+              savings_status
+              credit_status
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+SimpleLogistic:
+
+Class good :
+1.21 + 
+[checking_status=<0] * -0.15 +
+[checking_status=no checking] * 0.59 +
+[checking_status=>=200] * 0.5  +
+[duration_months] * -0.02 +
+[credit_history=critical/other existing credit] * 0.41 +
+[credit_history=delayed previously] * -0.11 +
+[credit_history=no credits/all paid] * -0.39 +
+[credit_history=all paid] * -0.56 +
+[credit_amount] * -0 +
+[savings_status=no known savings] * 0.03 +
+[savings_status=<100] * -0.7 +
+[savings_status=>=1000] * 0.1  +
+[savings_status=100<=X<500] * -0.5
+
+Class bad :
+-1.21 + 
+[checking_status=<0] * 0.15 +
+[checking_status=no checking] * -0.59 +
+[checking_status=>=200] * -0.5 +
+[duration_months] * 0.02 +
+[credit_history=critical/other existing credit] * -0.41 +
+[credit_history=delayed previously] * 0.11 +
+[credit_history=no credits/all paid] * 0.39 +
+[credit_history=all paid] * 0.56 +
+[credit_amount] * 0    +
+[savings_status=no known savings] * -0.03 +
+[savings_status=<100] * 0.7  +
+[savings_status=>=1000] * -0.1 +
+[savings_status=100<=X<500] * 0.5 
+
+Attribute mappings:
+
+Model attributes           	    Incoming attributes
+---------------------------	    ----------------
+(nominal) checking_status  	--> 1 (nominal) checking_status
+(numeric) duration_months  	--> 2 (numeric) duration_months
+(nominal) credit_history   	--> 3 (nominal) credit_history
+(numeric) credit_amount    	--> 5 (numeric) credit_amount
+(nominal) savings_status   	--> 6 (nominal) savings_status
+(nominal) credit_status    	--> 21 (nominal) credit_status
+
+
+Time taken to build model: 0.17 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.4 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         246               74.5455 %
+Incorrectly Classified Instances        84               25.4545 %
+Kappa statistic                          0.3237
+Mean absolute error                      0.3355
+Root mean squared error                  0.429 
+Relative absolute error                 79.8359 %
+Root relative squared error             93.6121 %
+Total Number of Instances              330     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.896    0.606    0.775      0.896    0.831      0.338    0.721     0.835     good
+                 0.394    0.104    0.619      0.394    0.481      0.338    0.721     0.549     bad
+Weighted Avg.    0.745    0.455    0.728      0.745    0.726      0.338    0.721     0.749     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 207  24 |   a = good
+  60  39 |   b = bad
+

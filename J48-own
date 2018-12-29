@@ -1,0 +1,138 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     dataset_31_credit-g-clean-weka.filters.supervised.instance.Resample-B0.0-S1-Z33.0-no-replacement-V-weka.filters.unsupervised.attribute.Remove-R2,5,8,11,13,16,18-19
+Instances:    670
+Attributes:   13
+              checking_status
+              credit_history
+              purpose_of_credit
+              savings_status
+              present_employment_years
+              personal_status
+              other_parties
+              property_magnitude
+              other_payment_plans
+              housing_type
+              job
+              foreign_worker
+              credit_status
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+J48 pruned tree
+------------------
+
+checking_status = <0
+|   credit_history = critical/other existing credit: good (45.0/9.0)
+|   credit_history = existing paid
+|   |   savings_status = no known savings: good (12.0/5.0)
+|   |   savings_status = <100
+|   |   |   purpose_of_credit = radio/tv: good (20.0/9.0)
+|   |   |   purpose_of_credit = education: bad (4.0/1.0)
+|   |   |   purpose_of_credit = furniture/equipment: good (23.0/10.0)
+|   |   |   purpose_of_credit = new car: bad (24.0/7.0)
+|   |   |   purpose_of_credit = used car: good (5.0/1.0)
+|   |   |   purpose_of_credit = business: good (3.0/1.0)
+|   |   |   purpose_of_credit = domestic appliance: bad (3.0/1.0)
+|   |   |   purpose_of_credit = repairs: bad (1.0)
+|   |   |   purpose_of_credit = other: good (1.0)
+|   |   |   purpose_of_credit = retraining: bad (1.0)
+|   |   savings_status = 500<=X<1000: good (3.0)
+|   |   savings_status = >=1000: good (4.0)
+|   |   savings_status = 100<=X<500
+|   |   |   purpose_of_credit = radio/tv: bad (2.0)
+|   |   |   purpose_of_credit = education: bad (0.0)
+|   |   |   purpose_of_credit = furniture/equipment: bad (1.0)
+|   |   |   purpose_of_credit = new car: good (2.0)
+|   |   |   purpose_of_credit = used car: bad (0.0)
+|   |   |   purpose_of_credit = business: bad (0.0)
+|   |   |   purpose_of_credit = domestic appliance: bad (0.0)
+|   |   |   purpose_of_credit = repairs: bad (0.0)
+|   |   |   purpose_of_credit = other: bad (0.0)
+|   |   |   purpose_of_credit = retraining: bad (0.0)
+|   credit_history = delayed previously: bad (10.0/3.0)
+|   credit_history = no credits/all paid: bad (11.0/2.0)
+|   credit_history = all paid: bad (14.0/3.0)
+checking_status = 0<=X<200
+|   savings_status = no known savings: good (22.0/2.0)
+|   savings_status = <100
+|   |   property_magnitude = real estate: good (38.0/9.0)
+|   |   property_magnitude = life insurance: good (19.0/8.0)
+|   |   property_magnitude = no known property: bad (16.0/4.0)
+|   |   property_magnitude = car
+|   |   |   housing_type = own: bad (30.0/9.0)
+|   |   |   housing_type = for free: bad (0.0)
+|   |   |   housing_type = rent: good (5.0)
+|   savings_status = 500<=X<1000: good (7.0/1.0)
+|   savings_status = >=1000: good (9.0/2.0)
+|   savings_status = 100<=X<500
+|   |   purpose_of_credit = radio/tv: bad (5.0)
+|   |   purpose_of_credit = education: good (2.0/1.0)
+|   |   purpose_of_credit = furniture/equipment: good (1.0)
+|   |   purpose_of_credit = new car: bad (10.0/3.0)
+|   |   purpose_of_credit = used car: good (3.0)
+|   |   purpose_of_credit = business: good (6.0/2.0)
+|   |   purpose_of_credit = domestic appliance: bad (0.0)
+|   |   purpose_of_credit = repairs: good (1.0)
+|   |   purpose_of_credit = other: good (2.0/1.0)
+|   |   purpose_of_credit = retraining: bad (0.0)
+checking_status = no checking: good (259.0/33.0)
+checking_status = >=200: good (46.0/8.0)
+
+Number of Leaves  : 	48
+
+Size of the tree : 	57
+
+Attribute mappings:
+
+Model attributes                    	    Incoming attributes
+------------------------------------	    ----------------
+(nominal) checking_status           	--> 1 (nominal) checking_status
+(nominal) credit_history            	--> 3 (nominal) credit_history
+(nominal) purpose_of_credit         	--> 4 (nominal) purpose_of_credit
+(nominal) savings_status            	--> 6 (nominal) savings_status
+(nominal) present_employment_years  	--> 7 (nominal) present_employment_years
+(nominal) personal_status           	--> 9 (nominal) personal_status
+(nominal) other_parties             	--> 10 (nominal) other_parties
+(nominal) property_magnitude        	--> 12 (nominal) property_magnitude
+(nominal) other_payment_plans       	--> 14 (nominal) other_payment_plans
+(nominal) housing_type              	--> 15 (nominal) housing_type
+(nominal) job                       	--> 17 (nominal) job
+(nominal) foreign_worker            	--> 20 (nominal) foreign_worker
+(nominal) credit_status             	--> 21 (nominal) credit_status
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.39 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         237               71.8182 %
+Incorrectly Classified Instances        93               28.1818 %
+Kappa statistic                          0.2132
+Mean absolute error                      0.3444
+Root mean squared error                  0.4468
+Relative absolute error                 81.9554 %
+Root relative squared error             97.4976 %
+Total Number of Instances              330     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.909    0.727    0.745      0.909    0.819      0.236    0.689     0.803     good
+                 0.273    0.091    0.563      0.273    0.367      0.236    0.689     0.478     bad
+Weighted Avg.    0.718    0.536    0.690      0.718    0.683      0.236    0.689     0.706     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 210  21 |   a = good
+  72  27 |   b = bad
+

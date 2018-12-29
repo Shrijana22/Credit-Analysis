@@ -1,0 +1,122 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.functions.SimpleLogistic -- -I 0 -M 500 -H 50 -W 0.0
+Relation:     dataset_31_credit-g-clean-weka.filters.supervised.instance.Resample-B0.0-S1-Z33.0-no-replacement-V-weka.filters.unsupervised.attribute.Remove-R1-2,4,12-18
+Instances:    670
+Attributes:   11
+              credit_history
+              credit_amount
+              savings_status
+              present_employment_years
+              installment_commitment
+              personal_status
+              other_parties
+              residence_since_years
+              own_telephone
+              foreign_worker
+              credit_status
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+SimpleLogistic:
+
+Class good :
+1.57 + 
+[credit_history=critical/other existing credit] * 0.5  +
+[credit_history=delayed previously] * -0.12 +
+[credit_history=no credits/all paid] * -0.5 +
+[credit_history=all paid] * -0.63 +
+[credit_amount] * -0 +
+[savings_status=no known savings] * 0.36 +
+[savings_status=<100] * -0.47 +
+[savings_status=500<=X<1000] * 0.39 +
+[savings_status=>=1000] * 0.41 +
+[savings_status=100<=X<500] * -0.24 +
+[present_employment_years=>=7] * 0.06 +
+[present_employment_years=4<=X<7] * 0.2  +
+[present_employment_years=<1] * -0.14 +
+[installment_commitment] * -0.15 +
+[personal_status=male single] * 0.21 +
+[personal_status=male div/sep] * -0.19 +
+[personal_status=male mar/wid] * 0.1  +
+[other_parties=guarantor] * 0.22 +
+[other_parties=co applicant] * -0.16 +
+[residence_since_years] * -0.07 +
+[own_telephone=none] * -0.18 +
+[foreign_worker=no] * 0.43
+
+Class bad :
+-1.57 + 
+[credit_history=critical/other existing credit] * -0.5 +
+[credit_history=delayed previously] * 0.12 +
+[credit_history=no credits/all paid] * 0.5  +
+[credit_history=all paid] * 0.63 +
+[credit_amount] * 0    +
+[savings_status=no known savings] * -0.36 +
+[savings_status=<100] * 0.47 +
+[savings_status=500<=X<1000] * -0.39 +
+[savings_status=>=1000] * -0.41 +
+[savings_status=100<=X<500] * 0.24 +
+[present_employment_years=>=7] * -0.06 +
+[present_employment_years=4<=X<7] * -0.2 +
+[present_employment_years=<1] * 0.14 +
+[installment_commitment] * 0.15 +
+[personal_status=male single] * -0.21 +
+[personal_status=male div/sep] * 0.19 +
+[personal_status=male mar/wid] * -0.1 +
+[other_parties=guarantor] * -0.22 +
+[other_parties=co applicant] * 0.16 +
+[residence_since_years] * 0.07 +
+[own_telephone=none] * 0.18 +
+[foreign_worker=no] * -0.43
+
+Attribute mappings:
+
+Model attributes                    	    Incoming attributes
+------------------------------------	    ----------------
+(nominal) credit_history            	--> 3 (nominal) credit_history
+(numeric) credit_amount             	--> 5 (numeric) credit_amount
+(nominal) savings_status            	--> 6 (nominal) savings_status
+(nominal) present_employment_years  	--> 7 (nominal) present_employment_years
+(numeric) installment_commitment    	--> 8 (numeric) installment_commitment
+(nominal) personal_status           	--> 9 (nominal) personal_status
+(nominal) other_parties             	--> 10 (nominal) other_parties
+(numeric) residence_since_years     	--> 11 (numeric) residence_since_years
+(nominal) own_telephone             	--> 19 (nominal) own_telephone
+(nominal) foreign_worker            	--> 20 (nominal) foreign_worker
+(nominal) credit_status             	--> 21 (nominal) credit_status
+
+
+Time taken to build model: 0.2 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.34 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         242               73.3333 %
+Incorrectly Classified Instances        88               26.6667 %
+Kappa statistic                          0.2427
+Mean absolute error                      0.3506
+Root mean squared error                  0.435 
+Relative absolute error                 83.4243 %
+Root relative squared error             94.9222 %
+Total Number of Instances              330     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.931    0.727    0.749      0.931    0.830      0.277    0.687     0.810     good
+                 0.273    0.069    0.628      0.273    0.380      0.277    0.687     0.544     bad
+Weighted Avg.    0.733    0.530    0.713      0.733    0.695      0.277    0.687     0.730     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 215  16 |   a = good
+  72  27 |   b = bad
+

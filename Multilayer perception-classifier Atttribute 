@@ -1,0 +1,531 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     dataset_31_credit-g-clean-weka.filters.supervised.instance.Resample-B0.0-S1-Z33.0-no-replacement-V-weka.filters.unsupervised.attribute.Remove-R1-2,4,12-18
+Instances:    670
+Attributes:   11
+              credit_history
+              credit_amount
+              savings_status
+              present_employment_years
+              installment_commitment
+              personal_status
+              other_parties
+              residence_since_years
+              own_telephone
+              foreign_worker
+              credit_status
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -13.989056795220876
+    Node 2    7.557462190714876
+    Node 3    4.823707623373758
+    Node 4    5.1176437161515125
+    Node 5    1.2096086259275332
+    Node 6    3.559186277319829
+    Node 7    6.3847026979618
+    Node 8    -10.060742180436831
+    Node 9    7.077447167409191
+    Node 10    5.556649566383772
+    Node 11    9.775964931535775
+    Node 12    -8.124112110037036
+    Node 13    6.633704673103458
+    Node 14    -6.316470936415462
+    Node 15    6.708633159919101
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    13.989028345014274
+    Node 2    -7.557449367350736
+    Node 3    -4.823699858710853
+    Node 4    -5.117633077638856
+    Node 5    -1.2096078351541106
+    Node 6    -3.5591823421364546
+    Node 7    -6.384690722752443
+    Node 8    10.060723910969198
+    Node 9    -7.077434365346279
+    Node 10    -5.556643770954031
+    Node 11    -9.775925587845176
+    Node 12    8.124098982747192
+    Node 13    -6.633688987859812
+    Node 14    6.31646375428916
+    Node 15    -6.708621192954707
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.37234510247721897
+    Attrib credit_history=critical/other existing credit    7.28474576651619
+    Attrib credit_history=existing paid    -1.8089395293789277
+    Attrib credit_history=delayed previously    -1.045759977763967
+    Attrib credit_history=no credits/all paid    -0.7191974177677489
+    Attrib credit_history=all paid    -2.5392500950837595
+    Attrib credit_amount    -2.8165660248618725
+    Attrib savings_status=no known savings    0.050779832917964805
+    Attrib savings_status=<100    -7.934393896851319
+    Attrib savings_status=500<=X<1000    3.5857966133312633
+    Attrib savings_status=>=1000    2.99602730187103
+    Attrib savings_status=100<=X<500    2.6429596647444153
+    Attrib present_employment_years=>=7    1.310023935279815
+    Attrib present_employment_years=1<=X<4    -0.10076305062822831
+    Attrib present_employment_years=4<=X<7    6.309399525943011
+    Attrib present_employment_years=unemployed    -1.2401149623408838
+    Attrib present_employment_years=<1    -4.935198588334429
+    Attrib installment_commitment    -9.549898927561598
+    Attrib personal_status=male single    3.835447394517076
+    Attrib personal_status=female div/dep/mar    2.2255770072003807
+    Attrib personal_status=male div/sep    -2.999662471626077
+    Attrib personal_status=male mar/wid    -2.227545102775247
+    Attrib other_parties=none    5.248501677673265
+    Attrib other_parties=guarantor    -2.09045867233063
+    Attrib other_parties=co applicant    -2.7203579412492513
+    Attrib residence_since_years    0.9680812106078232
+    Attrib own_telephone=none    -3.587690542549699
+    Attrib foreign_worker=no    -0.06609717524785606
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.8899563475662695
+    Attrib credit_history=critical/other existing credit    3.4752416104642676
+    Attrib credit_history=existing paid    -2.297311598431186
+    Attrib credit_history=delayed previously    3.75642120063721
+    Attrib credit_history=no credits/all paid    -2.2210756238690457
+    Attrib credit_history=all paid    -0.120962362359141
+    Attrib credit_amount    0.2252537220640392
+    Attrib savings_status=no known savings    -1.8140503145762632
+    Attrib savings_status=<100    -1.1705487513280795
+    Attrib savings_status=500<=X<1000    1.572166505608374
+    Attrib savings_status=>=1000    2.138418926572948
+    Attrib savings_status=100<=X<500    1.9021482642329341
+    Attrib present_employment_years=>=7    1.4985528602531062
+    Attrib present_employment_years=1<=X<4    2.4481291909914984
+    Attrib present_employment_years=4<=X<7    -1.6932362493558364
+    Attrib present_employment_years=unemployed    0.6358266797259032
+    Attrib present_employment_years=<1    -0.23228236234978722
+    Attrib installment_commitment    0.8329021337408449
+    Attrib personal_status=male single    2.0647375669387333
+    Attrib personal_status=female div/dep/mar    0.9276678470301468
+    Attrib personal_status=male div/sep    -0.4914395796605646
+    Attrib personal_status=male mar/wid    -0.7857565887141291
+    Attrib other_parties=none    1.7400264875549354
+    Attrib other_parties=guarantor    -2.1539908550720064
+    Attrib other_parties=co applicant    1.1963161214843803
+    Attrib residence_since_years    0.44444377444058963
+    Attrib own_telephone=none    1.685410239920561
+    Attrib foreign_worker=no    0.8538499980935136
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.9478865649002386
+    Attrib credit_history=critical/other existing credit    6.330816605211143
+    Attrib credit_history=existing paid    -2.1145764147701547
+    Attrib credit_history=delayed previously    2.230320504853609
+    Attrib credit_history=no credits/all paid    -3.6197910077842295
+    Attrib credit_history=all paid    0.015834223091995298
+    Attrib credit_amount    -1.7935932645266153
+    Attrib savings_status=no known savings    -1.255773450417159
+    Attrib savings_status=<100    0.17905266746647236
+    Attrib savings_status=500<=X<1000    4.6038894140478535
+    Attrib savings_status=>=1000    -0.07380630807889499
+    Attrib savings_status=100<=X<500    -0.5955046076586707
+    Attrib present_employment_years=>=7    -2.376765154727978
+    Attrib present_employment_years=1<=X<4    0.005073099268641267
+    Attrib present_employment_years=4<=X<7    5.724780184902999
+    Attrib present_employment_years=unemployed    1.5567700251571472
+    Attrib present_employment_years=<1    -1.9554300363513129
+    Attrib installment_commitment    -7.75874239734836
+    Attrib personal_status=male single    2.0477696778617105
+    Attrib personal_status=female div/dep/mar    4.052962084809519
+    Attrib personal_status=male div/sep    -2.027522106960198
+    Attrib personal_status=male mar/wid    -2.1039950228939026
+    Attrib other_parties=none    0.462865485193217
+    Attrib other_parties=guarantor    6.7367303624403325
+    Attrib other_parties=co applicant    -6.197840154735021
+    Attrib residence_since_years    -0.7421012250558798
+    Attrib own_telephone=none    -2.224616748602822
+    Attrib foreign_worker=no    -2.8777435446811896
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -0.7095737254903602
+    Attrib credit_history=critical/other existing credit    0.3173117895932594
+    Attrib credit_history=existing paid    1.0543813211940107
+    Attrib credit_history=delayed previously    -0.43771382470522163
+    Attrib credit_history=no credits/all paid    0.2416365984012612
+    Attrib credit_history=all paid    0.8589787215063863
+    Attrib credit_amount    0.6658899184647138
+    Attrib savings_status=no known savings    2.276866929803848
+    Attrib savings_status=<100    -1.2556125182354003
+    Attrib savings_status=500<=X<1000    1.342283226344267
+    Attrib savings_status=>=1000    1.0537078060391611
+    Attrib savings_status=100<=X<500    -1.278054851067259
+    Attrib present_employment_years=>=7    -1.9072920495053285
+    Attrib present_employment_years=1<=X<4    1.680973010026161
+    Attrib present_employment_years=4<=X<7    -0.9829016575775424
+    Attrib present_employment_years=unemployed    0.5297284315208649
+    Attrib present_employment_years=<1    2.756301204011736
+    Attrib installment_commitment    3.331766928928448
+    Attrib personal_status=male single    1.7360636193660384
+    Attrib personal_status=female div/dep/mar    -1.6711869662554595
+    Attrib personal_status=male div/sep    1.1339545740890828
+    Attrib personal_status=male mar/wid    0.24257597280703747
+    Attrib other_parties=none    -0.12977656773513804
+    Attrib other_parties=guarantor    1.4812501829419857
+    Attrib other_parties=co applicant    -0.7199049270875928
+    Attrib residence_since_years    -0.36542984167604237
+    Attrib own_telephone=none    2.527501559387684
+    Attrib foreign_worker=no    1.0727014543874123
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.6335781910950106
+    Attrib credit_history=critical/other existing credit    -5.3552653618127035
+    Attrib credit_history=existing paid    5.272557158523286
+    Attrib credit_history=delayed previously    -2.06214328520198
+    Attrib credit_history=no credits/all paid    2.6138967293361217
+    Attrib credit_history=all paid    1.332682716521926
+    Attrib credit_amount    -0.7532200570250782
+    Attrib savings_status=no known savings    0.022326513872610716
+    Attrib savings_status=<100    4.5232985844892415
+    Attrib savings_status=500<=X<1000    2.1589839356414218
+    Attrib savings_status=>=1000    3.244398881905508
+    Attrib savings_status=100<=X<500    -8.146780459068967
+    Attrib present_employment_years=>=7    1.5836216899904298
+    Attrib present_employment_years=1<=X<4    -2.051242515680599
+    Attrib present_employment_years=4<=X<7    -1.8509149513223992
+    Attrib present_employment_years=unemployed    4.776468376847078
+    Attrib present_employment_years=<1    -0.7082851152552239
+    Attrib installment_commitment    -5.213219773874539
+    Attrib personal_status=male single    -5.7601488351269365
+    Attrib personal_status=female div/dep/mar    -1.4415652247219888
+    Attrib personal_status=male div/sep    4.116306577803591
+    Attrib personal_status=male mar/wid    4.293431207217098
+    Attrib other_parties=none    -0.6385917693613591
+    Attrib other_parties=guarantor    3.071495607503447
+    Attrib other_parties=co applicant    -1.9177568565879113
+    Attrib residence_since_years    -7.159306758367526
+    Attrib own_telephone=none    -10.644407075394799
+    Attrib foreign_worker=no    -0.1293722562189094
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.9433940305594741
+    Attrib credit_history=critical/other existing credit    -2.366600153793169
+    Attrib credit_history=existing paid    6.169196731213892
+    Attrib credit_history=delayed previously    1.5998426537643864
+    Attrib credit_history=no credits/all paid    3.107041247924142
+    Attrib credit_history=all paid    -5.49788578431504
+    Attrib credit_amount    -10.286750712558149
+    Attrib savings_status=no known savings    6.785460859548243
+    Attrib savings_status=<100    1.0335803758057813
+    Attrib savings_status=500<=X<1000    0.8564777198549063
+    Attrib savings_status=>=1000    0.6811327017964907
+    Attrib savings_status=100<=X<500    -6.358399000378665
+    Attrib present_employment_years=>=7    8.799950444207024
+    Attrib present_employment_years=1<=X<4    4.226395335732407
+    Attrib present_employment_years=4<=X<7    -3.5390207009924493
+    Attrib present_employment_years=unemployed    -5.9387814169645905
+    Attrib present_employment_years=<1    -0.638116512964282
+    Attrib installment_commitment    -7.203422584000056
+    Attrib personal_status=male single    0.011018831517793221
+    Attrib personal_status=female div/dep/mar    3.1012279167347505
+    Attrib personal_status=male div/sep    -0.5264263664976933
+    Attrib personal_status=male mar/wid    -0.6587585520457325
+    Attrib other_parties=none    -3.0598418993865706
+    Attrib other_parties=guarantor    2.7431453605434286
+    Attrib other_parties=co applicant    1.236828155481246
+    Attrib residence_since_years    -10.07745236706922
+    Attrib own_telephone=none    4.877419911573235
+    Attrib foreign_worker=no    2.7679612599975534
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -1.1570723470015494
+    Attrib credit_history=critical/other existing credit    3.1300209455143833
+    Attrib credit_history=existing paid    3.1840136006634605
+    Attrib credit_history=delayed previously    -2.9462182907563252
+    Attrib credit_history=no credits/all paid    -0.15337942550391986
+    Attrib credit_history=all paid    0.25548171927631325
+    Attrib credit_amount    3.7369903023982936
+    Attrib savings_status=no known savings    -3.884710981865031
+    Attrib savings_status=<100    -2.5176835403700504
+    Attrib savings_status=500<=X<1000    2.4797932435825922
+    Attrib savings_status=>=1000    2.1907674124682375
+    Attrib savings_status=100<=X<500    5.086694494977865
+    Attrib present_employment_years=>=7    2.6272061058262883
+    Attrib present_employment_years=1<=X<4    -0.7386189219847985
+    Attrib present_employment_years=4<=X<7    1.4461675769660485
+    Attrib present_employment_years=unemployed    -1.1267260590208714
+    Attrib present_employment_years=<1    1.2085424075812272
+    Attrib installment_commitment    -9.913230238408788
+    Attrib personal_status=male single    0.2414188033954757
+    Attrib personal_status=female div/dep/mar    0.9007423643151683
+    Attrib personal_status=male div/sep    0.2856127743109533
+    Attrib personal_status=male mar/wid    0.8393403682223882
+    Attrib other_parties=none    3.0917486737952666
+    Attrib other_parties=guarantor    0.6337845139539947
+    Attrib other_parties=co applicant    -2.604940262991742
+    Attrib residence_since_years    -3.7885714881007084
+    Attrib own_telephone=none    -0.17978467370977608
+    Attrib foreign_worker=no    2.0501140127665307
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -1.0457857673412105
+    Attrib credit_history=critical/other existing credit    8.19176727483974
+    Attrib credit_history=existing paid    2.8395776819914658
+    Attrib credit_history=delayed previously    -1.1320432579742163
+    Attrib credit_history=no credits/all paid    -6.020251478061966
+    Attrib credit_history=all paid    -0.8988560254030487
+    Attrib credit_amount    6.354522705261175
+    Attrib savings_status=no known savings    4.497833149575765
+    Attrib savings_status=<100    -3.576092358187357
+    Attrib savings_status=500<=X<1000    -0.03415121016135915
+    Attrib savings_status=>=1000    2.9029312551439856
+    Attrib savings_status=100<=X<500    -0.651379676890866
+    Attrib present_employment_years=>=7    -3.618657393853475
+    Attrib present_employment_years=1<=X<4    -3.524905296350784
+    Attrib present_employment_years=4<=X<7    5.249978999706343
+    Attrib present_employment_years=unemployed    1.8172188182226472
+    Attrib present_employment_years=<1    3.1773146409029747
+    Attrib installment_commitment    0.9961658274360682
+    Attrib personal_status=male single    4.396071039105334
+    Attrib personal_status=female div/dep/mar    -0.041326416818994356
+    Attrib personal_status=male div/sep    -0.893354238957305
+    Attrib personal_status=male mar/wid    -1.4273183747460167
+    Attrib other_parties=none    3.986552808439497
+    Attrib other_parties=guarantor    -3.7272161241519837
+    Attrib other_parties=co applicant    0.7755027674647368
+    Attrib residence_since_years    6.963664483401181
+    Attrib own_telephone=none    -0.6362642948726077
+    Attrib foreign_worker=no    4.206556241980731
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -0.5056437781357516
+    Attrib credit_history=critical/other existing credit    1.2034614926063467
+    Attrib credit_history=existing paid    -1.9431573011548637
+    Attrib credit_history=delayed previously    1.7347851282693252
+    Attrib credit_history=no credits/all paid    1.130368297069771
+    Attrib credit_history=all paid    -0.43701009055152584
+    Attrib credit_amount    0.08302880213510892
+    Attrib savings_status=no known savings    3.612847141642562
+    Attrib savings_status=<100    -3.947496130086466
+    Attrib savings_status=500<=X<1000    1.5581775997862346
+    Attrib savings_status=>=1000    1.3499529897092657
+    Attrib savings_status=100<=X<500    -0.9027959812341521
+    Attrib present_employment_years=>=7    -1.5374572581003756
+    Attrib present_employment_years=1<=X<4    3.4402234820142596
+    Attrib present_employment_years=4<=X<7    -1.136349713910998
+    Attrib present_employment_years=unemployed    0.15674024486431978
+    Attrib present_employment_years=<1    0.7132626284870098
+    Attrib installment_commitment    3.7420306937685646
+    Attrib personal_status=male single    2.6243484102827073
+    Attrib personal_status=female div/dep/mar    0.06061596678277522
+    Attrib personal_status=male div/sep    -2.697361804812143
+    Attrib personal_status=male mar/wid    1.1662374025120275
+    Attrib other_parties=none    -2.7456258890324454
+    Attrib other_parties=guarantor    -0.1999550164573444
+    Attrib other_parties=co applicant    3.551055467580999
+    Attrib residence_since_years    -7.536152558425489
+    Attrib own_telephone=none    1.490461819290178
+    Attrib foreign_worker=no    0.8054074041128113
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -1.515095440580257
+    Attrib credit_history=critical/other existing credit    -3.235640825406312
+    Attrib credit_history=existing paid    -0.48039527947841854
+    Attrib credit_history=delayed previously    2.4056262470330627
+    Attrib credit_history=no credits/all paid    1.715970590425747
+    Attrib credit_history=all paid    4.107199103128348
+    Attrib credit_amount    -2.398724032407178
+    Attrib savings_status=no known savings    -2.5039700521407275
+    Attrib savings_status=<100    -0.2937452212285491
+    Attrib savings_status=500<=X<1000    5.419883298133796
+    Attrib savings_status=>=1000    0.35565511315793313
+    Attrib savings_status=100<=X<500    1.4868159240213685
+    Attrib present_employment_years=>=7    2.065221391978943
+    Attrib present_employment_years=1<=X<4    1.9244462656746535
+    Attrib present_employment_years=4<=X<7    -3.1613603487642727
+    Attrib present_employment_years=unemployed    5.20726223599308
+    Attrib present_employment_years=<1    -1.608919972888313
+    Attrib installment_commitment    5.1037037432823285
+    Attrib personal_status=male single    -3.6105681129735916
+    Attrib personal_status=female div/dep/mar    0.15482784978829958
+    Attrib personal_status=male div/sep    4.037088325130333
+    Attrib personal_status=male mar/wid    2.3851251339669832
+    Attrib other_parties=none    -2.179463756834037
+    Attrib other_parties=guarantor    -0.5430122639974241
+    Attrib other_parties=co applicant    4.274092284098684
+    Attrib residence_since_years    13.079458088371343
+    Attrib own_telephone=none    1.9628355527703247
+    Attrib foreign_worker=no    1.6207718442538943
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -0.6393391743573873
+    Attrib credit_history=critical/other existing credit    2.5142589126811603
+    Attrib credit_history=existing paid    -2.1685201020239044
+    Attrib credit_history=delayed previously    0.155818730859141
+    Attrib credit_history=no credits/all paid    1.0171504419070188
+    Attrib credit_history=all paid    0.5655696092079096
+    Attrib credit_amount    -2.7657789518304834
+    Attrib savings_status=no known savings    0.786851305801212
+    Attrib savings_status=<100    -1.752097195324077
+    Attrib savings_status=500<=X<1000    4.8013666074907775
+    Attrib savings_status=>=1000    0.30263531596205806
+    Attrib savings_status=100<=X<500    -2.215008020766643
+    Attrib present_employment_years=>=7    2.283541161232469
+    Attrib present_employment_years=1<=X<4    1.4246867570709243
+    Attrib present_employment_years=4<=X<7    1.0213183321870927
+    Attrib present_employment_years=unemployed    -1.572128814090129
+    Attrib present_employment_years=<1    -1.2422230081580004
+    Attrib installment_commitment    1.0682676041411112
+    Attrib personal_status=male single    2.770836981953063
+    Attrib personal_status=female div/dep/mar    -0.5123933668291636
+    Attrib personal_status=male div/sep    0.21384538629936184
+    Attrib personal_status=male mar/wid    -1.1065489146884218
+    Attrib other_parties=none    -2.6057088988806236
+    Attrib other_parties=guarantor    0.7698233652696802
+    Attrib other_parties=co applicant    2.474533000888128
+    Attrib residence_since_years    0.47973642716387205
+    Attrib own_telephone=none    1.9078070167397727
+    Attrib foreign_worker=no    0.7364472386921423
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    0.17135322588256374
+    Attrib credit_history=critical/other existing credit    1.6581326028357162
+    Attrib credit_history=existing paid    4.493634372263924
+    Attrib credit_history=delayed previously    -3.0970481324847845
+    Attrib credit_history=no credits/all paid    -2.753808975106058
+    Attrib credit_history=all paid    -0.9445801522140913
+    Attrib credit_amount    -8.64892899254386
+    Attrib savings_status=no known savings    2.64664563612704
+    Attrib savings_status=<100    -1.8159173637581498
+    Attrib savings_status=500<=X<1000    1.4548884339560804
+    Attrib savings_status=>=1000    -2.4890952216546296
+    Attrib savings_status=100<=X<500    -0.5354039498739572
+    Attrib present_employment_years=>=7    0.44866742676296895
+    Attrib present_employment_years=1<=X<4    0.6825579674455017
+    Attrib present_employment_years=4<=X<7    -1.8551051806880559
+    Attrib present_employment_years=unemployed    2.5019197127188133
+    Attrib present_employment_years=<1    -2.3933567555108195
+    Attrib installment_commitment    -4.698675734293899
+    Attrib personal_status=male single    1.0488689390811348
+    Attrib personal_status=female div/dep/mar    -3.8850030262900384
+    Attrib personal_status=male div/sep    0.06096492942622173
+    Attrib personal_status=male mar/wid    2.4560395113338167
+    Attrib other_parties=none    1.45579928710982
+    Attrib other_parties=guarantor    1.7628725164781038
+    Attrib other_parties=co applicant    -3.512818958985312
+    Attrib residence_since_years    -7.375260153780315
+    Attrib own_telephone=none    4.627738722775938
+    Attrib foreign_worker=no    -0.1761396383604855
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    -0.5109755879993251
+    Attrib credit_history=critical/other existing credit    2.285535421557856
+    Attrib credit_history=existing paid    1.8772965381091737
+    Attrib credit_history=delayed previously    -1.470246563050439
+    Attrib credit_history=no credits/all paid    0.344714941313101
+    Attrib credit_history=all paid    -1.4017034061263587
+    Attrib credit_amount    7.6941538241111695
+    Attrib savings_status=no known savings    4.38801501628695
+    Attrib savings_status=<100    -2.5559801697892643
+    Attrib savings_status=500<=X<1000    1.0595789105999234
+    Attrib savings_status=>=1000    0.001382008117889017
+    Attrib savings_status=100<=X<500    -1.3781071212518776
+    Attrib present_employment_years=>=7    0.4882584802716336
+    Attrib present_employment_years=1<=X<4    5.410810563274082
+    Attrib present_employment_years=4<=X<7    -3.059928231920418
+    Attrib present_employment_years=unemployed    0.05303477476360754
+    Attrib present_employment_years=<1    -1.3216317531597908
+    Attrib installment_commitment    0.3642031217104402
+    Attrib personal_status=male single    -3.0412000485460413
+    Attrib personal_status=female div/dep/mar    4.162883615400261
+    Attrib personal_status=male div/sep    -0.38045262192302565
+    Attrib personal_status=male mar/wid    0.22110119486302654
+    Attrib other_parties=none    -2.064562502092508
+    Attrib other_parties=guarantor    1.5168565761202175
+    Attrib other_parties=co applicant    1.0528790638492946
+    Attrib residence_since_years    0.38512164985435676
+    Attrib own_telephone=none    -2.7995738437208546
+    Attrib foreign_worker=no    2.312674037783838
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    -1.107735310577424
+    Attrib credit_history=critical/other existing credit    5.263437835232764
+    Attrib credit_history=existing paid    3.7506091560567834
+    Attrib credit_history=delayed previously    -3.0585097974215025
+    Attrib credit_history=no credits/all paid    -0.9913880865622097
+    Attrib credit_history=all paid    -1.5663374472931988
+    Attrib credit_amount    -5.3090395316350865
+    Attrib savings_status=no known savings    -3.7229782471142845
+    Attrib savings_status=<100    -2.6187559375756737
+    Attrib savings_status=500<=X<1000    4.308176896173847
+    Attrib savings_status=>=1000    0.6147354971398765
+    Attrib savings_status=100<=X<500    4.83855058424393
+    Attrib present_employment_years=>=7    1.8254181063170116
+    Attrib present_employment_years=1<=X<4    -4.782091360928951
+    Attrib present_employment_years=4<=X<7    -2.757086178405612
+    Attrib present_employment_years=unemployed    1.8148649949928137
+    Attrib present_employment_years=<1    7.319079689061148
+    Attrib installment_commitment    6.896919241029996
+    Attrib personal_status=male single    -0.6500863595287142
+    Attrib personal_status=female div/dep/mar    3.132241663326815
+    Attrib personal_status=male div/sep    -2.35498840385961
+    Attrib personal_status=male mar/wid    2.176189200097555
+    Attrib other_parties=none    -2.0261455264976167
+    Attrib other_parties=guarantor    2.464947759695264
+    Attrib other_parties=co applicant    0.7529365582568481
+    Attrib residence_since_years    -0.4301041329579536
+    Attrib own_telephone=none    -9.290777591772677
+    Attrib foreign_worker=no    0.759584414610489
+Class good
+    Input
+    Node 0
+Class bad
+    Input
+    Node 1
+
+Attribute mappings:
+
+Model attributes                    	    Incoming attributes
+------------------------------------	    ----------------
+(nominal) credit_history            	--> 3 (nominal) credit_history
+(numeric) credit_amount             	--> 5 (numeric) credit_amount
+(nominal) savings_status            	--> 6 (nominal) savings_status
+(nominal) present_employment_years  	--> 7 (nominal) present_employment_years
+(numeric) installment_commitment    	--> 8 (numeric) installment_commitment
+(nominal) personal_status           	--> 9 (nominal) personal_status
+(nominal) other_parties             	--> 10 (nominal) other_parties
+(numeric) residence_since_years     	--> 11 (numeric) residence_since_years
+(nominal) own_telephone             	--> 19 (nominal) own_telephone
+(nominal) foreign_worker            	--> 20 (nominal) foreign_worker
+(nominal) credit_status             	--> 21 (nominal) credit_status
+
+
+Time taken to build model: 3.04 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.47 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         225               68.1818 %
+Incorrectly Classified Instances       105               31.8182 %
+Kappa statistic                          0.1886
+Mean absolute error                      0.3222
+Root mean squared error                  0.5261
+Relative absolute error                 76.6673 %
+Root relative squared error            114.797  %
+Total Number of Instances              330     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.823    0.646    0.748      0.823    0.784      0.192    0.651     0.809     good
+                 0.354    0.177    0.461      0.354    0.400      0.192    0.651     0.455     bad
+Weighted Avg.    0.682    0.506    0.662      0.682    0.668      0.192    0.651     0.703     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 190  41 |   a = good
+  64  35 |   b = bad
+

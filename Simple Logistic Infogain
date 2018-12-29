@@ -1,0 +1,132 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.functions.SimpleLogistic -- -I 0 -M 500 -H 50 -W 0.0
+Relation:     dataset_31_credit-g-clean-weka.filters.supervised.instance.Resample-B0.0-S1-Z33.0-no-replacement-V-weka.filters.unsupervised.attribute.Remove-R8,11,13,16,18-19
+Instances:    670
+Attributes:   15
+              checking_status
+              duration_months
+              credit_history
+              purpose_of_credit
+              credit_amount
+              savings_status
+              present_employment_years
+              personal_status
+              other_parties
+              property_magnitude
+              other_payment_plans
+              housing_type
+              job
+              foreign_worker
+              credit_status
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+SimpleLogistic:
+
+Class good :
+0.4  + 
+[checking_status=<0] * -0.11 +
+[checking_status=no checking] * 0.56 +
+[checking_status=>=200] * 0.47 +
+[duration_months] * -0.02 +
+[credit_history=critical/other existing credit] * 0.41 +
+[credit_history=no credits/all paid] * -0.41 +
+[credit_history=all paid] * -0.37 +
+[purpose_of_credit=education] * -0.37 +
+[purpose_of_credit=new car] * -0.32 +
+[purpose_of_credit=used car] * 0.38 +
+[purpose_of_credit=retraining] * 0.48 +
+[savings_status=no known savings] * 0.2  +
+[savings_status=<100] * -0.45 +
+[savings_status=>=1000] * 0.37 +
+[savings_status=100<=X<500] * -0.21 +
+[present_employment_years=4<=X<7] * 0.2  +
+[personal_status=male single] * 0.19 +
+[other_parties=guarantor] * 0.28 +
+[property_magnitude=real estate] * 0.25 +
+[other_payment_plans=none] * 0.29 +
+[housing_type=own] * 0.15 +
+[job=unemp/unskilled non res] * 0.64 +
+[foreign_worker=no] * 0.42
+
+Class bad :
+-0.4 + 
+[checking_status=<0] * 0.11 +
+[checking_status=no checking] * -0.56 +
+[checking_status=>=200] * -0.47 +
+[duration_months] * 0.02 +
+[credit_history=critical/other existing credit] * -0.41 +
+[credit_history=no credits/all paid] * 0.41 +
+[credit_history=all paid] * 0.37 +
+[purpose_of_credit=education] * 0.37 +
+[purpose_of_credit=new car] * 0.32 +
+[purpose_of_credit=used car] * -0.38 +
+[purpose_of_credit=retraining] * -0.48 +
+[savings_status=no known savings] * -0.2 +
+[savings_status=<100] * 0.45 +
+[savings_status=>=1000] * -0.37 +
+[savings_status=100<=X<500] * 0.21 +
+[present_employment_years=4<=X<7] * -0.2 +
+[personal_status=male single] * -0.19 +
+[other_parties=guarantor] * -0.28 +
+[property_magnitude=real estate] * -0.25 +
+[other_payment_plans=none] * -0.29 +
+[housing_type=own] * -0.15 +
+[job=unemp/unskilled non res] * -0.64 +
+[foreign_worker=no] * -0.42
+
+Attribute mappings:
+
+Model attributes                    	    Incoming attributes
+------------------------------------	    ----------------
+(nominal) checking_status           	--> 1 (nominal) checking_status
+(numeric) duration_months           	--> 2 (numeric) duration_months
+(nominal) credit_history            	--> 3 (nominal) credit_history
+(nominal) purpose_of_credit         	--> 4 (nominal) purpose_of_credit
+(numeric) credit_amount             	--> 5 (numeric) credit_amount
+(nominal) savings_status            	--> 6 (nominal) savings_status
+(nominal) present_employment_years  	--> 7 (nominal) present_employment_years
+(nominal) personal_status           	--> 9 (nominal) personal_status
+(nominal) other_parties             	--> 10 (nominal) other_parties
+(nominal) property_magnitude        	--> 12 (nominal) property_magnitude
+(nominal) other_payment_plans       	--> 14 (nominal) other_payment_plans
+(nominal) housing_type              	--> 15 (nominal) housing_type
+(nominal) job                       	--> 17 (nominal) job
+(nominal) foreign_worker            	--> 20 (nominal) foreign_worker
+(nominal) credit_status             	--> 21 (nominal) credit_status
+
+
+Time taken to build model: 0.23 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.38 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         251               76.0606 %
+Incorrectly Classified Instances        79               23.9394 %
+Kappa statistic                          0.3535
+Mean absolute error                      0.3182
+Root mean squared error                  0.4135
+Relative absolute error                 75.7246 %
+Root relative squared error             90.2234 %
+Total Number of Instances              330     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.918    0.606    0.779      0.918    0.843      0.375    0.769     0.879     good
+                 0.394    0.082    0.672      0.394    0.497      0.375    0.769     0.588     bad
+Weighted Avg.    0.761    0.449    0.747      0.761    0.739      0.375    0.769     0.792     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 212  19 |   a = good
+  60  39 |   b = bad
+

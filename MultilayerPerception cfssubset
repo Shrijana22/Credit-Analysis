@@ -1,0 +1,262 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     dataset_31_credit-g-clean-weka.filters.supervised.instance.Resample-B0.0-S1-Z33.0-no-replacement-V-weka.filters.unsupervised.attribute.Remove-R4,7-20
+Instances:    670
+Attributes:   6
+              checking_status
+              duration_months
+              credit_history
+              credit_amount
+              savings_status
+              credit_status
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -4.390688930544443
+    Node 2    2.8290469255573263
+    Node 3    5.223015001822958
+    Node 4    3.6626967603171914
+    Node 5    2.4831649498025556
+    Node 6    3.0085334841619513
+    Node 7    -5.2076029038568725
+    Node 8    2.685572867359864
+    Node 9    1.9370789139650326
+    Node 10    3.192875424051966
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    4.390691631243486
+    Node 2    -2.829044477891434
+    Node 3    -5.223194960483387
+    Node 4    -3.662699160500991
+    Node 5    -2.4831668718375
+    Node 6    -3.0085356425339094
+    Node 7    5.207609287938445
+    Node 8    -2.6855752368046413
+    Node 9    -1.9370797629673153
+    Node 10    -3.1928722280821393
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -1.0113621884811907
+    Attrib checking_status=<0    -0.5405467379640534
+    Attrib checking_status=0<=X<200    2.0316631605843725
+    Attrib checking_status=no checking    -1.4813296194723224
+    Attrib checking_status=>=200    2.0689773616014855
+    Attrib duration_months    5.164025498845255
+    Attrib credit_history=critical/other existing credit    1.4132195936588445
+    Attrib credit_history=existing paid    -2.4965763555383185
+    Attrib credit_history=delayed previously    -1.2010116812916067
+    Attrib credit_history=no credits/all paid    3.0052154335847416
+    Attrib credit_history=all paid    2.4529963694017742
+    Attrib credit_amount    2.5314447713928767
+    Attrib savings_status=no known savings    1.3167889685585756
+    Attrib savings_status=<100    -2.6132754196609436
+    Attrib savings_status=500<=X<1000    0.5034033239027428
+    Attrib savings_status=>=1000    1.8671097288913436
+    Attrib savings_status=100<=X<500    2.1065974179885503
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -1.0387985629770173
+    Attrib checking_status=<0    -1.7405073751763964
+    Attrib checking_status=0<=X<200    1.5193255812868447
+    Attrib checking_status=no checking    -2.4729036879683384
+    Attrib checking_status=>=200    4.7131935565221745
+    Attrib duration_months    5.909834442001196
+    Attrib credit_history=critical/other existing credit    0.7107080909164342
+    Attrib credit_history=existing paid    -0.7052604196175994
+    Attrib credit_history=delayed previously    -0.0015251718185608418
+    Attrib credit_history=no credits/all paid    2.146278044802555
+    Attrib credit_history=all paid    0.9867453753576848
+    Attrib credit_amount    0.34635891986984907
+    Attrib savings_status=no known savings    3.978688239438881
+    Attrib savings_status=<100    -2.2592021525470063
+    Attrib savings_status=500<=X<1000    1.3333159306762072
+    Attrib savings_status=>=1000    2.969562624746338
+    Attrib savings_status=100<=X<500    -2.988443344152333
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -3.1255644274785293
+    Attrib checking_status=<0    0.6648430614259055
+    Attrib checking_status=0<=X<200    3.4616412076428293
+    Attrib checking_status=no checking    0.9304309812377695
+    Attrib checking_status=>=200    1.197307200345786
+    Attrib duration_months    -23.77272208435493
+    Attrib credit_history=critical/other existing credit    0.2768839751363824
+    Attrib credit_history=existing paid    10.256058007608598
+    Attrib credit_history=delayed previously    3.12133112623658
+    Attrib credit_history=no credits/all paid    0.31612542032507657
+    Attrib credit_history=all paid    -4.604408619400683
+    Attrib credit_amount    4.023825584035044
+    Attrib savings_status=no known savings    2.8185098097589587
+    Attrib savings_status=<100    3.4985622211105825
+    Attrib savings_status=500<=X<1000    3.6766588147667565
+    Attrib savings_status=>=1000    0.9326217192999685
+    Attrib savings_status=100<=X<500    -1.436813178230856
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    0.18303999426002882
+    Attrib checking_status=<0    3.4720911785634687
+    Attrib checking_status=0<=X<200    -9.51128465794252
+    Attrib checking_status=no checking    2.9081176329009275
+    Attrib checking_status=>=200    2.6927062869775376
+    Attrib duration_months    12.960502195863503
+    Attrib credit_history=critical/other existing credit    5.417982891088679
+    Attrib credit_history=existing paid    -3.0930314182348
+    Attrib credit_history=delayed previously    -2.821006895474122
+    Attrib credit_history=no credits/all paid    0.8907982043778611
+    Attrib credit_history=all paid    -0.8632702167151864
+    Attrib credit_amount    1.5294762109537048
+    Attrib savings_status=no known savings    -7.498569035955812
+    Attrib savings_status=<100    -1.0655101298311975
+    Attrib savings_status=500<=X<1000    2.4205660799575464
+    Attrib savings_status=>=1000    2.215227462526092
+    Attrib savings_status=100<=X<500    3.4127001224567466
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    0.562494877867906
+    Attrib checking_status=<0    -1.6935590661622106
+    Attrib checking_status=0<=X<200    -2.7905250920871003
+    Attrib checking_status=no checking    1.9244437087775825
+    Attrib checking_status=>=200    1.3567696878125075
+    Attrib duration_months    -3.5648359570252923
+    Attrib credit_history=critical/other existing credit    0.8018648299283857
+    Attrib credit_history=existing paid    -1.702683269364345
+    Attrib credit_history=delayed previously    2.5108794305412045
+    Attrib credit_history=no credits/all paid    0.27181337913568154
+    Attrib credit_history=all paid    -3.5990574286521264
+    Attrib credit_amount    5.148588564473583
+    Attrib savings_status=no known savings    -0.6668778566277903
+    Attrib savings_status=<100    -8.866133819188848
+    Attrib savings_status=500<=X<1000    4.763026777945571
+    Attrib savings_status=>=1000    2.895412499432462
+    Attrib savings_status=100<=X<500    0.06538302025456454
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -1.1036853514327027
+    Attrib checking_status=<0    -1.7060608787524882
+    Attrib checking_status=0<=X<200    1.6585202458040473
+    Attrib checking_status=no checking    2.054842551901884
+    Attrib checking_status=>=200    0.1765853220160085
+    Attrib duration_months    -4.441529206390022
+    Attrib credit_history=critical/other existing credit    3.057805851140978
+    Attrib credit_history=existing paid    2.5680724484211828
+    Attrib credit_history=delayed previously    -0.8315663899241924
+    Attrib credit_history=no credits/all paid    1.8719474758201997
+    Attrib credit_history=all paid    -3.336760515383193
+    Attrib credit_amount    9.859774111444452
+    Attrib savings_status=no known savings    -1.9542761593459084
+    Attrib savings_status=<100    -2.0601878926690533
+    Attrib savings_status=500<=X<1000    7.324337713330844
+    Attrib savings_status=>=1000    1.0634564645938425
+    Attrib savings_status=100<=X<500    -0.8999337622487976
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -1.581513276001376
+    Attrib checking_status=<0    0.4180488945044951
+    Attrib checking_status=0<=X<200    -0.4790424697581353
+    Attrib checking_status=no checking    3.193559409170165
+    Attrib checking_status=>=200    0.017530746734794992
+    Attrib duration_months    -11.75635292656908
+    Attrib credit_history=critical/other existing credit    8.912131167916305
+    Attrib credit_history=existing paid    -2.0853720171565757
+    Attrib credit_history=delayed previously    -0.15733692050470038
+    Attrib credit_history=no credits/all paid    0.7440169640181173
+    Attrib credit_history=all paid    -2.795611754123291
+    Attrib credit_amount    -4.852793280258257
+    Attrib savings_status=no known savings    2.301753819720252
+    Attrib savings_status=<100    -2.249258993642503
+    Attrib savings_status=500<=X<1000    7.44344358467178
+    Attrib savings_status=>=1000    0.30288178813287203
+    Attrib savings_status=100<=X<500    -3.2000998181421028
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    0.6265923167847866
+    Attrib checking_status=<0    -4.889708372914376
+    Attrib checking_status=0<=X<200    -1.66287117576014
+    Attrib checking_status=no checking    1.964716338153951
+    Attrib checking_status=>=200    3.3459172024612127
+    Attrib duration_months    -19.775537068798016
+    Attrib credit_history=critical/other existing credit    -4.514959921862516
+    Attrib credit_history=existing paid    -4.178992772740232
+    Attrib credit_history=delayed previously    0.955294669312306
+    Attrib credit_history=no credits/all paid    -0.455203066660434
+    Attrib credit_history=all paid    6.308617190867754
+    Attrib credit_amount    1.5179545799798673
+    Attrib savings_status=no known savings    1.62956807902544
+    Attrib savings_status=<100    -2.239115739266065
+    Attrib savings_status=500<=X<1000    2.3974858658376377
+    Attrib savings_status=>=1000    0.4621239049567466
+    Attrib savings_status=100<=X<500    -4.190746019557484
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -1.6041989623576718
+    Attrib checking_status=<0    -1.815319506566993
+    Attrib checking_status=0<=X<200    3.058079765664633
+    Attrib checking_status=no checking    0.5735013244785137
+    Attrib checking_status=>=200    1.380386530166894
+    Attrib duration_months    4.447973792325592
+    Attrib credit_history=critical/other existing credit    -1.76361696668757
+    Attrib credit_history=existing paid    1.470418649349574
+    Attrib credit_history=delayed previously    7.78689637945105
+    Attrib credit_history=no credits/all paid    1.450070287308918
+    Attrib credit_history=all paid    -3.9557859842249727
+    Attrib credit_amount    7.991606416633566
+    Attrib savings_status=no known savings    4.4818783666178685
+    Attrib savings_status=<100    -1.30109842445513
+    Attrib savings_status=500<=X<1000    1.3560324423355297
+    Attrib savings_status=>=1000    -0.795214823680332
+    Attrib savings_status=100<=X<500    1.2163360874759814
+Class good
+    Input
+    Node 0
+Class bad
+    Input
+    Node 1
+
+Attribute mappings:
+
+Model attributes           	    Incoming attributes
+---------------------------	    ----------------
+(nominal) checking_status  	--> 1 (nominal) checking_status
+(numeric) duration_months  	--> 2 (numeric) duration_months
+(nominal) credit_history   	--> 3 (nominal) credit_history
+(numeric) credit_amount    	--> 5 (numeric) credit_amount
+(nominal) savings_status   	--> 6 (nominal) savings_status
+(nominal) credit_status    	--> 21 (nominal) credit_status
+
+
+Time taken to build model: 1.45 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.32 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         236               71.5152 %
+Incorrectly Classified Instances        94               28.4848 %
+Kappa statistic                          0.3371
+Mean absolute error                      0.3328
+Root mean squared error                  0.4619
+Relative absolute error                 79.2047 %
+Root relative squared error            100.8056 %
+Total Number of Instances              330     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.779    0.434    0.807      0.779    0.793      0.338    0.702     0.811     good
+                 0.566    0.221    0.523      0.566    0.544      0.338    0.702     0.531     bad
+Weighted Avg.    0.715    0.370    0.722      0.715    0.718      0.338    0.702     0.727     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 180  51 |   a = good
+  43  56 |   b = bad
+
